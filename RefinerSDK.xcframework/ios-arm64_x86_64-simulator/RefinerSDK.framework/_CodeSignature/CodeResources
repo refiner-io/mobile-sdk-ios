@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dGp384OpoIscKzfUJSd2X7zW4Vk=
+		zDzkerI/cGXS453ydN+cNBscEe4=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GWvnf6ZZkkRPGRqFKm2PGum3jFE=
+		X0C9a6AwFf/Fmcd69ISInWBp62s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dGp384OpoIscKzfUJSd2X7zW4Vk=
+			zDzkerI/cGXS453ydN+cNBscEe4=
 			</data>
 			<key>hash2</key>
 			<data>
-			N1DkaAvONzJlaIKt7GuD+xaLhi6A4WmzGNqujTCm9es=
+			5YsnLKSaYWhZ9UGh8L/b10Jphped/hHy+CQoJTguIi8=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GWvnf6ZZkkRPGRqFKm2PGum3jFE=
+			X0C9a6AwFf/Fmcd69ISInWBp62s=
 			</data>
 			<key>hash2</key>
 			<data>
-			IUkV97e+8CiJkXwOXbLsAa+N/kWpSkgV4sgbupwDK3s=
+			yji7drMR4nCTrC+kRcugygHFtca3aWhTwfthwJ0OWcQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
