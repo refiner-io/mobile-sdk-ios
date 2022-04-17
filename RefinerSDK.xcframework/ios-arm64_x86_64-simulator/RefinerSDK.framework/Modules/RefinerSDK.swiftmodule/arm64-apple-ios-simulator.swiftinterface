@@ -1,0 +1,35 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RefinerSDK
+import Foundation
+import RefinerInternalSDK
+@_exported import RefinerSDK
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+public let RefinerSDKVersion: Swift.String
+public protocol RefinerInterface : AnyObject {
+  func resetUser()
+  func initialize(configs: RefinerInternalSDK.RefinerConfigs)
+  func identifyUser(userTraits: [Swift.String : Any], userId: Swift.String) throws
+  func trackEvent(name: Swift.String)
+  func trackScreen(name: Swift.String)
+  func showForm(uuid: Swift.String)
+  func showForm(uuid: Swift.String, force: Swift.Bool)
+  func attachToResponse(data: [Swift.String : Any])
+}
+@_hasMissingDesignatedInitializers public class Refiner {
+  public static let instance: RefinerSDK.RefinerInterface
+  @objc deinit
+}
+extension RefinerSDK.Refiner : RefinerSDK.RefinerInterface {
+  public func initialize(configs: RefinerInternalSDK.RefinerConfigs)
+  public func identifyUser(userTraits: [Swift.String : Any], userId: Swift.String) throws
+  public func resetUser()
+  public func trackEvent(name: Swift.String)
+  public func trackScreen(name: Swift.String)
+  public func showForm(uuid: Swift.String)
+  public func showForm(uuid: Swift.String, force: Swift.Bool)
+  public func attachToResponse(data: [Swift.String : Any])
+}
