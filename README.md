@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Refiner iOS SDK's lets you launch [survey widgets](https://refiner.io/features/survey-widgets/) directly in a native iOS application. Once the SDK is installed in your app code, surveys can be triggered through the Refiner platform without the need to change any code. 
+The Refiner iOS SDK lets you launch [survey widgets](https://refiner.io/features/survey-widgets/) directly in a native iOS application. Once the SDK is installed in your app code, surveys can be triggered through the Refiner platform without the need to change any code. 
 
 Refiner iOS SDK's minimum deployment target is iOS 11.
 
