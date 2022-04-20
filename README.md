@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Refiner iOS SDK lets you launch [survey widgets](https://refiner.io/features/survey-widgets/) directly in a native iOS application. Once the SDK is installed in your app code, surveys can be triggered through the Refiner platform without the need to change any code. 
+The Refiner iOS SDK lets you launch [survey widgets](https://refiner.io/features/survey-widgets/) directly in native iOS applications. Once the SDK is installed in your app code, surveys can be triggered through the Refiner platform without the need to change any code. 
 
 Refiner iOS SDK's minimum deployment target is iOS 11.
 
@@ -30,7 +30,7 @@ Initialize Refiner iOS SDK in your application class with the needed configurati
     }
 ```
 
-#### Identify User
+### Identify User
 
 Call `Identify User` to create or update a user traits in Refiner. 
 ```swift
@@ -45,7 +45,7 @@ Call `Identify User` to create or update a user traits in Refiner.
     }
 ```
 
-#### Track Event
+### Track Event
 
 `Track Event` lets you track user events. 
 
@@ -53,7 +53,7 @@ Call `Identify User` to create or update a user traits in Refiner.
 Refiner.instance.trackEvent(name: "EVENT_NAME")
 ```
 
-#### Track Screen
+### Track Screen
 
 `Track Screen` provides to track screen that user is currently on.
 
@@ -61,7 +61,7 @@ Refiner.instance.trackEvent(name: "EVENT_NAME")
 Refiner.instance.trackScreen(name: "SCREEN_NAME")
 ```
 
-#### Show Form
+### Show Form
 
 If you use the Manual Trigger Event for your survey, you need to call `Show Form` whenever you want to launch the survey.
 
@@ -71,7 +71,7 @@ Refiner.instance.showForm(uuid: "FORM_UUID")
 Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 ```
 
-#### Attach Contextual Data
+### Attach Contextual Data
 
 Attach contextual data to the survey submissions with `attachToResponse`. Set `null` to remove the contextual data.
 
@@ -83,7 +83,7 @@ Attach contextual data to the survey submissions with `attachToResponse`. Set `n
         ])
 ```
 
-#### Reset User
+### Reset User
 
 Call `Reset User` to reset the user identifier previously set through `Identify User`. We recommend calling this method when the user logs out from your app.
 
