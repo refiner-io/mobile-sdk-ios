@@ -1,10 +1,12 @@
-# Refiner Mobile SDK integration
+# Refiner iOS SDK 
 
-## iOS
+## Introduction
+
+The Refiner iOS SDK's lets you launch microsurvey widgets directly in a native iOS application. Once the SDK is installed in your app code, surveys can be triggered through the Refiner platform without the need to change any code. 
 
 Refiner iOS SDK's minimum deployment target is iOS 11.
 
-### 1) Installation - Swift Package Manager (Xcode 11+)
+## Installation with Swift Package Manager (Xcode 11+)
 
 [Swift Package Manager](https://swift.org/package-manager/) (SwiftPM) is a tool for managing the distribution of Swift code as well as C-family dependency. From Xcode 11, SwiftPM got natively integrated with Xcode.
 
@@ -12,9 +14,9 @@ Refiner SDK support SwiftPM. To use SwiftPM, you should use Xcode 11 to open you
 
 After select the package, you can choose the dependency type (tagged version, branch or commit). Then Xcode will setup all the stuff for you.
 
-### 2) Usage
+## Usage
 
-#### Initialization & Configuration
+### Initialization & Configuration
 
 Initialize Refiner iOS SDK in your application class with the needed configuration parameters. 
 
