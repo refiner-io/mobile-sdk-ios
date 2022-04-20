@@ -55,7 +55,7 @@ Refiner.instance.trackEvent(name: "EVENT_NAME")
 
 ### Track Screen
 
-`Track Screen` provides to track screen that user is currently on.
+`Track Screen` lets you track the current screen a user is viewing.
 
 ```swift
 Refiner.instance.trackScreen(name: "SCREEN_NAME")
