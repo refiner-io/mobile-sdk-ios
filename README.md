@@ -16,7 +16,7 @@ After select the package, you can choose the dependency type (tagged version, br
 
 #### Initialization & Configuration
 
-Initialize Refiner iOS SDK in your application class with the needed configuration parameters.
+Initialize Refiner iOS SDK in your application class with the needed configuration parameters. 
 
 ```swift
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -30,8 +30,7 @@ Initialize Refiner iOS SDK in your application class with the needed configurati
 
 #### Identify User
 
-Call `Identify User` to create or update a user in Refiner.
-
+Call `Identify User` to create or update a user traits in Refiner. 
 ```swift
     do {
         try Refiner.instance.identifyUser(
@@ -46,7 +45,7 @@ Call `Identify User` to create or update a user in Refiner.
 
 #### Track Event
 
-`Track Event` provides to track user events.
+`Track Event` lets you track user events. 
 
 ```swift
 Refiner.instance.trackEvent(name: "EVENT_NAME")
@@ -54,7 +53,7 @@ Refiner.instance.trackEvent(name: "EVENT_NAME")
 
 #### Track Screen
 
-`Track Screen` provides to track screen that user viewed.
+`Track Screen` provides to track screen that user is currently on.
 
 ```swift
 Refiner.instance.trackScreen(name: "SCREEN_NAME")
@@ -62,7 +61,7 @@ Refiner.instance.trackScreen(name: "SCREEN_NAME")
 
 #### Show Form
 
-// TODO
+If you use the Manual Trigger Event for your survey, you need to call `Show Form` whenever you want to launch the survey.
 
 ```swift
 Refiner.instance.showForm(uuid: "FORM_UUID")
@@ -72,7 +71,7 @@ Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 
 #### Attach Contextual Data
 
-In order to attach contextual data to the survey submissions, call `attachToResponse`.
+Attach contextual data to the survey submissions with `attachToResponse`. Set `null` to remove the contextual data.
 
 ```swift
     Refiner.instance.attachToResponse(
@@ -84,7 +83,7 @@ In order to attach contextual data to the survey submissions, call `attachToResp
 
 #### Reset User
 
-//TODO
+Call `Reset User` to reset the user identifier previously set through `Identify User`. We recommend calling this method when the user logs out from your app.
 
 ```swift
     Refiner.instance.resetUser()
