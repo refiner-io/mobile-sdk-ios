@@ -12,7 +12,9 @@ public let RefinerSDKVersion: Swift.String
 public protocol RefinerInterface : AnyObject {
   func resetUser()
   func initialize(configs: RefinerInternalSDK.RefinerConfigs)
-  func identifyUser(userTraits: [Swift.String : Any], userId: Swift.String) throws
+  func identifyUser(userId: Swift.String) throws
+  func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
+  func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
   func trackEvent(name: Swift.String)
   func trackScreen(name: Swift.String)
   func showForm(uuid: Swift.String)
@@ -25,7 +27,9 @@ public protocol RefinerInterface : AnyObject {
 }
 extension RefinerSDK.Refiner : RefinerSDK.RefinerInterface {
   public func initialize(configs: RefinerInternalSDK.RefinerConfigs)
-  public func identifyUser(userTraits: [Swift.String : Any], userId: Swift.String) throws
+  public func identifyUser(userId: Swift.String) throws
+  public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
+  public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
   public func resetUser()
   public func trackEvent(name: Swift.String)
   public func trackScreen(name: Swift.String)
