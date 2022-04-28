@@ -1,0 +1,37 @@
+//
+//  AppDelegate.swift
+//  RefinerSDKApp
+//
+//  Created by Anıl Taşkıran on 23.03.2022.
+//
+
+import UIKit
+import RefinerSDK
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Refiner.instance.resetUser()
+
+        Refiner.instance.initialize(configs: .init(projectId: "56421950-5d32-11ea-9bb4-9f1f1a987a49",
+                                                   apiKey: "d49c5e82-8c6d-47df-a7c7-4fff92883b2a",
+                                                   userId: "my-user-id",
+                                                   locale: "en_EN"))
+        return true
+    }
+
+    // MARK: UISceneSession Lifecycle
+
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+}
+
