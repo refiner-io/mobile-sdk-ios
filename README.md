@@ -9,13 +9,50 @@
 
 Refiner iOS SDK's minimum deployment target is iOS 11.
 
-### 1) Installation - Swift Package Manager (Xcode 11+)
+### 1) Installation
+    The Refiner iOS SDK can be added either by using CocoaPods or SPM.
+
+#### 1.1 Swift Package Manager (Xcode 11+)
 
 [Swift Package Manager](https://swift.org/package-manager/) (SwiftPM) is a tool for managing the distribution of Swift code as well as C-family dependency. From Xcode 11, SwiftPM got natively integrated with Xcode.
 
 Refiner SDK support SwiftPM. To use SwiftPM, you should use Xcode 11 to open your project. Click `File` -> `Swift Packages` -> `Add Package Dependency`, enter [RefinerSDK repo's URL](https://github.com/refiner-io/mobile-sdk-ios.git). Or you can login Xcode with your GitHub account and just type `RefinerSDK` to search.
 
 After select the package, you can choose the dependency type (tagged version, branch or commit). Then Xcode will setup all the stuff for you.
+
+#### 1.2 CocoaPods
+
+Referencing the `RefinerSDK` pod in the `Podfile` will be sufficient to add the Refiner iOS SDK to your project.
+
+**Steps to add:**
+
+1. If your project doesn't have a `Podfile` then you can create one by running the following command on the terminal:
+
+```bash
+pod init
+```
+
+2. Reference `RefinerSDK` in the `Podfile`:
+
+```podspec
+target 'YOUR_APPLICATION_NAME' do
+
+  # ... beginning of your Podfile ...
+
+  pod 'RefinerSDK'
+
+  # ... remaining of your Podfile ...
+
+end
+```
+
+> **Note:** Replace `YOUR_APPLICATION_NAME` with the name of your application in the `target` section
+
+3. Install pods by running the following command on the terminal:
+
+```bash
+pod install
+```
 
 ### 2) Usage
 
