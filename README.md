@@ -1,3 +1,8 @@
+[![Platform](https://img.shields.io/badge/platform-iOS-green.svg)](https://refiner.io)
+[![Version](https://img.shields.io/cocoapods/v/RefinerSDK.svg?style=flat)](https://cocoapods.org/pods/RefinerSDK)
+[![Package Manager](https://img.shields.io/badge/package%20manager-compatible-green.svg?logo=Swift)](https://github.com/refiner-io/mobile-sdk-ios)
+
+
 # Refiner Mobile SDK integration
 
 ## iOS
