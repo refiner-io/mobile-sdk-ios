@@ -1,2 +1,7 @@
 
 .DS_Store
+example/LocalFrameworkApp/RefinerSDKApp.xcodeproj/project.xcworkspace/xcshareddata
+example/RemoteFrameworkApp/RefinerSDKApp.xcodeproj/project.xcworkspace/xcshareddata
+example/spmFrameworkApp/SpmFrameworkApp/SpmFrameworkApp.xcodeproj/project.xcworkspace/xcshareddata
+example/spmFrameworkApp/SpmFrameworkApp/SpmFrameworkApp.xcodeproj/project.xcworkspace/xcuserdata
+example/spmFrameworkApp/SpmFrameworkApp/SpmFrameworkApp.xcodeproj/xcuserdata

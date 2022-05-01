@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/RefinerSDK/RefinerSDK-xcframeworks.sh
+${PODS_ROOT}/RefinerSDK/RefinerSDK.xcframework
+${PODS_ROOT}/RefinerSDK/RefinerInternalSDK.xcframework

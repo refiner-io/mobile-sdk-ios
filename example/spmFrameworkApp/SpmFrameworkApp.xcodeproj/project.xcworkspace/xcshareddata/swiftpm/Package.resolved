@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RefinerSDK",
+        "repositoryURL": "https://github.com/refiner-io/mobile-sdk-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "5bc537284b4ec5ca3469f449665b96c07f156055",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
