@@ -21,12 +21,12 @@ public protocol RefinerInterface : AnyObject {
   func showForm(uuid: Swift.String, force: Swift.Bool)
   func attachToResponse(data: [Swift.String : Any])
 }
-@_hasMissingDesignatedInitializers public class Refiner {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Refiner : ObjectiveC.NSObject {
   public static let instance: RefinerSDK.RefinerInterface
   @objc deinit
 }
 extension RefinerSDK.Refiner : RefinerSDK.RefinerInterface {
-  public func initialize(configs: RefinerInternalSDK.RefinerConfigs)
+  @objc dynamic public func initialize(configs: RefinerInternalSDK.RefinerConfigs)
   public func identifyUser(userId: Swift.String) throws
   public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
   public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
