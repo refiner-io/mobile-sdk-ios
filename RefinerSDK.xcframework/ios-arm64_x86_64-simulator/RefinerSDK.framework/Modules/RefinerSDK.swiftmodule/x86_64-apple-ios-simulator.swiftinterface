@@ -9,31 +9,31 @@ import UIKit
 import WebKit
 import _Concurrency
 public let RefinerSDKVersion: Swift.String
-public protocol RefinerInterface : AnyObject {
-  func resetUser()
-  func initialize(configs: RefinerInternalSDK.RefinerConfigs)
-  func identifyUser(userId: Swift.String) throws
-  func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
-  func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
-  func trackEvent(name: Swift.String)
-  func trackScreen(name: Swift.String)
-  func showForm(uuid: Swift.String)
-  func showForm(uuid: Swift.String, force: Swift.Bool)
-  func attachToResponse(data: [Swift.String : Any])
+@objc public protocol RefinerInterface {
+  @objc func resetUser()
+  @objc func initialize(projectId: Swift.String)
+  @objc func identifyUser(userId: Swift.String) throws
+  @objc func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
+  @objc func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
+  @objc func trackEvent(name: Swift.String)
+  @objc func trackScreen(name: Swift.String)
+  @objc func showForm(uuid: Swift.String)
+  @objc func showForm(uuid: Swift.String, force: Swift.Bool)
+  @objc func attachToResponse(data: [Swift.String : Any])
 }
-@_hasMissingDesignatedInitializers public class Refiner {
-  public static let instance: RefinerSDK.RefinerInterface
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Refiner : ObjectiveC.NSObject {
+  @objc public static let instance: RefinerSDK.RefinerInterface
   @objc deinit
 }
 extension RefinerSDK.Refiner : RefinerSDK.RefinerInterface {
-  public func initialize(configs: RefinerInternalSDK.RefinerConfigs)
-  public func identifyUser(userId: Swift.String) throws
-  public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
-  public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
-  public func resetUser()
-  public func trackEvent(name: Swift.String)
-  public func trackScreen(name: Swift.String)
-  public func showForm(uuid: Swift.String)
-  public func showForm(uuid: Swift.String, force: Swift.Bool)
-  public func attachToResponse(data: [Swift.String : Any])
+  @objc dynamic public func initialize(projectId: Swift.String)
+  @objc dynamic public func identifyUser(userId: Swift.String) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
+  @objc dynamic public func resetUser()
+  @objc dynamic public func trackEvent(name: Swift.String)
+  @objc dynamic public func trackScreen(name: Swift.String)
+  @objc dynamic public func showForm(uuid: Swift.String)
+  @objc dynamic public func showForm(uuid: Swift.String, force: Swift.Bool)
+  @objc dynamic public func attachToResponse(data: [Swift.String : Any])
 }

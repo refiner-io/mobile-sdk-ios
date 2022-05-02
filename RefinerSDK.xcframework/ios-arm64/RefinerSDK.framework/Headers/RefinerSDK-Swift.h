@@ -188,6 +188,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -204,6 +206,50 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="RefinerSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+@protocol RefinerInterface;
+
+SWIFT_CLASS("_TtC10RefinerSDK7Refiner")
+@interface Refiner : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <RefinerInterface> _Nonnull instance;)
++ (id <RefinerInterface> _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@class NSString;
+@class NSNumber;
+
+SWIFT_PROTOCOL("_TtP10RefinerSDK16RefinerInterface_")
+@protocol RefinerInterface
+- (void)resetUser;
+- (void)initializeWithProjectId:(NSString * _Nonnull)projectId;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale error:(NSError * _Nullable * _Nullable)error;
+- (void)trackEventWithName:(NSString * _Nonnull)name;
+- (void)trackScreenWithName:(NSString * _Nonnull)name;
+- (void)showFormWithUuid:(NSString * _Nonnull)uuid;
+- (void)showFormWithUuid:(NSString * _Nonnull)uuid force:(BOOL)force;
+- (void)attachToResponseWithData:(NSDictionary<NSString *, id> * _Nonnull)data;
+@end
+
+
+@interface Refiner (SWIFT_EXTENSION(RefinerSDK)) <RefinerInterface>
+- (void)initializeWithProjectId:(NSString * _Nonnull)projectId;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale error:(NSError * _Nullable * _Nullable)error;
+- (void)resetUser;
+- (void)trackEventWithName:(NSString * _Nonnull)name;
+- (void)trackScreenWithName:(NSString * _Nonnull)name;
+- (void)showFormWithUuid:(NSString * _Nonnull)uuid;
+- (void)showFormWithUuid:(NSString * _Nonnull)uuid force:(BOOL)force;
+- (void)attachToResponseWithData:(NSDictionary<NSString *, id> * _Nonnull)data;
+@end
+
 
 
 #if __has_attribute(external_source_symbol)
