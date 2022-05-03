@@ -754,7 +754,7 @@ __attribute__((swift_name("SerializationExtKt")))
 + (NSArray<RISDKKotlinx_serialization_jsonJsonElement *> *)toJsonArray:(id)receiver __attribute__((swift_name("toJsonArray(_:)")));
 + (RISDKKotlinx_serialization_jsonJsonElement *)toJsonElement:(id _Nullable)receiver __attribute__((swift_name("toJsonElement(_:)")));
 + (NSDictionary<NSString *, RISDKKotlinx_serialization_jsonJsonElement *> *)toJsonObject:(NSDictionary<id, id> *)receiver __attribute__((swift_name("toJsonObject(_:)")));
-+ (NSString *)toJsonString:(id _Nullable)receiver __attribute__((swift_name("toJsonString(_:)")));
++ (NSString * _Nullable)toJsonString:(id _Nullable)receiver __attribute__((swift_name("toJsonString(_:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
