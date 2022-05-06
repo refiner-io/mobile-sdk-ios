@@ -105,7 +105,11 @@ If you use the Manual Trigger Event for your survey, you need to call `Show Form
 
 ```swift
 Refiner.instance.showForm(uuid: "FORM_UUID")
-/* OR */
+```
+
+For testing purposes, you can also provide an additional `force` parameter which will bypass all targeting rules and always display the survey.
+
+```swift
 Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 ```
 
