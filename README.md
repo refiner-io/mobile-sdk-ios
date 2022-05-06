@@ -85,7 +85,7 @@ Call `Identify User` to create or update a user traits in Refiner.
 
 #### Track Event
 
-`Track Event` lets you track user events. 
+`Track Event` lets you track user events. Tracked events can be used to create user segments and target audiences in Refiner.
 
 ```swift
 Refiner.instance.trackEvent(name: "EVENT_NAME")
@@ -93,7 +93,7 @@ Refiner.instance.trackEvent(name: "EVENT_NAME")
 
 #### Track Screen
 
-`Track Screen` provides to track screen that user is currently on.
+`Track Screen` provides to track screen that user is currently on. Screen information can be used to launch surveys in specific areas of your app.
 
 ```swift
 Refiner.instance.trackScreen(name: "SCREEN_NAME")
