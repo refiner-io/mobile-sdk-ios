@@ -61,26 +61,27 @@ pod install
 Initialize Refiner iOS SDK in your application class with the needed configuration parameters. 
 
 ```swift
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Refiner.instance.initialize(projectId: "PROJECT_ID")
-        return true
-    }
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    Refiner.instance.initialize(projectId: "PROJECT_ID")
+    return true
+}
 ```
 
 #### Identify User
 
 Call `Identify User` to create or update a user traits in Refiner. 
 ```swift
-    do {
-        try Refiner.instance.identifyUser(
-            userTraits: [
-                "email": "hello@hello.com"
-            ],
-            userId: "USER_ID",
-            locale: "en_EN")
-    } catch {
-        print(error.localizedDescription)
-    }
+do {
+    try Refiner.instance.identifyUser(
+        userTraits: [
+            "email": "hello@hello.com"
+            "something": "else"
+        ],
+        userId: "USER_ID",
+        locale: "en_EN")
+} catch {
+    print(error.localizedDescription)
+}
 ```
 
 #### Track Event
