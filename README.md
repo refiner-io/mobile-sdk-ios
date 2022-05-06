@@ -118,11 +118,11 @@ Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 Attach contextual data to the survey submissions with `attachToResponse`. Set `null` to remove the contextual data.
 
 ```swift
-    Refiner.instance.attachToResponse(
-        data: [
-            "some_data": "hello",
-            "some_more_data": "hello again"
-        ])
+Refiner.instance.attachToResponse(
+    data: [
+        "some_data": "hello",
+        "some_more_data": "hello again"
+    ])
 ```
 
 #### Reset User
@@ -130,5 +130,5 @@ Attach contextual data to the survey submissions with `attachToResponse`. Set `n
 Call `Reset User` to reset the user identifier previously set through `Identify User`. We recommend calling this method when the user logs out from your app.
 
 ```swift
-    Refiner.instance.resetUser()
+Refiner.instance.resetUser()
 ```
