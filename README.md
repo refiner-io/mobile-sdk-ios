@@ -56,6 +56,8 @@ pod install
 
 ### 2) Usage
 
+Visit our [documentation](https://refiner.io/docs/kb/mobile-sdk/mobile-sdk-reference/) for more information about the SDK methods.
+
 #### Initialization & Configuration
 
 Initialize Refiner iOS SDK in your application class with the needed configuration parameters. 
