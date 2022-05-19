@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        Refiner.instance.resetUser()
 
-        Refiner.instance.initialize(configs: .init(projectId: "56421950-5d32-11ea-9bb4-9f1f1a987a49"))
+        Refiner.instance.initialize(projectId: "56421950-5d32-11ea-9bb4-9f1f1a987a49")
         return true
     }
 

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        registerCallback()
         Refiner.instance.attachToResponse(
             data: [
                 "some_data": "hello",
@@ -42,6 +42,44 @@ class ViewController: UIViewController {
 
     @IBAction func showRefinerSurvey() {
         Refiner.instance.showForm(uuid: SECOND_FORM_ID, force: true)
+    }
+
+    func registerCallback() {
+        Refiner.instance.onBeforeShow = { formId, formConfig in
+            print("onBeforeShowCallback")
+            print("formId: \(formId))")
+            print("formConfig: \(formConfig ?? ""))")
+        }
+
+        Refiner.instance.onNavigation = { formId, formElement, progress in
+            print("onNavigationCallback")
+            print("formId: \(formId))")
+            print("formElement: \(formElement ?? ""))")
+            print("progress: \(progress ?? ""))")
+        }
+        
+        
+        Refiner.instance.onShow = { formId in
+            print("onShowCallback")
+            print("formId: \(formId))")
+        }
+        
+        Refiner.instance.onDismiss = { formId in
+            print("onDismissCallback")
+            print("formId: \(formId))")
+        }
+        
+        
+        Refiner.instance.onComplete = { formId, formData in
+            print("onCompleteCallback")
+            print("formId: \(formId))")
+            print("formData: \(formData ?? ""))")
+        }
+        
+        Refiner.instance.onClose = { formId in
+            print("onCloseCallback")
+            print("formId: \(formId))")
+        }
     }
 }
 

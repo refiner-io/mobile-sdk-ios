@@ -135,3 +135,67 @@ Call `Reset User` to reset the user identifier previously set through `Identify 
 ```swift
 Refiner.instance.resetUser()
 ```
+
+#### Register callback functions
+
+Registering callback functions allows you to execute any code at specific moments in the lifecycle of a survey.
+A popular use-case for callback functions is to redirect a user to a new screen once they completed a survey.
+
+`onBeforeShow` gets called right before a survey is supposed to be shown.
+
+```swift
+     Refiner.instance.onBeforeShow = { formId, formConfig in
+            print("onBeforeShowCallback")
+            print("formId: \(formId))")
+            print("formConfig: \(formConfig ?? ""))")
+        }
+```
+
+`onNavigation` gets called when the user moves through the survey
+
+```swift
+    Refiner.instance.onNavigation = { formId, formElement, progress in
+        print("onNavigationCallback")
+        print("formId: \(formId))")
+        print("formElement: \(formElement ?? ""))")
+        print("progress: \(progress ?? ""))")
+    }    
+```
+
+`onShow` gets called when a survey widget becomes visible to your user.
+
+```swift
+    Refiner.instance.onShow = { formId in
+        print("onShowCallback")
+        print("formId: \(formId))")
+    }
+```
+
+`onClose` gets called when the survey widgets disappears from the screen.
+
+```swift
+    Refiner.instance.onClose = { formId in
+        print("onCloseCallback")
+        print("formId: \(formId))")
+    }
+```
+
+`onDismiss` gets called when the user dismissed a survey by clicking on the “x” in the top right corner.
+
+```swift
+    Refiner.instance.onComplete = { formId, formData in
+        print("onCompleteCallback")
+        print("formId: \(formId))")
+        print("formData: \(formData ?? ""))")
+    }
+```
+
+`onComplete` gets called when the user completed (submitted) a survey.
+
+```swift
+    Refiner.instance.onDismiss = { formId in
+        print("onDismissCallback")
+        print("formId: \(formId))")
+    }
+```     
+        

@@ -615,7 +615,7 @@
 			repositoryURL = "https://github.com/refiner-io/mobile-sdk-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.2;
+				version = 1.0.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
