@@ -2,7 +2,7 @@
 //  RefinerSDK.h
 //  RefinerSDK
 //
-//  Version 1.0.2
+//  Version 1.0.5
 //
 
 #import <Foundation/Foundation.h>
