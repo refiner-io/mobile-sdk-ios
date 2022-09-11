@@ -192,7 +192,7 @@ __attribute__((swift_name("NativeViewModel")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)dismissFormFormUuid:(NSString *)formUuid onDismissFormState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onDismissFormState __attribute__((swift_name("dismissForm(formUuid:onDismissFormState:)")));
-- (void)identifyUserUserId:(NSString *)userId contactAttributes:(id _Nullable)contactAttributes locale:(NSString * _Nullable)locale onIdentifyUserState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onIdentifyUserState __attribute__((swift_name("identifyUser(userId:contactAttributes:locale:onIdentifyUserState:)")));
+- (void)identifyUserUserId:(NSString *)userId contactAttributes:(id _Nullable)contactAttributes locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature onIdentifyUserState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onIdentifyUserState __attribute__((swift_name("identifyUser(userId:contactAttributes:locale:signature:onIdentifyUserState:)")));
 - (void)markFormAsShownFormUuid:(NSString *)formUuid onMarkFormAsShownState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onMarkFormAsShownState __attribute__((swift_name("markFormAsShown(formUuid:onMarkFormAsShownState:)")));
 - (void)onDestroy __attribute__((swift_name("onDestroy()")));
 - (void)partialSubmitFormContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes formUuid:(NSString *)formUuid __attribute__((swift_name("partialSubmitForm(contactAttributes:accountAttributes:formUuid:)")));
@@ -382,6 +382,7 @@ __attribute__((swift_name("RefinerSettings")))
 @property (readonly) NSString *CONTEXTUAL_DATA __attribute__((swift_name("CONTEXTUAL_DATA")));
 @property (readonly) NSString *LOCALE __attribute__((swift_name("LOCALE")));
 @property (readonly) NSString *PROJECT_ID __attribute__((swift_name("PROJECT_ID")));
+@property (readonly) NSString *SIGNATURE __attribute__((swift_name("SIGNATURE")));
 @property (readonly) NSString *TOKEN __attribute__((swift_name("TOKEN")));
 @property (readonly) NSString *USER_ID __attribute__((swift_name("USER_ID")));
 @property (readonly) NSString *USER_TRAITS __attribute__((swift_name("USER_TRAITS")));
@@ -488,28 +489,32 @@ __attribute__((swift_name("DataStateCompanion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RefinerConfigs")))
 @interface RISDKRefinerConfigs : RISDKBase
-- (instancetype)initWithProjectId:(NSString *)projectId __attribute__((swift_name("init(projectId:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithProjectId:(NSString *)projectId enableDebugMode:(BOOL)enableDebugMode __attribute__((swift_name("init(projectId:enableDebugMode:)"))) __attribute__((objc_designated_initializer));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
-- (RISDKRefinerConfigs *)doCopyProjectId:(NSString *)projectId __attribute__((swift_name("doCopy(projectId:)")));
+- (BOOL)component2 __attribute__((swift_name("component2()")));
+- (RISDKRefinerConfigs *)doCopyProjectId:(NSString *)projectId enableDebugMode:(BOOL)enableDebugMode __attribute__((swift_name("doCopy(projectId:enableDebugMode:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL enableDebugMode __attribute__((swift_name("enableDebugMode")));
 @property (readonly) NSString *projectId __attribute__((swift_name("projectId")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormActionRequest")))
 @interface RISDKFormActionRequest : RISDKBase
-- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKFormActionRequestCompanion *companion __attribute__((swift_name("companion")));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
 - (BOOL)component3 __attribute__((swift_name("component3()")));
-- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:)")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable contactRemoteId __attribute__((swift_name("contactRemoteId")));
+@property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) NSString *formUuid __attribute__((swift_name("formUuid")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @end;
@@ -527,18 +532,20 @@ __attribute__((swift_name("FormActionRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("IdentifyUserRequest")))
 @interface RISDKIdentifyUserRequest : RISDKBase
-- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKIdentifyUserRequestCompanion *companion __attribute__((swift_name("companion")));
 - (id _Nullable)component1 __attribute__((swift_name("component1()")));
 - (NSString *)component2 __attribute__((swift_name("component2()")));
 - (BOOL)component3 __attribute__((swift_name("component3()")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:)")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) id _Nullable contactAttributes __attribute__((swift_name("contactAttributes")));
 @property (readonly) NSString *contactRemoteId __attribute__((swift_name("contactRemoteId")));
+@property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
 @end;
@@ -556,7 +563,7 @@ __attribute__((swift_name("IdentifyUserRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ShowFormRequest")))
 @interface RISDKShowFormRequest : RISDKBase
-- (instancetype)initWithManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("init(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKShowFormRequestCompanion *companion __attribute__((swift_name("companion")));
 - (BOOL)component1 __attribute__((swift_name("component1()")));
 - (BOOL)component2 __attribute__((swift_name("component2()")));
@@ -564,11 +571,13 @@ __attribute__((swift_name("ShowFormRequest")))
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
 - (BOOL)component5 __attribute__((swift_name("component5()")));
 - (NSString * _Nullable)component6 __attribute__((swift_name("component6()")));
-- (RISDKShowFormRequest *)doCopyManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("doCopy(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:)")));
+- (NSString * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (RISDKShowFormRequest *)doCopyManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable contactRemoteId __attribute__((swift_name("contactRemoteId")));
+@property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) BOOL forceFormView __attribute__((swift_name("forceFormView")));
 @property (readonly) NSString *formUuid __attribute__((swift_name("formUuid")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
@@ -589,7 +598,7 @@ __attribute__((swift_name("ShowFormRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SubmitFormRequest")))
 @interface RISDKSubmitFormRequest : RISDKBase
-- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk __attribute__((swift_name("init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKSubmitFormRequestCompanion *companion __attribute__((swift_name("companion")));
 - (id _Nullable)component1 __attribute__((swift_name("component1()")));
 - (id _Nullable)component2 __attribute__((swift_name("component2()")));
@@ -597,13 +606,15 @@ __attribute__((swift_name("SubmitFormRequest")))
 - (NSString *)component4 __attribute__((swift_name("component4()")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
 - (BOOL)component6 __attribute__((swift_name("component6()")));
-- (RISDKSubmitFormRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk __attribute__((swift_name("doCopy(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:)")));
+- (NSString * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (RISDKSubmitFormRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) id _Nullable accountAttributes __attribute__((swift_name("accountAttributes")));
 @property (readonly) id _Nullable contactAttributes __attribute__((swift_name("contactAttributes")));
 @property (readonly) NSString * _Nullable contactRemoteId __attribute__((swift_name("contactRemoteId")));
+@property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) NSString *formUuid __attribute__((swift_name("formUuid")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) BOOL isPartialSubmit __attribute__((swift_name("isPartialSubmit")));
@@ -622,17 +633,19 @@ __attribute__((swift_name("SubmitFormRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TrackEventRequest")))
 @interface RISDKTrackEventRequest : RISDKBase
-- (instancetype)initWithEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("init(eventName:contactRemoteId:isMobileSdk:locale:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackEventRequestCompanion *companion __attribute__((swift_name("companion")));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
 - (BOOL)component3 __attribute__((swift_name("component3()")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (RISDKTrackEventRequest *)doCopyEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("doCopy(eventName:contactRemoteId:isMobileSdk:locale:)")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (RISDKTrackEventRequest *)doCopyEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable contactRemoteId __attribute__((swift_name("contactRemoteId")));
+@property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) NSString *eventName __attribute__((swift_name("eventName")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
@@ -651,17 +664,19 @@ __attribute__((swift_name("TrackEventRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TrackScreenRequest")))
 @interface RISDKTrackScreenRequest : RISDKBase
-- (instancetype)initWithScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackScreenRequestCompanion *companion __attribute__((swift_name("companion")));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
 - (BOOL)component3 __attribute__((swift_name("component3()")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (RISDKTrackScreenRequest *)doCopyScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:)")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (RISDKTrackScreenRequest *)doCopyScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable contactRemoteId __attribute__((swift_name("contactRemoteId")));
+@property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
 @property (readonly) NSString *screenName __attribute__((swift_name("screenName")));
@@ -737,7 +752,7 @@ __attribute__((swift_name("KotlinArray")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KoinIOSKt")))
 @interface RISDKKoinIOSKt : RISDKBase
-+ (RISDKKoin_coreKoinApplication *)doInitRefinerSdkSharedUserDefaults:(NSUserDefaults *)userDefaults appInfo:(id<RISDKAppInfo>)appInfo logger:(RISDKKermitLogger *)logger doOnStartup:(void (^)(void))doOnStartup __attribute__((swift_name("doInitRefinerSdkShared(userDefaults:appInfo:logger:doOnStartup:)")));
++ (RISDKKoin_coreKoinApplication *)doInitRefinerSdkSharedUserDefaults:(NSUserDefaults *)userDefaults appInfo:(id<RISDKAppInfo>)appInfo logger:(RISDKKermitLogger *)logger refinerConfigs:(RISDKRefinerConfigs *)refinerConfigs doOnStartup:(void (^)(void))doOnStartup __attribute__((swift_name("doInitRefinerSdkShared(userDefaults:appInfo:logger:refinerConfigs:doOnStartup:)")));
 @property (class, readonly) RISDKKoin_coreModule *platformModule __attribute__((swift_name("platformModule")));
 @end;
 
@@ -1181,8 +1196,6 @@ __attribute__((swift_name("KotlinIterator")))
 
 __attribute__((swift_name("Kotlinx_serialization_jsonJsonElement")))
 @interface RISDKKotlinx_serialization_jsonJsonElement : RISDKBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 @property (class, readonly, getter=companion) RISDKKotlinx_serialization_jsonJsonElementCompanion *companion __attribute__((swift_name("companion")));
 @end;
 
@@ -1391,8 +1404,6 @@ __attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
 
 __attribute__((swift_name("Kotlinx_serialization_coreSerializersModule")))
 @interface RISDKKotlinx_serialization_coreSerializersModule : RISDKBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)dumpToCollector:(id<RISDKKotlinx_serialization_coreSerializersModuleCollector>)collector __attribute__((swift_name("dumpTo(collector:)")));
 - (id<RISDKKotlinx_serialization_coreKSerializer> _Nullable)getContextualKClass:(id<RISDKKotlinKClass>)kClass typeArgumentsSerializers:(NSArray<id<RISDKKotlinx_serialization_coreKSerializer>> *)typeArgumentsSerializers __attribute__((swift_name("getContextual(kClass:typeArgumentsSerializers:)")));
 - (id<RISDKKotlinx_serialization_coreSerializationStrategy> _Nullable)getPolymorphicBaseClass:(id<RISDKKotlinKClass>)baseClass value:(id)value __attribute__((swift_name("getPolymorphic(baseClass:value:)")));
@@ -1406,8 +1417,6 @@ __attribute__((swift_name("KotlinAnnotation")))
 
 __attribute__((swift_name("Kotlinx_serialization_coreSerialKind")))
 @interface RISDKKotlinx_serialization_coreSerialKind : RISDKBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @end;
@@ -1597,8 +1606,6 @@ __attribute__((swift_name("Ktor_httpHeaders")))
 
 __attribute__((swift_name("Ktor_httpOutgoingContent")))
 @interface RISDKKtor_httpOutgoingContent : RISDKBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (id _Nullable)getPropertyKey:(RISDKKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("getProperty(key:)")));
 - (void)setPropertyKey:(RISDKKtor_utilsAttributeKey<id> *)key value:(id _Nullable)value __attribute__((swift_name("setProperty(key:value:)")));
 - (id<RISDKKtor_httpHeaders> _Nullable)trailers __attribute__((swift_name("trailers()")));
@@ -2296,6 +2303,12 @@ __attribute__((swift_name("Ktor_client_coreHttpClientCall")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
+- (void)bodyNullableInfo:(RISDKKtor_utilsTypeInfo *)info completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("bodyNullable(info:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)getResponseContentWithCompletionHandler:(void (^)(id<RISDKKtor_ioByteReadChannel> _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getResponseContent(completionHandler:)")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) BOOL allowDoubleReceive __attribute__((swift_name("allowDoubleReceive")));
@@ -2364,12 +2377,15 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_httpHeaderValueParam")))
 @interface RISDKKtor_httpHeaderValueParam : RISDKBase
 - (instancetype)initWithName:(NSString *)name value:(NSString *)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithName:(NSString *)name value:(NSString *)value escapeValue:(BOOL)escapeValue __attribute__((swift_name("init(name:value:escapeValue:)"))) __attribute__((objc_designated_initializer));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
 - (NSString *)component2 __attribute__((swift_name("component2()")));
-- (RISDKKtor_httpHeaderValueParam *)doCopyName:(NSString *)name value:(NSString *)value __attribute__((swift_name("doCopy(name:value:)")));
+- (BOOL)component3 __attribute__((swift_name("component3()")));
+- (RISDKKtor_httpHeaderValueParam *)doCopyName:(NSString *)name value:(NSString *)value escapeValue:(BOOL)escapeValue __attribute__((swift_name("doCopy(name:value:escapeValue:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL escapeValue __attribute__((swift_name("escapeValue")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end;
@@ -2958,7 +2974,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode")))
 - (RISDKKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)removeFirstOrNull __attribute__((swift_name("removeFirstOrNull()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) BOOL isRemoved __attribute__((swift_name("isRemoved")));
-@property (readonly, getter=next_) id _Nullable next __attribute__((swift_name("next")));
+@property (readonly, getter=next_) id next __attribute__((swift_name("next")));
 @property (readonly) RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *nextNode __attribute__((swift_name("nextNode")));
 @property (readonly) RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *prevNode __attribute__((swift_name("prevNode")));
 @end;
@@ -2968,7 +2984,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode.Abstrac
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)completeOp:(RISDKKotlinx_coroutines_coreAtomicOp<id> *)op failure:(id _Nullable)failure __attribute__((swift_name("complete(op:failure:)")));
-- (id _Nullable)failureAffected:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)affected __attribute__((swift_name("failure(affected:)")));
+- (id _Nullable)failureAffected:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)affected __attribute__((swift_name("failure(affected:)")));
 - (void)finishOnSuccessAffected:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
 - (void)finishPreparePrepareOp:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
 - (id _Nullable)onPreparePrepareOp:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("onPrepare(prepareOp:)")));
@@ -3086,7 +3102,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFi
 - (instancetype)initWithQueue:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)queue __attribute__((swift_name("init(queue:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
-- (id _Nullable)failureAffected:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)affected __attribute__((swift_name("failure(affected:)")));
+- (id _Nullable)failureAffected:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)affected __attribute__((swift_name("failure(affected:)")));
 - (void)finishOnSuccessAffected:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
 - (void)finishPreparePrepareOp:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
 - (BOOL)retryAffected:(RISDKKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(id)next __attribute__((swift_name("retry(affected:next:)")));

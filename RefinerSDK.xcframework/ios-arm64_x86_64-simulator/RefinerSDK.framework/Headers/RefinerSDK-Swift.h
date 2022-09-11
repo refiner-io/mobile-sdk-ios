@@ -237,13 +237,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Refiner * _N
 
 @interface Refiner (SWIFT_EXTENSION(RefinerSDK))
 /// Initialize Refiner iOS SDK in your application class with the needed configuration parameters. It should be called Before Identify User Function. AppDelegate Class is recommended.
-- (void)initializeWithProjectId:(NSString * _Nonnull)projectId;
+- (void)initializeWithProjectId:(NSString * _Nonnull)projectId enableDebugMode:(BOOL)enableDebugMode;
 /// Call Identify User to create or update a user traits in Refiner.
-- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Identify User to create or update a user traits in Refiner.
-- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Identify User to create or update a user traits in Refiner.
-- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Reset User to reset the user identifier previously set through Identify User. We recommend calling this method when the user logs out from your app.
 - (void)resetUser;
 /// Track Event lets you track user events. Tracked events can be used to create user segments and target audiences in Refiner.
@@ -503,13 +503,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Refiner * _N
 
 @interface Refiner (SWIFT_EXTENSION(RefinerSDK))
 /// Initialize Refiner iOS SDK in your application class with the needed configuration parameters. It should be called Before Identify User Function. AppDelegate Class is recommended.
-- (void)initializeWithProjectId:(NSString * _Nonnull)projectId;
+- (void)initializeWithProjectId:(NSString * _Nonnull)projectId enableDebugMode:(BOOL)enableDebugMode;
 /// Call Identify User to create or update a user traits in Refiner.
-- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Identify User to create or update a user traits in Refiner.
-- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Identify User to create or update a user traits in Refiner.
-- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Reset User to reset the user identifier previously set through Identify User. We recommend calling this method when the user logs out from your app.
 - (void)resetUser;
 /// Track Event lets you track user events. Tracked events can be used to create user segments and target audiences in Refiner.
