@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class RISDKEnvironment, RISDKKoin_coreKoin, RISDKLibKoinContext, RISDKKoin_coreKoinApplication, RISDKKermitLogger, RISDKBaseResponse, RISDKDataState<__covariant T>, RISDKRefinerModelCompanion, RISDKFormActionRequest, RISDKIdentifyUserRequest, RISDKSubmitFormRequest, RISDKShowFormRequest, RISDKTrackEventRequest, RISDKTrackScreenRequest, RISDKKotlinEnumCompanion, RISDKKotlinEnum<E>, RISDKKotlinArray<T>, RISDKRefinerSettings, RISDKAnySerializer, RISDKBaseResponseCompanion, RISDKDataStateCompanion, RISDKRefinerConfigs, RISDKFormActionRequestCompanion, RISDKIdentifyUserRequestCompanion, RISDKShowFormRequestCompanion, RISDKSubmitFormRequestCompanion, RISDKTrackEventRequestCompanion, RISDKTrackScreenRequestCompanion, RISDKKoin_coreScope, RISDKKoin_coreParametersHolder, RISDKKotlinLazyThreadSafetyMode, RISDKKoin_coreModule, RISDKKoin_coreLogger, RISDKKoin_coreInstanceRegistry, RISDKKoin_corePropertyRegistry, RISDKKoin_coreScopeRegistry, RISDKKotlinx_serialization_jsonJsonElement, NSUserDefaults, RISDKKoin_coreKoinApplicationCompanion, RISDKKoin_coreLevel, RISDKKermitLoggerCompanion, RISDKKotlinThrowable, RISDKKermitSeverity, RISDKKotlinUnit, RISDKKotlinException, RISDKKotlinRuntimeException, RISDKKotlinIllegalStateException, RISDKKtor_client_coreHttpRequestData, RISDKKtor_client_coreHttpResponseData, RISDKKtor_client_coreHttpClient, RISDKKtor_client_coreHttpClientEngineConfig, RISDKKotlinx_coroutines_coreCoroutineDispatcher, RISDKKotlinx_serialization_coreSerializersModule, RISDKKotlinx_serialization_coreSerialKind, RISDKKotlinNothing, RISDKKoin_coreLockable, RISDKKoin_coreParametersHolderCompanion, RISDKKoin_coreInstanceFactory<T>, RISDKKotlinPair<__covariant A, __covariant B>, RISDKKoin_coreScopeDSL, RISDKKoin_coreSingleInstanceFactory<T>, RISDKKoin_coreScopeRegistryCompanion, RISDKKotlinx_serialization_jsonJsonElementCompanion, RISDKKermitLogWriter, RISDKKtor_httpUrl, RISDKKtor_httpHttpMethod, RISDKKtor_httpOutgoingContent, RISDKKtor_httpHttpStatusCode, RISDKKtor_utilsGMTDate, RISDKKtor_httpHttpProtocolVersion, RISDKKtor_client_coreHttpClientConfig<T>, RISDKKtor_eventsEvents, RISDKKtor_client_coreHttpReceivePipeline, RISDKKtor_client_coreHttpRequestPipeline, RISDKKtor_client_coreHttpResponsePipeline, RISDKKtor_client_coreHttpSendPipeline, RISDKKtor_client_coreProxyConfig, RISDKKotlinAbstractCoroutineContextElement, RISDKKotlinx_coroutines_coreCoroutineDispatcherKey, RISDKKoin_coreBeanDefinition<T>, RISDKKoin_coreInstanceFactoryCompanion, RISDKKoin_coreInstanceContext, RISDKKtor_httpUrlCompanion, RISDKKtor_httpURLProtocol, RISDKKtor_httpHttpMethodCompanion, RISDKKtor_utilsAttributeKey<T>, RISDKKtor_httpContentType, RISDKKotlinCancellationException, RISDKKtor_httpHttpStatusCodeCompanion, RISDKKtor_utilsGMTDateCompanion, RISDKKtor_utilsWeekDay, RISDKKtor_utilsMonth, RISDKKtor_httpHttpProtocolVersionCompanion, RISDKKtor_eventsEventDefinition<T>, RISDKKtor_utilsPipelinePhase, RISDKKtor_utilsPipeline<TSubject, TContext>, RISDKKtor_client_coreHttpReceivePipelinePhases, RISDKKtor_client_coreHttpResponse, RISDKKtor_client_coreHttpRequestPipelinePhases, RISDKKtor_client_coreHttpRequestBuilder, RISDKKtor_client_coreHttpResponsePipelinePhases, RISDKKtor_client_coreHttpResponseContainer, RISDKKtor_client_coreHttpClientCall, RISDKKtor_client_coreHttpSendPipelinePhases, RISDKKotlinAbstractCoroutineContextKey<B, E>, RISDKKoin_coreKind, RISDKKoin_coreCallbacks<T>, RISDKKtor_httpURLProtocolCompanion, RISDKKtor_httpHeaderValueParam, RISDKKtor_httpHeaderValueWithParametersCompanion, RISDKKtor_httpHeaderValueWithParameters, RISDKKtor_httpContentTypeCompanion, RISDKKtor_utilsWeekDayCompanion, RISDKKtor_utilsMonthCompanion, RISDKKtor_httpHeadersBuilder, RISDKKtor_client_coreHttpRequestBuilderCompanion, RISDKKtor_httpURLBuilder, RISDKKtor_utilsTypeInfo, RISDKKtor_client_coreHttpClientCallCompanion, RISDKKotlinx_coroutines_coreAtomicDesc, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, RISDKKtor_ioMemory, RISDKKtor_ioChunkBuffer, RISDKKotlinByteArray, RISDKKtor_ioBuffer, RISDKKtor_ioByteReadPacket, RISDKKtor_utilsStringValuesBuilderImpl, RISDKKtor_httpURLBuilderCompanion, RISDKKotlinx_coroutines_coreAtomicOp<__contravariant T>, RISDKKotlinx_coroutines_coreOpDescriptor, RISDKKotlinx_coroutines_coreLockFreeLinkedListNode, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, RISDKKtor_ioMemoryCompanion, RISDKKtor_ioBufferCompanion, RISDKKtor_ioChunkBufferCompanion, RISDKKotlinByteIterator, RISDKKtor_ioInputCompanion, RISDKKtor_ioInput, RISDKKtor_ioByteReadPacketCompanion, RISDKKotlinKTypeProjection, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>, RISDKKotlinKVariance, RISDKKotlinKTypeProjectionCompanion;
+@class RISDKEnvironment, RISDKKoin_coreKoin, RISDKLibKoinContext, RISDKKoin_coreKoinApplication, RISDKKermitLogger, RISDKBaseResponse, RISDKDataState<__covariant T>, RISDKRefinerModelCompanion, RISDKFormActionRequest, RISDKIdentifyUserRequest, RISDKSubmitFormRequest, RISDKShowFormRequest, RISDKTrackEventRequest, RISDKTrackScreenRequest, RISDKKotlinEnumCompanion, RISDKKotlinEnum<E>, RISDKKotlinArray<T>, RISDKRefinerSettings, RISDKAnySerializer, RISDKBaseResponseCompanion, RISDKDataStateCompanion, RISDKRefinerConfigs, RISDKFormActionRequestCompanion, RISDKIdentifyUserRequestCompanion, RISDKShowFormRequestCompanion, RISDKSubmitFormRequestCompanion, RISDKTrackEventRequestCompanion, RISDKTrackScreenRequestCompanion, RISDKKoin_coreScope, RISDKKoin_coreParametersHolder, RISDKKotlinLazyThreadSafetyMode, RISDKKoin_coreModule, RISDKKoin_coreLogger, RISDKKoin_coreInstanceRegistry, RISDKKoin_corePropertyRegistry, RISDKKoin_coreScopeRegistry, RISDKKotlinx_serialization_jsonJsonElement, NSUserDefaults, RISDKKoin_coreKoinApplicationCompanion, RISDKKoin_coreLevel, RISDKKermitLoggerCompanion, RISDKKotlinThrowable, RISDKKermitSeverity, RISDKKotlinException, RISDKKotlinRuntimeException, RISDKKotlinIllegalStateException, RISDKKtor_client_coreHttpRequestData, RISDKKtor_client_coreHttpResponseData, RISDKKtor_client_coreHttpClient, RISDKKtor_client_coreHttpClientEngineConfig, RISDKKotlinx_coroutines_coreCoroutineDispatcher, RISDKKotlinx_serialization_coreSerializersModule, RISDKKotlinx_serialization_coreSerialKind, RISDKKotlinNothing, RISDKKoin_coreLockable, RISDKKoin_coreParametersHolderCompanion, RISDKKoin_coreInstanceFactory<T>, RISDKKotlinPair<__covariant A, __covariant B>, RISDKKoin_coreScopeDSL, RISDKKoin_coreSingleInstanceFactory<T>, RISDKKoin_coreScopeRegistryCompanion, RISDKKotlinx_serialization_jsonJsonElementCompanion, RISDKKermitLogWriter, RISDKKtor_httpUrl, RISDKKtor_httpHttpMethod, RISDKKtor_httpOutgoingContent, RISDKKtor_httpHttpStatusCode, RISDKKtor_utilsGMTDate, RISDKKtor_httpHttpProtocolVersion, RISDKKtor_client_coreHttpClientConfig<T>, RISDKKtor_eventsEvents, RISDKKtor_client_coreHttpReceivePipeline, RISDKKtor_client_coreHttpRequestPipeline, RISDKKtor_client_coreHttpResponsePipeline, RISDKKtor_client_coreHttpSendPipeline, RISDKKtor_client_coreProxyConfig, RISDKKotlinAbstractCoroutineContextElement, RISDKKotlinx_coroutines_coreCoroutineDispatcherKey, RISDKKoin_coreBeanDefinition<T>, RISDKKoin_coreInstanceFactoryCompanion, RISDKKoin_coreInstanceContext, RISDKKtor_httpUrlCompanion, RISDKKtor_httpURLProtocol, RISDKKtor_httpHttpMethodCompanion, RISDKKtor_utilsAttributeKey<T>, RISDKKtor_httpContentType, RISDKKotlinCancellationException, RISDKKtor_httpHttpStatusCodeCompanion, RISDKKtor_utilsGMTDateCompanion, RISDKKtor_utilsWeekDay, RISDKKtor_utilsMonth, RISDKKtor_httpHttpProtocolVersionCompanion, RISDKKtor_eventsEventDefinition<T>, RISDKKtor_utilsPipelinePhase, RISDKKtor_utilsPipeline<TSubject, TContext>, RISDKKtor_client_coreHttpReceivePipelinePhases, RISDKKtor_client_coreHttpResponse, RISDKKotlinUnit, RISDKKtor_client_coreHttpRequestPipelinePhases, RISDKKtor_client_coreHttpRequestBuilder, RISDKKtor_client_coreHttpResponsePipelinePhases, RISDKKtor_client_coreHttpResponseContainer, RISDKKtor_client_coreHttpClientCall, RISDKKtor_client_coreHttpSendPipelinePhases, RISDKKotlinAbstractCoroutineContextKey<B, E>, RISDKKoin_coreKind, RISDKKoin_coreCallbacks<T>, RISDKKtor_httpURLProtocolCompanion, RISDKKtor_httpHeaderValueParam, RISDKKtor_httpHeaderValueWithParametersCompanion, RISDKKtor_httpHeaderValueWithParameters, RISDKKtor_httpContentTypeCompanion, RISDKKtor_utilsWeekDayCompanion, RISDKKtor_utilsMonthCompanion, RISDKKtor_httpHeadersBuilder, RISDKKtor_client_coreHttpRequestBuilderCompanion, RISDKKtor_httpURLBuilder, RISDKKtor_utilsTypeInfo, RISDKKtor_client_coreHttpClientCallCompanion, RISDKKotlinx_coroutines_coreAtomicDesc, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, RISDKKtor_ioMemory, RISDKKtor_ioChunkBuffer, RISDKKotlinByteArray, RISDKKtor_ioBuffer, RISDKKtor_ioByteReadPacket, RISDKKtor_utilsStringValuesBuilderImpl, RISDKKtor_httpURLBuilderCompanion, RISDKKotlinx_coroutines_coreAtomicOp<__contravariant T>, RISDKKotlinx_coroutines_coreOpDescriptor, RISDKKotlinx_coroutines_coreLockFreeLinkedListNode, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, RISDKKtor_ioMemoryCompanion, RISDKKtor_ioBufferCompanion, RISDKKtor_ioChunkBufferCompanion, RISDKKotlinByteIterator, RISDKKtor_ioInputCompanion, RISDKKtor_ioInput, RISDKKtor_ioByteReadPacketCompanion, RISDKKotlinKTypeProjection, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, RISDKKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>, RISDKKotlinKVariance, RISDKKotlinKTypeProjectionCompanion;
 
 @protocol RISDKKoin_coreKoinComponent, RISDKKotlinCoroutineContext, RISDKKotlinx_coroutines_coreCoroutineScope, RISDKLibKoinComponent, RISDKKotlinx_coroutines_coreStateFlow, RISDKKotlinx_coroutines_coreFlow, RISDKKotlinComparable, RISDKRefinerApi, RISDKKtor_client_coreHttpClientEngine, RISDKKotlinx_serialization_coreEncoder, RISDKKotlinx_serialization_coreSerialDescriptor, RISDKKotlinx_serialization_coreSerializationStrategy, RISDKKotlinx_serialization_coreDecoder, RISDKKotlinx_serialization_coreDeserializationStrategy, RISDKKotlinx_serialization_coreKSerializer, RISDKKoin_coreKoinScopeComponent, RISDKKoin_coreQualifier, RISDKKotlinKClass, RISDKKotlinLazy, RISDKKotlinIterator, RISDKAppInfo, RISDKKotlinCoroutineContextElement, RISDKKotlinCoroutineContextKey, RISDKKermitLoggerConfig, RISDKKotlinx_coroutines_coreFlowCollector, RISDKKotlinx_coroutines_coreSharedFlow, RISDKKtor_client_coreHttpClientEngineCapability, RISDKKtor_ioCloseable, RISDKKotlinx_serialization_coreCompositeEncoder, RISDKKotlinAnnotation, RISDKKotlinx_serialization_coreCompositeDecoder, RISDKKoin_coreScopeCallback, RISDKKotlinKDeclarationContainer, RISDKKotlinKAnnotatedElement, RISDKKotlinKClassifier, RISDKKtor_httpHeaders, RISDKKotlinx_coroutines_coreJob, RISDKKtor_utilsAttributes, RISDKKotlinContinuation, RISDKKotlinContinuationInterceptor, RISDKKotlinx_coroutines_coreRunnable, RISDKKotlinx_serialization_coreSerializersModuleCollector, RISDKKtor_httpParameters, RISDKKotlinMapEntry, RISDKKtor_utilsStringValues, RISDKKotlinx_coroutines_coreChildHandle, RISDKKotlinx_coroutines_coreChildJob, RISDKKotlinx_coroutines_coreDisposableHandle, RISDKKotlinSequence, RISDKKotlinx_coroutines_coreSelectClause0, RISDKKtor_client_coreHttpClientPlugin, RISDKKotlinSuspendFunction2, RISDKKotlinx_coroutines_coreParentJob, RISDKKotlinx_coroutines_coreSelectInstance, RISDKKotlinSuspendFunction0, RISDKKotlinFunction, RISDKKtor_httpHttpMessage, RISDKKtor_ioByteReadChannel, RISDKKtor_httpHttpMessageBuilder, RISDKKtor_client_coreHttpRequest, RISDKKtor_ioReadSession, RISDKKotlinSuspendFunction1, RISDKKotlinAppendable, RISDKKtor_utilsStringValuesBuilder, RISDKKtor_httpParametersBuilder, RISDKKotlinKType, RISDKKtor_ioObjectPool;
 
@@ -424,14 +424,14 @@ __attribute__((swift_name("BaseResponse")))
 @interface RISDKBaseResponse : RISDKBase
 - (instancetype)initWithComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(id _Nullable)styles token:(NSString * _Nullable)token componentDataJson:(NSString * _Nullable)componentDataJson stylesJson:(NSString * _Nullable)stylesJson __attribute__((swift_name("init(component:componentData:message:onScreenDelay:styles:token:componentDataJson:stylesJson:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKBaseResponseCompanion *companion __attribute__((swift_name("companion")));
-- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
-- (id _Nullable)component2 __attribute__((swift_name("component2()")));
-- (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
-- (RISDKInt * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (id _Nullable)component5 __attribute__((swift_name("component5()")));
-- (NSString * _Nullable)component6 __attribute__((swift_name("component6()")));
-- (NSString * _Nullable)component7 __attribute__((swift_name("component7()")));
-- (NSString * _Nullable)component8 __attribute__((swift_name("component8()")));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKInt * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKBaseResponse *)doCopyComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(id _Nullable)styles token:(NSString * _Nullable)token componentDataJson:(NSString * _Nullable)componentDataJson stylesJson:(NSString * _Nullable)stylesJson __attribute__((swift_name("doCopy(component:componentData:message:onScreenDelay:styles:token:componentDataJson:stylesJson:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -461,10 +461,10 @@ __attribute__((swift_name("DataState")))
 @interface RISDKDataState<__covariant T> : RISDKBase
 - (instancetype)initWithData:(T _Nullable)data exception:(NSString * _Nullable)exception empty:(BOOL)empty loading:(BOOL)loading __attribute__((swift_name("init(data:exception:empty:loading:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKDataStateCompanion *companion __attribute__((swift_name("companion")));
-- (T _Nullable)component1 __attribute__((swift_name("component1()")));
-- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
-- (BOOL)component4 __attribute__((swift_name("component4()")));
+- (T _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKDataState<T> *)doCopyData:(T _Nullable)data exception:(NSString * _Nullable)exception empty:(BOOL)empty loading:(BOOL)loading __attribute__((swift_name("doCopy(data:exception:empty:loading:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -490,8 +490,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RefinerConfigs")))
 @interface RISDKRefinerConfigs : RISDKBase
 - (instancetype)initWithProjectId:(NSString *)projectId enableDebugMode:(BOOL)enableDebugMode __attribute__((swift_name("init(projectId:enableDebugMode:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (BOOL)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKRefinerConfigs *)doCopyProjectId:(NSString *)projectId enableDebugMode:(BOOL)enableDebugMode __attribute__((swift_name("doCopy(projectId:enableDebugMode:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -505,10 +505,10 @@ __attribute__((swift_name("FormActionRequest")))
 @interface RISDKFormActionRequest : RISDKBase
 - (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKFormActionRequestCompanion *companion __attribute__((swift_name("companion")));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
-- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -534,11 +534,11 @@ __attribute__((swift_name("IdentifyUserRequest")))
 @interface RISDKIdentifyUserRequest : RISDKBase
 - (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKIdentifyUserRequestCompanion *companion __attribute__((swift_name("companion")));
-- (id _Nullable)component1 __attribute__((swift_name("component1()")));
-- (NSString *)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
-- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (id _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -565,13 +565,13 @@ __attribute__((swift_name("ShowFormRequest")))
 @interface RISDKShowFormRequest : RISDKBase
 - (instancetype)initWithManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKShowFormRequestCompanion *companion __attribute__((swift_name("companion")));
-- (BOOL)component1 __attribute__((swift_name("component1()")));
-- (BOOL)component2 __attribute__((swift_name("component2()")));
-- (NSString *)component3 __attribute__((swift_name("component3()")));
-- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (BOOL)component5 __attribute__((swift_name("component5()")));
-- (NSString * _Nullable)component6 __attribute__((swift_name("component6()")));
-- (NSString * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (BOOL)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKShowFormRequest *)doCopyManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -600,13 +600,13 @@ __attribute__((swift_name("SubmitFormRequest")))
 @interface RISDKSubmitFormRequest : RISDKBase
 - (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKSubmitFormRequestCompanion *companion __attribute__((swift_name("companion")));
-- (id _Nullable)component1 __attribute__((swift_name("component1()")));
-- (id _Nullable)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
-- (NSString *)component4 __attribute__((swift_name("component4()")));
-- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
-- (BOOL)component6 __attribute__((swift_name("component6()")));
-- (NSString * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (id _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKSubmitFormRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -635,11 +635,11 @@ __attribute__((swift_name("TrackEventRequest")))
 @interface RISDKTrackEventRequest : RISDKBase
 - (instancetype)initWithEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackEventRequestCompanion *companion __attribute__((swift_name("companion")));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
-- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKTrackEventRequest *)doCopyEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -666,11 +666,11 @@ __attribute__((swift_name("TrackScreenRequest")))
 @interface RISDKTrackScreenRequest : RISDKBase
 - (instancetype)initWithScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackScreenRequestCompanion *companion __attribute__((swift_name("companion")));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
-- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKTrackScreenRequest *)doCopyScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -841,7 +841,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)collectCollector:(id<RISDKKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
+- (void)collectCollector:(id<RISDKKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
 @end;
 
 __attribute__((swift_name("Kotlinx_coroutines_coreSharedFlow")))
@@ -1011,9 +1011,9 @@ __attribute__((swift_name("Koin_coreScope")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 - (void)close __attribute__((swift_name("close()")));
-- (id<RISDKKoin_coreQualifier>)component1 __attribute__((swift_name("component1()")));
-- (NSString *)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
+- (id<RISDKKoin_coreQualifier>)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKoin_coreScope *)doCopyScopeQualifier:(id<RISDKKoin_coreQualifier>)scopeQualifier id:(NSString *)id isRoot:(BOOL)isRoot _koin:(RISDKKoin_coreKoin *)_koin __attribute__((swift_name("doCopy(scopeQualifier:id:isRoot:_koin:)")));
 - (void)declareInstance:(id _Nullable)instance qualifier:(id<RISDKKoin_coreQualifier> _Nullable)qualifier secondaryTypes:(NSArray<id<RISDKKotlinKClass>> *)secondaryTypes allowOverride:(BOOL)allowOverride __attribute__((swift_name("declare(instance:qualifier:secondaryTypes:allowOverride:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
@@ -1248,11 +1248,17 @@ __attribute__((swift_name("KermitLogger.Companion")))
 - (instancetype)initWithConfig:(id<RISDKKermitLoggerConfig>)config tag:(NSString *)tag __attribute__((swift_name("init(config:tag:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) RISDKKermitLoggerCompanion *shared __attribute__((swift_name("shared")));
+- (void)aTag:(NSString *)tag throwable:(RISDKKotlinThrowable * _Nullable)throwable message:(NSString *(^)(void))message __attribute__((swift_name("a(tag:throwable:message:)")));
 - (void)addLogWriterLogWriter:(RISDKKotlinArray<RISDKKermitLogWriter *> *)logWriter __attribute__((swift_name("addLogWriter(logWriter:)")));
+- (void)dTag:(NSString *)tag throwable:(RISDKKotlinThrowable * _Nullable)throwable message:(NSString *(^)(void))message __attribute__((swift_name("d(tag:throwable:message:)")));
+- (void)eTag:(NSString *)tag throwable:(RISDKKotlinThrowable * _Nullable)throwable message:(NSString *(^)(void))message __attribute__((swift_name("e(tag:throwable:message:)")));
+- (void)iTag:(NSString *)tag throwable:(RISDKKotlinThrowable * _Nullable)throwable message:(NSString *(^)(void))message __attribute__((swift_name("i(tag:throwable:message:)")));
 - (void)setLogWritersLogWriter:(RISDKKotlinArray<RISDKKermitLogWriter *> *)logWriter __attribute__((swift_name("setLogWriters(logWriter:)")));
 - (void)setLogWritersLogWriters:(NSArray<RISDKKermitLogWriter *> *)logWriters __attribute__((swift_name("setLogWriters(logWriters:)")));
 - (void)setMinSeveritySeverity:(RISDKKermitSeverity *)severity __attribute__((swift_name("setMinSeverity(severity:)")));
 - (void)setTagTag:(NSString *)tag __attribute__((swift_name("setTag(tag:)")));
+- (void)vTag:(NSString *)tag throwable:(RISDKKotlinThrowable * _Nullable)throwable message:(NSString *(^)(void))message __attribute__((swift_name("v(tag:throwable:message:)")));
+- (void)wTag:(NSString *)tag throwable:(RISDKKotlinThrowable * _Nullable)throwable message:(NSString *(^)(void))message __attribute__((swift_name("w(tag:throwable:message:)")));
 @property (readonly) NSString *tag __attribute__((swift_name("tag")));
 @end;
 
@@ -1279,17 +1285,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinUnit")))
-@interface RISDKKotlinUnit : RISDKBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)unit __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) RISDKKotlinUnit *shared __attribute__((swift_name("shared")));
-- (NSString *)description __attribute__((swift_name("description()")));
+- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1482,8 +1478,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinPair")))
 @interface RISDKKotlinPair<__covariant A, __covariant B> : RISDKBase
 - (instancetype)initWithFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("init(first:second:)"))) __attribute__((objc_designated_initializer));
-- (A _Nullable)component1 __attribute__((swift_name("component1()")));
-- (B _Nullable)component2 __attribute__((swift_name("component2()")));
+- (A _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (B _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKotlinPair<A, B> *)doCopyFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("doCopy(first:second:)")));
 - (BOOL)equalsOther:(id _Nullable)other __attribute__((swift_name("equals(other:)")));
 - (int32_t)hashCode __attribute__((swift_name("hashCode()")));
@@ -1577,7 +1573,7 @@ __attribute__((swift_name("Ktor_httpHttpMethod")))
 @interface RISDKKtor_httpHttpMethod : RISDKBase
 - (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKKtor_httpHttpMethodCompanion *companion __attribute__((swift_name("companion")));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_httpHttpMethod *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -1628,7 +1624,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)joinWithCompletionHandler:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("join(completionHandler:)")));
+- (void)joinWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("join(completionHandler:)")));
 - (id<RISDKKotlinx_coroutines_coreJob>)plusOther_:(id<RISDKKotlinx_coroutines_coreJob>)other __attribute__((swift_name("plus(other_:)"))) __attribute__((unavailable("Operator '+' on two Job objects is meaningless. Job is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The job to the right of `+` just replaces the job the left of `+`.")));
 - (BOOL)start __attribute__((swift_name("start()")));
 @property (readonly) id<RISDKKotlinSequence> children __attribute__((swift_name("children")));
@@ -1657,8 +1653,8 @@ __attribute__((swift_name("Ktor_httpHttpStatusCode")))
 @interface RISDKKtor_httpHttpStatusCode : RISDKBase
 - (instancetype)initWithValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("init(value:description:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKKtor_httpHttpStatusCodeCompanion *companion __attribute__((swift_name("companion")));
-- (int32_t)component1 __attribute__((swift_name("component1()")));
-- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (int32_t)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_httpHttpStatusCode *)doCopyValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("doCopy(value:description:)")));
 - (RISDKKtor_httpHttpStatusCode *)descriptionValue:(NSString *)value __attribute__((swift_name("description(value:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
@@ -1673,15 +1669,15 @@ __attribute__((swift_name("Ktor_utilsGMTDate")))
 @interface RISDKKtor_utilsGMTDate : RISDKBase <RISDKKotlinComparable>
 @property (class, readonly, getter=companion) RISDKKtor_utilsGMTDateCompanion *companion __attribute__((swift_name("companion")));
 - (int32_t)compareToOther:(RISDKKtor_utilsGMTDate *)other __attribute__((swift_name("compareTo(other:)")));
-- (int32_t)component1 __attribute__((swift_name("component1()")));
-- (int32_t)component2 __attribute__((swift_name("component2()")));
-- (int32_t)component3 __attribute__((swift_name("component3()")));
-- (RISDKKtor_utilsWeekDay *)component4 __attribute__((swift_name("component4()")));
-- (int32_t)component5 __attribute__((swift_name("component5()")));
-- (int32_t)component6 __attribute__((swift_name("component6()")));
-- (RISDKKtor_utilsMonth *)component7 __attribute__((swift_name("component7()")));
-- (int32_t)component8 __attribute__((swift_name("component8()")));
-- (int64_t)component9 __attribute__((swift_name("component9()")));
+- (int32_t)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKKtor_utilsWeekDay *)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKKtor_utilsMonth *)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int64_t)component9 __attribute__((swift_name("component9()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_utilsGMTDate *)doCopySeconds:(int32_t)seconds minutes:(int32_t)minutes hours:(int32_t)hours dayOfWeek:(RISDKKtor_utilsWeekDay *)dayOfWeek dayOfMonth:(int32_t)dayOfMonth dayOfYear:(int32_t)dayOfYear month:(RISDKKtor_utilsMonth *)month year:(int32_t)year timestamp:(int64_t)timestamp __attribute__((swift_name("doCopy(seconds:minutes:hours:dayOfWeek:dayOfMonth:dayOfYear:month:year:timestamp:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -1702,9 +1698,9 @@ __attribute__((swift_name("Ktor_httpHttpProtocolVersion")))
 @interface RISDKKtor_httpHttpProtocolVersion : RISDKBase
 - (instancetype)initWithName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("init(name:major:minor:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKKtor_httpHttpProtocolVersionCompanion *companion __attribute__((swift_name("companion")));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (int32_t)component2 __attribute__((swift_name("component2()")));
-- (int32_t)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_httpHttpProtocolVersion *)doCopyName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("doCopy(name:major:minor:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -1857,12 +1853,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Koin_coreBeanDefinition")))
 @interface RISDKKoin_coreBeanDefinition<T> : RISDKBase
 - (instancetype)initWithScopeQualifier:(id<RISDKKoin_coreQualifier>)scopeQualifier primaryType:(id<RISDKKotlinKClass>)primaryType qualifier:(id<RISDKKoin_coreQualifier> _Nullable)qualifier definition:(T _Nullable (^)(RISDKKoin_coreScope *, RISDKKoin_coreParametersHolder *))definition kind:(RISDKKoin_coreKind *)kind secondaryTypes:(NSArray<id<RISDKKotlinKClass>> *)secondaryTypes __attribute__((swift_name("init(scopeQualifier:primaryType:qualifier:definition:kind:secondaryTypes:)"))) __attribute__((objc_designated_initializer));
-- (id<RISDKKoin_coreQualifier>)component1 __attribute__((swift_name("component1()")));
-- (id<RISDKKotlinKClass>)component2 __attribute__((swift_name("component2()")));
-- (id<RISDKKoin_coreQualifier> _Nullable)component3 __attribute__((swift_name("component3()")));
-- (T _Nullable (^)(RISDKKoin_coreScope *, RISDKKoin_coreParametersHolder *))component4 __attribute__((swift_name("component4()")));
-- (RISDKKoin_coreKind *)component5 __attribute__((swift_name("component5()")));
-- (NSArray<id<RISDKKotlinKClass>> *)component6 __attribute__((swift_name("component6()")));
+- (id<RISDKKoin_coreQualifier>)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id<RISDKKotlinKClass>)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id<RISDKKoin_coreQualifier> _Nullable)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
+- (T _Nullable (^)(RISDKKoin_coreScope *, RISDKKoin_coreParametersHolder *))component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKKoin_coreKind *)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSArray<id<RISDKKotlinKClass>> *)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKoin_coreBeanDefinition<T> *)doCopyScopeQualifier:(id<RISDKKoin_coreQualifier>)scopeQualifier primaryType:(id<RISDKKotlinKClass>)primaryType qualifier:(id<RISDKKoin_coreQualifier> _Nullable)qualifier definition:(T _Nullable (^)(RISDKKoin_coreScope *, RISDKKoin_coreParametersHolder *))definition kind:(RISDKKoin_coreKind *)kind secondaryTypes:(NSArray<id<RISDKKotlinKClass>> *)secondaryTypes __attribute__((swift_name("doCopy(scopeQualifier:primaryType:qualifier:definition:kind:secondaryTypes:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (BOOL)hasTypeClazz:(id<RISDKKotlinKClass>)clazz __attribute__((swift_name("hasType(clazz:)")));
@@ -1916,8 +1912,8 @@ __attribute__((swift_name("Ktor_httpURLProtocol")))
 @interface RISDKKtor_httpURLProtocol : RISDKBase
 - (instancetype)initWithName:(NSString *)name defaultPort:(int32_t)defaultPort __attribute__((swift_name("init(name:defaultPort:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKKtor_httpURLProtocolCompanion *companion __attribute__((swift_name("companion")));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (int32_t)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_httpURLProtocol *)doCopyName:(NSString *)name defaultPort:(int32_t)defaultPort __attribute__((swift_name("doCopy(name:defaultPort:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -2218,6 +2214,16 @@ __attribute__((swift_name("Ktor_client_coreHttpResponse")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinUnit")))
+@interface RISDKKotlinUnit : RISDKBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)unit __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) RISDKKotlinUnit *shared __attribute__((swift_name("shared")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_client_coreHttpRequestPipeline.Phases")))
 @interface RISDKKtor_client_coreHttpRequestPipelinePhases : RISDKBase
 + (instancetype)alloc __attribute__((unavailable));
@@ -2277,8 +2283,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_client_coreHttpResponseContainer")))
 @interface RISDKKtor_client_coreHttpResponseContainer : RISDKBase
 - (instancetype)initWithExpectedType:(RISDKKtor_utilsTypeInfo *)expectedType response:(id)response __attribute__((swift_name("init(expectedType:response:)"))) __attribute__((objc_designated_initializer));
-- (RISDKKtor_utilsTypeInfo *)component1 __attribute__((swift_name("component1()")));
-- (id)component2 __attribute__((swift_name("component2()")));
+- (RISDKKtor_utilsTypeInfo *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_client_coreHttpResponseContainer *)doCopyExpectedType:(RISDKKtor_utilsTypeInfo *)expectedType response:(id)response __attribute__((swift_name("doCopy(expectedType:response:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -2349,7 +2355,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Koin_coreCallbacks")))
 @interface RISDKKoin_coreCallbacks<T> : RISDKBase
 - (instancetype)initWithOnClose:(void (^ _Nullable)(T _Nullable))onClose __attribute__((swift_name("init(onClose:)"))) __attribute__((objc_designated_initializer));
-- (void (^ _Nullable)(T _Nullable))component1 __attribute__((swift_name("component1()")));
+- (void (^ _Nullable)(T _Nullable))component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKoin_coreCallbacks<T> *)doCopyOnClose:(void (^ _Nullable)(T _Nullable))onClose __attribute__((swift_name("doCopy(onClose:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -2378,9 +2384,9 @@ __attribute__((swift_name("Ktor_httpHeaderValueParam")))
 @interface RISDKKtor_httpHeaderValueParam : RISDKBase
 - (instancetype)initWithName:(NSString *)name value:(NSString *)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithName:(NSString *)name value:(NSString *)value escapeValue:(BOOL)escapeValue __attribute__((swift_name("init(name:value:escapeValue:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (NSString *)component2 __attribute__((swift_name("component2()")));
-- (BOOL)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_httpHeaderValueParam *)doCopyName:(NSString *)name value:(NSString *)value escapeValue:(BOOL)escapeValue __attribute__((swift_name("doCopy(name:value:escapeValue:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -2470,7 +2476,7 @@ __attribute__((swift_name("Ktor_ioByteReadChannel")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)awaitContentWithCompletionHandler:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("awaitContent(completionHandler:)")));
+- (void)awaitContentWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("awaitContent(completionHandler:)")));
 - (BOOL)cancelCause_:(RISDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("cancel(cause_:)")));
 
 /**
@@ -2538,25 +2544,25 @@ __attribute__((swift_name("Ktor_ioByteReadChannel")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)readFullyDst:(RISDKKtor_ioChunkBuffer *)dst n:(int32_t)n completionHandler:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:n:completionHandler:)")));
+- (void)readFullyDst:(RISDKKtor_ioChunkBuffer *)dst n:(int32_t)n completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:n:completionHandler:)")));
 
 /**
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)readFullyDst:(RISDKKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length completionHandler:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler:)")));
+- (void)readFullyDst:(RISDKKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler:)")));
 
 /**
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)readFullyDst:(void *)dst offset:(int32_t)offset length:(int32_t)length completionHandler_:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler_:)")));
+- (void)readFullyDst:(void *)dst offset:(int32_t)offset length:(int32_t)length completionHandler_:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler_:)")));
 
 /**
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)readFullyDst:(void *)dst offset:(int64_t)offset length:(int64_t)length completionHandler__:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler__:)")));
+- (void)readFullyDst:(void *)dst offset:(int64_t)offset length:(int64_t)length completionHandler__:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler__:)")));
 
 /**
  @note This method converts instances of CancellationException to errors.
@@ -2593,7 +2599,7 @@ __attribute__((swift_name("Ktor_ioByteReadChannel")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)readSuspendableSessionConsumer:(id<RISDKKotlinSuspendFunction1>)consumer completionHandler:(void (^)(RISDKKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readSuspendableSession(consumer:completionHandler:)"))) __attribute__((deprecated("Use read { } instead.")));
+- (void)readSuspendableSessionConsumer:(id<RISDKKotlinSuspendFunction1>)consumer completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("readSuspendableSession(consumer:completionHandler:)"))) __attribute__((deprecated("Use read { } instead.")));
 
 /**
  @note This method converts instances of CancellationException to errors.
@@ -2710,9 +2716,9 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_utilsTypeInfo")))
 @interface RISDKKtor_utilsTypeInfo : RISDKBase
 - (instancetype)initWithType:(id<RISDKKotlinKClass>)type reifiedType:(id<RISDKKotlinKType>)reifiedType kotlinType:(id<RISDKKotlinKType> _Nullable)kotlinType __attribute__((swift_name("init(type:reifiedType:kotlinType:)"))) __attribute__((objc_designated_initializer));
-- (id<RISDKKotlinKClass>)component1 __attribute__((swift_name("component1()")));
-- (id<RISDKKotlinKType>)component2 __attribute__((swift_name("component2()")));
-- (id<RISDKKotlinKType> _Nullable)component3 __attribute__((swift_name("component3()")));
+- (id<RISDKKotlinKClass>)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id<RISDKKotlinKType>)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id<RISDKKotlinKType> _Nullable)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKtor_utilsTypeInfo *)doCopyType:(id<RISDKKotlinKClass>)type reifiedType:(id<RISDKKotlinKType>)reifiedType kotlinType:(id<RISDKKotlinKType> _Nullable)kotlinType __attribute__((swift_name("doCopy(type:reifiedType:kotlinType:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -3071,8 +3077,8 @@ __attribute__((swift_name("KotlinKTypeProjection")))
 @interface RISDKKotlinKTypeProjection : RISDKBase
 - (instancetype)initWithVariance:(RISDKKotlinKVariance * _Nullable)variance type:(id<RISDKKotlinKType> _Nullable)type __attribute__((swift_name("init(variance:type:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKKotlinKTypeProjectionCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKKotlinKVariance * _Nullable)component1 __attribute__((swift_name("component1()")));
-- (id<RISDKKotlinKType> _Nullable)component2 __attribute__((swift_name("component2()")));
+- (RISDKKotlinKVariance * _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (id<RISDKKotlinKType> _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKKotlinKTypeProjection *)doCopyVariance:(RISDKKotlinKVariance * _Nullable)variance type:(id<RISDKKotlinKType> _Nullable)type __attribute__((swift_name("doCopy(variance:type:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
