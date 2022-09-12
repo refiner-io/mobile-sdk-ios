@@ -5,3 +5,5 @@ example/RemoteFrameworkApp/RefinerSDKApp.xcodeproj/project.xcworkspace/xcsharedd
 example/spmFrameworkApp/SpmFrameworkApp/SpmFrameworkApp.xcodeproj/project.xcworkspace/xcshareddata
 example/spmFrameworkApp/SpmFrameworkApp/SpmFrameworkApp.xcodeproj/project.xcworkspace/xcuserdata
 example/spmFrameworkApp/SpmFrameworkApp/SpmFrameworkApp.xcodeproj/xcuserdata
+example/PodFrameworkApp/Pods/Pods.xcodeproj/xcuserdata
+*/**/xcuserdata

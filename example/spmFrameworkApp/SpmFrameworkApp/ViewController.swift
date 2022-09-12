@@ -26,7 +26,8 @@ class ViewController: UIViewController {
                                               userTraits: [
                                                 "email": "hello@mail.com.tr"
                                               ],
-                                              locale: "en-EN")
+                                              locale: "en-EN",
+                                              signature: nil)
         } catch {
             print(error.localizedDescription)
         }

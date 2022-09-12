@@ -17,17 +17,17 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "RefinerSDK.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "RefinerSDK.xcframework/ios-arm64")
     echo ""
     ;;
-  "RefinerInternalSDK.xcframework/ios-arm64")
-    echo ""
+  "RefinerSDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "RefinerInternalSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
+    ;;
+  "RefinerInternalSDK.xcframework/ios-arm64")
+    echo ""
     ;;
   esac
 }
@@ -35,17 +35,17 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "RefinerSDK.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
   "RefinerSDK.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "RefinerInternalSDK.xcframework/ios-arm64")
-    echo "arm64"
+  "RefinerSDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "RefinerInternalSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
+    ;;
+  "RefinerInternalSDK.xcframework/ios-arm64")
+    echo "arm64"
     ;;
   esac
 }
@@ -129,6 +129,6 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/RefinerSDK/RefinerSDK.xcframework" "RefinerSDK" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
-install_xcframework "${PODS_ROOT}/RefinerSDK/RefinerInternalSDK.xcframework" "RefinerSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/RefinerSDK/RefinerSDK.xcframework" "RefinerSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/RefinerSDK/RefinerInternalSDK.xcframework" "RefinerSDK" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
 

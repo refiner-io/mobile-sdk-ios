@@ -1,5 +1,5 @@
 PODS:
-  - RefinerSDK (1.0.5)
+  - RefinerSDK (1.1.0)
 
 DEPENDENCIES:
   - RefinerSDK
@@ -9,7 +9,7 @@ SPEC REPOS:
     - RefinerSDK
 
 SPEC CHECKSUMS:
-  RefinerSDK: d599c4c9fed8b7b6f9e52ae574c94d932c7aa267
+  RefinerSDK: a0e191a26d1df197910ce079583de46828936103
 
 PODFILE CHECKSUM: d33556579f0103db11612b1c58ad485359f1cdb7
 

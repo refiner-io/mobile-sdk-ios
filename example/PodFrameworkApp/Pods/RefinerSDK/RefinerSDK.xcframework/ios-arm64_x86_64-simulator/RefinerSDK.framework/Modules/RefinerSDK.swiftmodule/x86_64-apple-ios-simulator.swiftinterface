@@ -20,10 +20,10 @@ public let RefinerSDKVersion: Swift.String
   @objc deinit
 }
 extension RefinerSDK.Refiner {
-  @objc dynamic public func initialize(projectId: Swift.String)
-  @objc dynamic public func identifyUser(userId: Swift.String) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
+  @objc dynamic public func initialize(projectId: Swift.String, enableDebugMode: Swift.Bool)
+  @objc dynamic public func identifyUser(userId: Swift.String, signature: Swift.String? = nil) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String? = nil) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
   @objc dynamic public func resetUser()
   @objc dynamic public func trackEvent(name: Swift.String)
   @objc dynamic public func trackScreen(name: Swift.String)
