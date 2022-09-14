@@ -72,6 +72,29 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 #### Identify User
 
 Call `Identify User` to create or update a user traits in Refiner. 
+
+
+The first parameter is the userId of your logged-in user and is the only mandatory parameter. 
+
+The second parameter is an object of user traits. You can omit or set this value to `null` if you don't want to send any user traits to your Refiner account.
+
+```swift
+do {
+    try Refiner.instance.identifyUser(
+        userTraits: [
+            "email": "hello@hello.com"
+            "something": "else"
+        ],
+        userId: "USER_ID"
+} catch {
+    print(error.localizedDescription)
+}
+```
+
+The third parameter is for setting the `locale` of a user and is optional. The expected format is a two letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code. When provided, the locale code is used for launching surveys for specific languages, as well as launching translated surveys. You can omit or set the value to `null` if you are not using any language specific features.
+
+The fourth parameter is an optional [Identity Verification](https://refiner.io/docs/kb/mobile-sdk/identify-verification-for-mobile-sdks/) signature. We recommend to use a Identify Verification signature for increased security in a production environment. For development purposes, you can omit or set this value to `null`.
+
 ```swift
 do {
     try Refiner.instance.identifyUser(
@@ -80,8 +103,8 @@ do {
             "something": "else"
         ],
         userId: "USER_ID",
-        locale: "en_EN", 
-        signature: "signature")
+        locale: "en", 
+        signature: "SIGNATURE")
 } catch {
     print(error.localizedDescription)
 }

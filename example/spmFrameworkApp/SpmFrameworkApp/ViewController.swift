@@ -24,9 +24,9 @@ class ViewController: UIViewController {
         do {
             try Refiner.instance.identifyUser(userId: "my-user-id",
                                               userTraits: [
-                                                "email": "hello@mail.com.tr"
+                                                "email": "hello@hello.com"
                                               ],
-                                              locale: "en-EN",
+                                              locale: "en",
                                               signature: nil)
         } catch {
             print(error.localizedDescription)
