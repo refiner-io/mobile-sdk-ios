@@ -120,7 +120,9 @@ Refiner.instance.trackEvent(name: "EVENT_NAME")
 
 #### Track Screen
 
-`Track Screen` provides to track screen that user is currently on. Screen information can be used to launch surveys in specific areas of your app.
+`Track Screen` provides to track screen that user is currently on. Screen information can be used to launch surveys in specific areas of your app. 
+
+We recommend to track screens on which you might want to show a survey one day. There is no need to systematically track all screens of your app.
 
 ```swift
 Refiner.instance.trackScreen(name: "SCREEN_NAME")
