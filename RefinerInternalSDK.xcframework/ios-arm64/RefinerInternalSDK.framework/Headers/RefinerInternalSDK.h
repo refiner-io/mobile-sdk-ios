@@ -149,6 +149,9 @@ __attribute__((swift_name("AppInfo")))
 @required
 @property (readonly) NSString *appId __attribute__((swift_name("appId")));
 @property (readonly) RISDKEnvironment *environment __attribute__((swift_name("environment")));
+@property (readonly) NSString *osVersion __attribute__((swift_name("osVersion")));
+@property (readonly) NSString *platform __attribute__((swift_name("platform")));
+@property (readonly) NSString *sdkVersion __attribute__((swift_name("sdkVersion")));
 @end;
 
 __attribute__((swift_name("Koin_coreKoinComponent")))
@@ -224,6 +227,7 @@ __attribute__((swift_name("RefinerModel")))
 - (id<RISDKKotlinx_coroutines_coreFlow>)submitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest __attribute__((swift_name("submitForm(submitFormRequest:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)trackEventTrackEventRequest:(RISDKTrackEventRequest *)trackEventRequest __attribute__((swift_name("trackEvent(trackEventRequest:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)trackScreenTrackScreenRequest:(RISDKTrackScreenRequest *)trackScreenRequest __attribute__((swift_name("trackScreen(trackScreenRequest:)")));
+@property NSString * _Nullable screenName __attribute__((swift_name("screenName")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -382,6 +386,7 @@ __attribute__((swift_name("RefinerSettings")))
 @property (readonly) NSString *CONTEXTUAL_DATA __attribute__((swift_name("CONTEXTUAL_DATA")));
 @property (readonly) NSString *LOCALE __attribute__((swift_name("LOCALE")));
 @property (readonly) NSString *PROJECT_ID __attribute__((swift_name("PROJECT_ID")));
+@property (readonly) NSString *SCREEN_NAME __attribute__((swift_name("SCREEN_NAME")));
 @property (readonly) NSString *SIGNATURE __attribute__((swift_name("SIGNATURE")));
 @property (readonly) NSString *TOKEN __attribute__((swift_name("TOKEN")));
 @property (readonly) NSString *USER_ID __attribute__((swift_name("USER_ID")));
@@ -422,17 +427,16 @@ __attribute__((swift_name("AnySerializer")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("BaseResponse")))
 @interface RISDKBaseResponse : RISDKBase
-- (instancetype)initWithComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(id _Nullable)styles token:(NSString * _Nullable)token componentDataJson:(NSString * _Nullable)componentDataJson stylesJson:(NSString * _Nullable)stylesJson __attribute__((swift_name("init(component:componentData:message:onScreenDelay:styles:token:componentDataJson:stylesJson:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles token:(NSString * _Nullable)token componentDataJson:(NSString * _Nullable)componentDataJson __attribute__((swift_name("init(component:componentData:message:onScreenDelay:styles:token:componentDataJson:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKBaseResponseCompanion *companion __attribute__((swift_name("companion")));
 - (NSString * _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
 - (id _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (RISDKInt * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
-- (id _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
-- (NSString * _Nullable)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
-- (RISDKBaseResponse *)doCopyComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(id _Nullable)styles token:(NSString * _Nullable)token componentDataJson:(NSString * _Nullable)componentDataJson stylesJson:(NSString * _Nullable)stylesJson __attribute__((swift_name("doCopy(component:componentData:message:onScreenDelay:styles:token:componentDataJson:stylesJson:)")));
+- (RISDKBaseResponse *)doCopyComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles token:(NSString * _Nullable)token componentDataJson:(NSString * _Nullable)componentDataJson __attribute__((swift_name("doCopy(component:componentData:message:onScreenDelay:styles:token:componentDataJson:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -441,8 +445,7 @@ __attribute__((swift_name("BaseResponse")))
 @property NSString * _Nullable componentDataJson __attribute__((swift_name("componentDataJson")));
 @property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @property (readonly) RISDKInt * _Nullable onScreenDelay __attribute__((swift_name("onScreenDelay")));
-@property (readonly) id _Nullable styles __attribute__((swift_name("styles")));
-@property NSString * _Nullable stylesJson __attribute__((swift_name("stylesJson")));
+@property (readonly) NSString * _Nullable styles __attribute__((swift_name("styles")));
 @property (readonly) NSString * _Nullable token __attribute__((swift_name("token")));
 @end;
 
@@ -503,13 +506,16 @@ __attribute__((swift_name("RefinerConfigs")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormActionRequest")))
 @interface RISDKFormActionRequest : RISDKBase
-- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKFormActionRequestCompanion *companion __attribute__((swift_name("companion")));
 - (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
-- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)")));
+- (NSString *)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -517,6 +523,9 @@ __attribute__((swift_name("FormActionRequest")))
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) NSString *formUuid __attribute__((swift_name("formUuid")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
+@property (readonly) NSString *mobileOsVersion __attribute__((swift_name("mobileOsVersion")));
+@property (readonly) NSString *mobilePlatform __attribute__((swift_name("mobilePlatform")));
+@property (readonly) NSString *mobileSdkVersion __attribute__((swift_name("mobileSdkVersion")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -532,14 +541,17 @@ __attribute__((swift_name("FormActionRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("IdentifyUserRequest")))
 @interface RISDKIdentifyUserRequest : RISDKBase
-- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKIdentifyUserRequestCompanion *companion __attribute__((swift_name("companion")));
 - (id _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString *)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
-- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
+- (NSString *)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -548,6 +560,9 @@ __attribute__((swift_name("IdentifyUserRequest")))
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
+@property (readonly) NSString *mobileOsVersion __attribute__((swift_name("mobileOsVersion")));
+@property (readonly) NSString *mobilePlatform __attribute__((swift_name("mobilePlatform")));
+@property (readonly) NSString *mobileSdkVersion __attribute__((swift_name("mobileSdkVersion")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -563,16 +578,19 @@ __attribute__((swift_name("IdentifyUserRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ShowFormRequest")))
 @interface RISDKShowFormRequest : RISDKBase
-- (instancetype)initWithManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("init(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKShowFormRequestCompanion *companion __attribute__((swift_name("companion")));
 - (BOOL)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component10 __attribute__((swift_name("component10()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString *)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
-- (RISDKShowFormRequest *)doCopyManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
+- (NSString *)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component9 __attribute__((swift_name("component9()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKShowFormRequest *)doCopyManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("doCopy(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -583,6 +601,9 @@ __attribute__((swift_name("ShowFormRequest")))
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
 @property (readonly) BOOL manualFormView __attribute__((swift_name("manualFormView")));
+@property (readonly) NSString *mobileOsVersion __attribute__((swift_name("mobileOsVersion")));
+@property (readonly) NSString *mobilePlatform __attribute__((swift_name("mobilePlatform")));
+@property (readonly) NSString *mobileSdkVersion __attribute__((swift_name("mobileSdkVersion")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -598,16 +619,20 @@ __attribute__((swift_name("ShowFormRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SubmitFormRequest")))
 @interface RISDKSubmitFormRequest : RISDKBase
-- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature screenName:(NSString * _Nullable)screenName mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKSubmitFormRequestCompanion *companion __attribute__((swift_name("companion")));
 - (id _Nullable)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component10 __attribute__((swift_name("component10()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component11 __attribute__((swift_name("component11()"))) __attribute__((deprecated("use corresponding property instead")));
 - (id _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString *)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
-- (RISDKSubmitFormRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:)")));
+- (NSString * _Nullable)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component9 __attribute__((swift_name("component9()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKSubmitFormRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature screenName:(NSString * _Nullable)screenName mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("doCopy(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -618,6 +643,10 @@ __attribute__((swift_name("SubmitFormRequest")))
 @property (readonly) NSString *formUuid __attribute__((swift_name("formUuid")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) BOOL isPartialSubmit __attribute__((swift_name("isPartialSubmit")));
+@property (readonly) NSString *mobileOsVersion __attribute__((swift_name("mobileOsVersion")));
+@property (readonly) NSString *mobilePlatform __attribute__((swift_name("mobilePlatform")));
+@property (readonly) NSString *mobileSdkVersion __attribute__((swift_name("mobileSdkVersion")));
+@property (readonly) NSString * _Nullable screenName __attribute__((swift_name("screenName")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -633,14 +662,17 @@ __attribute__((swift_name("SubmitFormRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TrackEventRequest")))
 @interface RISDKTrackEventRequest : RISDKBase
-- (instancetype)initWithEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("init(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackEventRequestCompanion *companion __attribute__((swift_name("companion")));
 - (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
-- (RISDKTrackEventRequest *)doCopyEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
+- (NSString *)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKTrackEventRequest *)doCopyEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("doCopy(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -649,6 +681,9 @@ __attribute__((swift_name("TrackEventRequest")))
 @property (readonly) NSString *eventName __attribute__((swift_name("eventName")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
+@property (readonly) NSString *mobileOsVersion __attribute__((swift_name("mobileOsVersion")));
+@property (readonly) NSString *mobilePlatform __attribute__((swift_name("mobilePlatform")));
+@property (readonly) NSString *mobileSdkVersion __attribute__((swift_name("mobileSdkVersion")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -664,14 +699,17 @@ __attribute__((swift_name("TrackEventRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TrackScreenRequest")))
 @interface RISDKTrackScreenRequest : RISDKBase
-- (instancetype)initWithScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackScreenRequestCompanion *companion __attribute__((swift_name("companion")));
 - (NSString *)component1 __attribute__((swift_name("component1()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()"))) __attribute__((deprecated("use corresponding property instead")));
 - (BOOL)component3 __attribute__((swift_name("component3()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()"))) __attribute__((deprecated("use corresponding property instead")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()"))) __attribute__((deprecated("use corresponding property instead")));
-- (RISDKTrackScreenRequest *)doCopyScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:)")));
+- (NSString *)component6 __attribute__((swift_name("component6()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component7 __attribute__((swift_name("component7()"))) __attribute__((deprecated("use corresponding property instead")));
+- (NSString *)component8 __attribute__((swift_name("component8()"))) __attribute__((deprecated("use corresponding property instead")));
+- (RISDKTrackScreenRequest *)doCopyScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -679,6 +717,9 @@ __attribute__((swift_name("TrackScreenRequest")))
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
 @property (readonly) NSString * _Nullable locale __attribute__((swift_name("locale")));
+@property (readonly) NSString *mobileOsVersion __attribute__((swift_name("mobileOsVersion")));
+@property (readonly) NSString *mobilePlatform __attribute__((swift_name("mobilePlatform")));
+@property (readonly) NSString *mobileSdkVersion __attribute__((swift_name("mobileSdkVersion")));
 @property (readonly) NSString *screenName __attribute__((swift_name("screenName")));
 @end;
 
