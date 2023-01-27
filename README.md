@@ -127,7 +127,7 @@ Depending on your setup, you might want to initiate regular checks for surveys t
 
 The `Ping` method provides an easy way to perform such checks. You can call the `Ping` method at key moments in a user's journey, such as when the app is re-opened, or when the user performs a specific action.
 
-```javascript
+```swift
 Refiner.ping();
 ```
 
