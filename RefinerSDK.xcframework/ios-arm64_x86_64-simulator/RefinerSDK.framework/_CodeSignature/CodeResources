@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lvVPcbXpb6SGpJdnZTbpPaOX1T0=
+		5GmXpHWV+W49d3OK9m7EtW/Dguw=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		lvVPcbXpb6SGpJdnZTbpPaOX1T0=
+		5GmXpHWV+W49d3OK9m7EtW/Dguw=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ujRNzS4p8z+InS8kaRB8cPMurjI=
+		APFaEKuE2Hxj8GEJQfcbP5y/Cts=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ujRNzS4p8z+InS8kaRB8cPMurjI=
+		APFaEKuE2Hxj8GEJQfcbP5y/Cts=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -164,11 +164,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lvVPcbXpb6SGpJdnZTbpPaOX1T0=
+			5GmXpHWV+W49d3OK9m7EtW/Dguw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bZlHDIRDagr5Rq8k1v66wvSur94pdhkeJFWC4PLPEFk=
+			ilRq7Zcsf33mdbnp2WhdfV/UqMA65CZtGpfvKLOQpqE=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/arm64.swiftdoc</key>
@@ -197,11 +197,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lvVPcbXpb6SGpJdnZTbpPaOX1T0=
+			5GmXpHWV+W49d3OK9m7EtW/Dguw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bZlHDIRDagr5Rq8k1v66wvSur94pdhkeJFWC4PLPEFk=
+			ilRq7Zcsf33mdbnp2WhdfV/UqMA65CZtGpfvKLOQpqE=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -230,11 +230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ujRNzS4p8z+InS8kaRB8cPMurjI=
+			APFaEKuE2Hxj8GEJQfcbP5y/Cts=
 			</data>
 			<key>hash2</key>
 			<data>
-			C5ItnegybR3191t2IY8KOn6brLfoNZ/kROxk2ZOGXv0=
+			2383IfPe20QWhrc3jPRMIlnmRCbLUEXd0FutH868L8w=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -263,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ujRNzS4p8z+InS8kaRB8cPMurjI=
+			APFaEKuE2Hxj8GEJQfcbP5y/Cts=
 			</data>
 			<key>hash2</key>
 			<data>
-			C5ItnegybR3191t2IY8KOn6brLfoNZ/kROxk2ZOGXv0=
+			2383IfPe20QWhrc3jPRMIlnmRCbLUEXd0FutH868L8w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
