@@ -147,10 +147,10 @@ Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 
 #### Attach Contextual Data
 
-Attach contextual data to the survey submissions with `attachToResponse`. Set `null` to remove the contextual data.
+Attach contextual data to the survey submissions with `addToResponse`. Set `null` to remove the contextual data.
 
 ```swift
-Refiner.instance.attachToResponse(
+Refiner.instance.addToResponse(
     data: [
         "some_data": "hello",
         "some_more_data": "hello again"
