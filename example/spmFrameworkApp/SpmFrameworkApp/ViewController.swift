@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCallback()
-        Refiner.instance.attachToResponse(
+        Refiner.instance.addToResponse(
             data: [
                 "some_data": "hello",
                 "some_more_data": "hello again"

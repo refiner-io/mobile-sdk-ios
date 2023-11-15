@@ -64,7 +64,7 @@ Initialize Refiner iOS SDK in your application class with the needed configurati
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    Refiner.instance.initialize(projectId: "PROJECT_ID")
+    Refiner.instance.initialize(projectId: "PROJECT_ID", enableDebugMode: true)
     return true
 }
 ```
@@ -72,18 +72,35 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 #### Identify User
 
 Call `Identify User` to create or update a user traits in Refiner. 
+
+
+The first parameter is the userId of your logged-in user and is the only mandatory parameter. 
+
+The second parameter is an object of user traits. You can omit or set this value to `null` if you don't want to send any user traits to your Refiner account.
+
 ```swift
-do {
-    try Refiner.instance.identifyUser(
-        userTraits: [
-            "email": "hello@hello.com"
-            "something": "else"
-        ],
-        userId: "USER_ID",
-        locale: "en_EN")
-} catch {
-    print(error.localizedDescription)
-}
+Refiner.instance.identifyUser(
+    userTraits: [
+        "email": "hello@hello.com"
+        "something": "else"
+    ],
+    userId: "USER_ID"
+)
+```
+
+The third parameter is for setting the `locale` of a user and is optional. The expected format is a two letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code. When provided, the locale code is used for launching surveys for specific languages, as well as launching translated surveys. You can omit or set the value to `null` if you are not using any language specific features.
+
+The fourth parameter is an optional [Identity Verification](https://refiner.io/docs/kb/mobile-sdk/identify-verification-for-mobile-sdks/) signature. We recommend to use a Identify Verification signature for increased security in a production environment. For development purposes, you can omit or set this value to `null`.
+
+```swift
+Refiner.instance.identifyUser(
+    userTraits: [
+        "email": "hello@hello.com"
+        "something": "else"
+    ],
+    userId: "USER_ID",
+    locale: "en", 
+    signature: "SIGNATURE")
 ```
 
 #### Track Event
@@ -96,10 +113,22 @@ Refiner.instance.trackEvent(name: "EVENT_NAME")
 
 #### Track Screen
 
-`Track Screen` provides to track screen that user is currently on. Screen information can be used to launch surveys in specific areas of your app.
+`Track Screen` provides to track screen that user is currently on. Screen information can be used to launch surveys in specific areas of your app. 
+
+We recommend to track screens on which you might want to show a survey one day. There is no need to systematically track all screens of your app.
 
 ```swift
 Refiner.instance.trackScreen(name: "SCREEN_NAME")
+```
+
+#### Ping
+
+Depending on your setup, you might want to initiate regular checks for surveys that are scheduled for the current user. For example when you are using time based trigger events, or when a target audience is based on user data received by our backend API. 
+
+The `Ping` method provides an easy way to perform such checks. You can call the `Ping` method at key moments in a user's journey, such as when the app is re-opened, or when the user performs a specific action.
+
+```swift
+Refiner.ping()
 ```
 
 #### Show Form
@@ -118,10 +147,10 @@ Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 
 #### Attach Contextual Data
 
-Attach contextual data to the survey submissions with `attachToResponse`. Set `null` to remove the contextual data.
+Attach contextual data to the survey submissions with `addToResponse`. Set `null` to remove the contextual data.
 
 ```swift
-Refiner.instance.attachToResponse(
+Refiner.instance.addToResponse(
     data: [
         "some_data": "hello",
         "some_more_data": "hello again"

@@ -64,7 +64,7 @@ Initialize Refiner iOS SDK in your application class with the needed configurati
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    Refiner.instance.initialize(projectId: "PROJECT_ID", enableDebugMode: true)
+    Refiner.instance.initialize(projectId: "PROJECT_ID", debugMode: true)
     return true
 }
 ```
