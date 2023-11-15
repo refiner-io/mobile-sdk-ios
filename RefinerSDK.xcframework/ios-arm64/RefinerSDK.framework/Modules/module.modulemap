@@ -1,7 +1,7 @@
 framework module RefinerSDK {
   umbrella header "RefinerSDK.h"
-
   export *
+
   module * { export * }
 }
 

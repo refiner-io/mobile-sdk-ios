@@ -1458,7 +1458,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(projectId:enableDebugMode:)",
+            "printedName": "initialize(projectId:debugMode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1479,10 +1479,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)initializeWithProjectId:enableDebugMode:",
-            "mangledName": "$s10RefinerSDK0A0C10initialize9projectId15enableDebugModeySS_SbtF",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)initializeWithProjectId:debugMode:",
+            "mangledName": "$s10RefinerSDK0A0C10initialize9projectId9debugModeySS_SbtF",
             "moduleName": "RefinerSDK",
-            "objc_name": "initializeWithProjectId:enableDebugMode:",
+            "objc_name": "initializeWithProjectId:debugMode:",
             "declAttributes": [
               "Dynamic",
               "AccessControl",
@@ -1966,6 +1966,96 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismissForm",
+            "printedName": "dismissForm(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)dismissFormWithUuid:",
+            "mangledName": "$s10RefinerSDK0A0C11dismissForm4uuidySS_tF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "dismissFormWithUuid:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeForm",
+            "printedName": "closeForm(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)closeFormWithUuid:",
+            "mangledName": "$s10RefinerSDK0A0C9closeForm4uuidySS_tF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "closeFormWithUuid:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProject",
+            "printedName": "setProject(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)setProjectWith:",
+            "mangledName": "$s10RefinerSDK0A0C10setProject4withySS_tF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "setProjectWith:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2039,221 +2129,886 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/StartKMM.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/StartKMM.swift",
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.2.2\""
+      "value": "\"1.3.0\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/StartKMM.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 5,
+      "value": "\"ios\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
       "kind": "BooleanLiteral",
       "offset": 805,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
       "kind": "IntegerLiteral",
       "offset": 854,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2199,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2412,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2416,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2420,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2522,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2582,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2797,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
       "kind": "StringLiteral",
       "offset": 362,
       "length": 39,
       "value": "\"RefinerSDK.BottomPopupDismissInteractionController\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1118,
+      "offset": 1264,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1592,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "Array",
+      "offset": 3224,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 3802,
+      "length": 16,
+      "value": "\"api.refiner.io\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 3836,
+      "length": 15,
+      "value": "\"js.refiner.io\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "Dictionary",
+      "offset": 4055,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4279,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4313,
+      "length": 89,
+      "value": "\"{ width:\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4356,
+      "length": 1,
+      "value": "\", height:\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4400,
+      "length": 1,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4424,
+      "length": 294,
+      "value": "\"        postMessage({sender: 'refiner', mobileSdkVersion: '\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4507,
+      "length": 23,
+      "value": "\"', mobileSdkPlatform: 'ios', hostDimensions: \""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4569,
+      "length": 1,
+      "value": "\", addToResponseData:\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4609,
+      "length": 6,
+      "value": "\"null\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4616,
+      "length": 1,
+      "value": "\", name: '\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4640,
+      "length": 6,
+      "value": "\"null\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4647,
+      "length": 63,
+      "value": "\"', data: \""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4672,
+      "length": 1,
+      "value": "\", customStyles: \"\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4701,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 4704,
+      "length": 10,
+      "value": "\"\" }, '*');\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5697,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
       "offset": 1424,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1473,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
       "offset": 1518,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
       "offset": 1571,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
       "offset": 1616,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
       "offset": 1660,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "BooleanLiteral",
       "offset": 1702,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "BooleanLiteral",
       "offset": 1743,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1803,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "StringLiteral",
       "offset": 1870,
       "length": 17,
       "value": "\"bottomPopupView\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupTransitionHandler.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupTransitionHandler.swift",
       "kind": "StringLiteral",
       "offset": 194,
       "length": 28,
       "value": "\"RefinerSDK.BottomPopupTransitionHandler\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupNavigationController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupNavigationController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2137,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupNavigationController.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 31,
       "value": "\"RefinerSDK.BottomPopupNavigationController\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupNavigationController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupNavigationController.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 31,
       "value": "\"RefinerSDK.BottomPopupNavigationController\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissAnimator.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 852,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissAnimator.swift",
       "kind": "StringLiteral",
       "offset": 188,
       "length": 26,
       "value": "\"RefinerSDK.BottomPopupDismissAnimator\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 507,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1763,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1864,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1984,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2304,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2376,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2543,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2615,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 33,
       "value": "\"RefinerSDK.BottomPopupPresentationController\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2916,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3210,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/Extensions\/Optional+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 303,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/Extensions\/Optional+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 477,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/Extensions\/Optional+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 546,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/Extensions\/Optional+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 644,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 44,
       "value": "\"var meta = document.createElement('meta');\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 248,
       "length": 25,
       "value": "\"meta.name = 'viewport';\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 288,
       "length": 94,
       "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 397,
       "length": 54,
       "value": "\"var head = document.getElementsByTagName('head')[0];\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 454,
       "length": 25,
       "value": "\"head.appendChild(meta);\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewRouter.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 906,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2186,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/String+Extension.swift",
+      "kind": "Array",
+      "offset": 307,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewRouter.swift",
       "kind": "StringLiteral",
       "offset": 246,
       "length": 46,
       "value": "\"https:\/\/js.refiner.io\/v001\/render\/index.html\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentAnimator.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/JavaScriptMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2023,
+      "length": 10,
+      "value": "\"formUuid\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/JavaScriptMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2091,
+      "length": 9,
+      "value": "\"element\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/JavaScriptMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2148,
+      "length": 10,
+      "value": "\"progress\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 977,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentAnimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1291,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentAnimator.swift",
       "kind": "StringLiteral",
       "offset": 188,
       "length": 26,
       "value": "\"RefinerSDK.BottomPopupPresentAnimator\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 737,
+      "offset": 809,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 764,
+      "offset": 836,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1231,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2178,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2575,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2838,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2911,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2984,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4052,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4428,
+      "length": 381,
+      "value": "\"    window.parent.addEventListener('message', function(event) {\n        if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.toggleMessageHandler) {\n            window.webkit.messageHandlers.toggleMessageHandler.postMessage(JSON.stringify(event.data));\n        }\n    });\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5050,
+      "length": 22,
+      "value": "\"toggleMessageHandler\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5164,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5337,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5447,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5499,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5751,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5821,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6361,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
       "offset": 113,
       "length": 60,
       "value": "\"Please initialize Refiner in your AppDelegate Class first!\""
     },
     {
-      "filePath": "\/Users\/aniltaskiran\/Developer\/personal\/refiner-io\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1787,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2234,
+      "length": 48,
+      "value": "\"checkAvailableSurvey | exception: \""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2281,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2647,
+      "length": 6,
+      "value": "\"uuid\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2872,
+      "length": 8,
+      "value": "\"config\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3831,
+      "length": 6,
+      "value": "\"null\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4601,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4771,
+      "length": 3,
+      "value": "900"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 4826,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 4880,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4946,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5282,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5435,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5802,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 6175,
+      "length": 72,
+      "value": "\"Refiner: Refiner SDK is initialized successfully! \""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 6246,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10142,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "Array",
+      "offset": 11206,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 12932,
+      "length": 6,
+      "value": "\"uuid\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13686,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14055,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14421,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14498,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14548,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15081,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15158,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15208,
+      "length": 1,
+      "value": "2"
     }
   ]
 }

@@ -6,19 +6,19 @@
 	<dict>
 		<key>Frameworks/RefinerInternalSDK.framework/Info.plist</key>
 		<data>
-		6OCVOUDKiRlLtzjklFjDiJ1Ztzs=
+		Z/bJxlkYIcXm1c3heGllWhciKFw=
 		</data>
 		<key>Frameworks/RefinerInternalSDK.framework/RefinerInternalSDK</key>
 		<data>
-		HnrsrzHi1jf7JmmyI6DJcy1n894=
+		YXlYwX5WSLfQLK0zfMR2Ki8RLws=
 		</data>
 		<key>Frameworks/RefinerInternalSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		BOoFm2vkO6eZBAxoqMSF9OGrJCw=
+		MkNYm/RU4vrwZ4sb4D4dL+iLNsg=
 		</data>
 		<key>Headers/RefinerSDK-Swift.h</key>
 		<data>
-		hHf1G/NwyUdDz9exBL31UQ1uo/I=
+		zQwTjJnFftDSw2Fqt7bfKhCjsnw=
 		</data>
 		<key>Headers/RefinerSDK.h</key>
 		<data>
@@ -26,51 +26,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		77jaa5hxUCfr/vSBKsYmJKbaslY=
+		WaZi559E+fQGlPRYhnncaWc74oM=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		0sJT+oKJWWE8SrnA4mCjn27jzKw=
+		IS3DLc+rNzbUJnosksNfOR5R8j4=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FtxFJca2EZbiyJfzR2cGcnOsFb4=
+		yBoPMtSRp9JjLntTslXvjw0+hBc=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LsiSABR/6Xh/draOfoTSGuAUigM=
+		7GbpuMbkqI729apRqbucZ9JJ26s=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FtxFJca2EZbiyJfzR2cGcnOsFb4=
+		yBoPMtSRp9JjLntTslXvjw0+hBc=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		beKvuNq3OqAV2jeZFhTn5LwpF/c=
+		M11X68hwpEqaCicbqz12jlrCwZo=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0sJT+oKJWWE8SrnA4mCjn27jzKw=
+		IS3DLc+rNzbUJnosksNfOR5R8j4=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QBci7OHYb9RP0MqopbByOH4XILc=
+		biL4hN30FMp5PMKXNlEduQ1SPxY=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		nHeA0Runk2rlX4LqJch7NbcGG4c=
+		7Dan2f7Dqar/IZ2u/SZB2kyKhGE=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QBci7OHYb9RP0MqopbByOH4XILc=
+		biL4hN30FMp5PMKXNlEduQ1SPxY=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		op1L2zaBERJLS5X6g3LEzp9jojs=
+		gH7hB2H7HruZI6ioF/Yy12Rjf28=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		iyH/1GAczXYMPxdSfkEA1SxkdV0=
+		xSkloKRFfGiwQ1bs6uol/18Bj3k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -79,44 +79,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6OCVOUDKiRlLtzjklFjDiJ1Ztzs=
+			Z/bJxlkYIcXm1c3heGllWhciKFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			rZg6HHdcblKX2REOJ0BjhQ79480v/oCoeUqwOpXOmvg=
+			V4Ps4l2VXcwz1BvLJNaPXihu1N1AmQwNC6TCFtVr40k=
 			</data>
 		</dict>
 		<key>Frameworks/RefinerInternalSDK.framework/RefinerInternalSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HnrsrzHi1jf7JmmyI6DJcy1n894=
+			YXlYwX5WSLfQLK0zfMR2Ki8RLws=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ab0Zej2vnuOchuTv1lsrCD2AlaayH22Lbwxdno2pBiE=
+			AeV1iTkK02hWxAbuIQ6KPEO61awfwK7D6qROz7ONQlI=
 			</data>
 		</dict>
 		<key>Frameworks/RefinerInternalSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BOoFm2vkO6eZBAxoqMSF9OGrJCw=
+			MkNYm/RU4vrwZ4sb4D4dL+iLNsg=
 			</data>
 			<key>hash2</key>
 			<data>
-			a9UpyJOEm4eBMrE80Y9K9ni+yPuNxRu18KfXWgDtqgI=
+			Tn8sVJpScJUIBXndo4+Ml4liswKEro4rVWKiw+YTe4U=
 			</data>
 		</dict>
 		<key>Headers/RefinerSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hHf1G/NwyUdDz9exBL31UQ1uo/I=
+			zQwTjJnFftDSw2Fqt7bfKhCjsnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OTFoAyhbzEZX8prY/xs1jgk9V8KdZ+Raim1d4rBcjqg=
+			K4D2Gp5FL2LCGfFiPCcnX9tZmZusKN45eQMVNe7WjWg=
 			</data>
 		</dict>
 		<key>Headers/RefinerSDK.h</key>
@@ -134,121 +134,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0sJT+oKJWWE8SrnA4mCjn27jzKw=
+			IS3DLc+rNzbUJnosksNfOR5R8j4=
 			</data>
 			<key>hash2</key>
 			<data>
-			xFy05agORigWM1U4SrxRaVe1XbNso0ViIL/O2CVW+4o=
+			x9JZcTjjr6GE/dwiYnq8RFLPqFs4HpbLBzXEtIDeRnY=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FtxFJca2EZbiyJfzR2cGcnOsFb4=
+			yBoPMtSRp9JjLntTslXvjw0+hBc=
 			</data>
 			<key>hash2</key>
 			<data>
-			w0YTdfjtq1/Tn2H5oATyiv4eD4yAZ9H37B54qoWPlss=
+			xp+DDmxLjTOSukHCHT0ZYiHju8ZWSiGUlB/4FSOp8p0=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LsiSABR/6Xh/draOfoTSGuAUigM=
+			7GbpuMbkqI729apRqbucZ9JJ26s=
 			</data>
 			<key>hash2</key>
 			<data>
-			YBl+K8AOmdVzZywAf2hXPAaVovWBWveSYNM8yRJwg2Y=
+			C1VoD+912SR9GQ8j4bijSueZOG1zo9aN5GZPdcALlA4=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FtxFJca2EZbiyJfzR2cGcnOsFb4=
+			yBoPMtSRp9JjLntTslXvjw0+hBc=
 			</data>
 			<key>hash2</key>
 			<data>
-			w0YTdfjtq1/Tn2H5oATyiv4eD4yAZ9H37B54qoWPlss=
+			xp+DDmxLjTOSukHCHT0ZYiHju8ZWSiGUlB/4FSOp8p0=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			beKvuNq3OqAV2jeZFhTn5LwpF/c=
+			M11X68hwpEqaCicbqz12jlrCwZo=
 			</data>
 			<key>hash2</key>
 			<data>
-			3sZ/vCq4TfPS1S2Eh2b0bIjje3qn6D0eFaPJPAmBZJc=
+			EhBcZirC1QoAZ24eKZo1tDkjjz9lJpJ9heafj7NC2mY=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0sJT+oKJWWE8SrnA4mCjn27jzKw=
+			IS3DLc+rNzbUJnosksNfOR5R8j4=
 			</data>
 			<key>hash2</key>
 			<data>
-			xFy05agORigWM1U4SrxRaVe1XbNso0ViIL/O2CVW+4o=
+			x9JZcTjjr6GE/dwiYnq8RFLPqFs4HpbLBzXEtIDeRnY=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QBci7OHYb9RP0MqopbByOH4XILc=
+			biL4hN30FMp5PMKXNlEduQ1SPxY=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHBHVLY1xb0gPGLoEqPwBm5PLAE2BMMBF2Z3OksW4Kw=
+			iyRM6ov7Iv7VRqo5fJdlj4zSZDEkQxKnFXyeR2MzQdo=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nHeA0Runk2rlX4LqJch7NbcGG4c=
+			7Dan2f7Dqar/IZ2u/SZB2kyKhGE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Na+pLmbN8/he7DFCazd1gBG5F12fvXQOMNgCluMlnBA=
+			HQlTmHESCWdG3GbRwd2d/AWEJpzk2jWhPOtvhylDz4s=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QBci7OHYb9RP0MqopbByOH4XILc=
+			biL4hN30FMp5PMKXNlEduQ1SPxY=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHBHVLY1xb0gPGLoEqPwBm5PLAE2BMMBF2Z3OksW4Kw=
+			iyRM6ov7Iv7VRqo5fJdlj4zSZDEkQxKnFXyeR2MzQdo=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			op1L2zaBERJLS5X6g3LEzp9jojs=
+			gH7hB2H7HruZI6ioF/Yy12Rjf28=
 			</data>
 			<key>hash2</key>
 			<data>
-			I6Z/dcUyOopogS8flRgLc/y/bSfiycvUntnRacG24HQ=
+			N3dqTD3sn5n2hdf6CgSZ3LuIg0a3x9IEgmE9Kh3sieA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iyH/1GAczXYMPxdSfkEA1SxkdV0=
+			xSkloKRFfGiwQ1bs6uol/18Bj3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			/qw4X2dos8q7lOrYJUR2YDaKGn6Pehbb4RLS+mbnv5Y=
+			+tciiPXb3hC5m+bHqnFKIzQo8HXlUxqRbANrtvNw0nk=
 			</data>
 		</dict>
 	</dict>

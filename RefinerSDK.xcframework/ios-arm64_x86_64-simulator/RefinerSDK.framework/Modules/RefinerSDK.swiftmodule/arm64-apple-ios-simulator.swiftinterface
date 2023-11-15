@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.2 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RefinerSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public let RefinerSDKVersion: Swift.String
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Refiner : ObjectiveC.NSObject {
   @objc public var onBeforeShow: ((_ formId: Swift.String, _ formConfig: Any?) -> Swift.Void)?
@@ -22,7 +23,7 @@ public let RefinerSDKVersion: Swift.String
   @objc deinit
 }
 extension RefinerSDK.Refiner {
-  @objc dynamic public func initialize(projectId: Swift.String, enableDebugMode: Swift.Bool)
+  @objc dynamic public func initialize(projectId: Swift.String, debugMode: Swift.Bool)
   @objc dynamic public func identifyUser(userId: Swift.String, signature: Swift.String? = nil) throws
   @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String? = nil) throws
   @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
@@ -35,4 +36,7 @@ extension RefinerSDK.Refiner {
   @objc dynamic public func addToResponse(data: [Swift.String : Any])
   @available(*, deprecated, renamed: "addToResponse")
   @objc dynamic public func attachToResponse(data: [Swift.String : Any])
+  @objc dynamic public func dismissForm(uuid: Swift.String)
+  @objc dynamic public func closeForm(uuid: Swift.String)
+  @objc dynamic public func setProject(with projectId: Swift.String)
 }
