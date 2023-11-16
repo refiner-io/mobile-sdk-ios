@@ -165,6 +165,28 @@ Call `Reset User` to reset the user identifier previously set through `Identify 
 Refiner.instance.resetUser()
 ```
 
+#### Set Project
+
+Change the environment UUID during runtime, after the SDK has been initialised.
+
+```swift
+Refiner.instance.setProject(projectId: "PROJECT_ID");
+```
+
+### Close Surveys
+
+Close a survey programmatically without sending any information to the backend API with the `closeForm` method. 
+
+```swift
+Refiner.instance.closeForm(uuid: "FORM_UUID")
+```
+
+Close a survey programmatically and send a "dismissed at" timestamp to the backend server with the `dismissForm` method. 
+
+```swift
+Refiner.instance.dismissForm(uuid: "FORM_UUID")
+```
+
 #### Register callback functions
 
 Registering callback functions allows you to execute any code at specific moments in the lifecycle of a survey.
