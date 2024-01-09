@@ -2824,191 +2824,233 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1787,
+      "offset": 1836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2234,
+      "offset": 2283,
       "length": 48,
       "value": "\"checkAvailableSurvey | exception: \""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2281,
+      "offset": 2330,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2647,
+      "offset": 2696,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2872,
+      "offset": 2921,
       "length": 8,
       "value": "\"config\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3831,
+      "offset": 3880,
       "length": 6,
       "value": "\"null\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4601,
+      "offset": 4650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 4771,
+      "offset": 4820,
       "length": 3,
       "value": "900"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 4826,
+      "offset": 4875,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 4880,
+      "offset": 4929,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4946,
+      "offset": 4995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5282,
+      "offset": 5331,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5435,
+      "offset": 5484,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5802,
+      "offset": 5851,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6175,
+      "offset": 6224,
       "length": 72,
       "value": "\"Refiner: Refiner SDK is initialized successfully! \""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6246,
+      "offset": 6295,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 10142,
+      "offset": 10191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "Array",
-      "offset": 11206,
+      "offset": 11255,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 12932,
+      "offset": 12987,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 13686,
+      "offset": 13745,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 14055,
+      "offset": 14130,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 14421,
+      "offset": 14512,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 14498,
+      "offset": 14589,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 14548,
+      "offset": 14639,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15081,
+      "offset": 15190,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15158,
+      "offset": 15267,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15208,
+      "offset": 15317,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15626,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15698,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15766,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15816,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 16097,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "Dictionary",
+      "offset": 16310,
+      "length": 3,
+      "value": "[]"
     }
   ]
 }
