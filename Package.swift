@@ -18,14 +18,11 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RefinerSDK",
-            path: "./RefinerSDK.xcframework",
-            resources: [
-                .copy("PrivacyInfo.xcprivacy")
-            ]
+            path: "./RefinerSDK.xcframework"
         ),
         .binaryTarget(
             name: "RefinerInternalSDK",
             path: "./RefinerInternalSDK.xcframework"
-        )
+        ),
     ]
 )

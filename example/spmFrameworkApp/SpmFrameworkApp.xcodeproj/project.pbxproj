@@ -17,6 +17,7 @@
 		4D1489C9281EC7790096B88B /* SpmFrameworkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1489C8281EC7790096B88B /* SpmFrameworkAppUITests.swift */; };
 		4D1489CB281EC7790096B88B /* SpmFrameworkAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1489CA281EC7790096B88B /* SpmFrameworkAppUITestsLaunchTests.swift */; };
 		4D1489D9281EC8280096B88B /* RefinerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1489D8281EC8280096B88B /* RefinerSDK */; };
+		90245E3F2BE6DCF3006EC319 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90245E3E2BE6DCF3006EC319 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4D1489C4281EC7790096B88B /* SpmFrameworkAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpmFrameworkAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1489C8281EC7790096B88B /* SpmFrameworkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpmFrameworkAppUITests.swift; sourceTree = "<group>"; };
 		4D1489CA281EC7790096B88B /* SpmFrameworkAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpmFrameworkAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		90245E3E2BE6DCF3006EC319 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				4D1489B0281EC7790096B88B /* Assets.xcassets */,
 				4D1489B2281EC7790096B88B /* LaunchScreen.storyboard */,
 				4D1489B5281EC7790096B88B /* Info.plist */,
+				90245E3E2BE6DCF3006EC319 /* PrivacyInfo.xcprivacy */,
 			);
 			path = SpmFrameworkApp;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			files = (
 				4D1489B4281EC7790096B88B /* LaunchScreen.storyboard in Resources */,
 				4D1489B1281EC7790096B88B /* Assets.xcassets in Resources */,
+				90245E3F2BE6DCF3006EC319 /* PrivacyInfo.xcprivacy in Resources */,
 				4D1489AF281EC7780096B88B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,8 +618,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/refiner-io/mobile-sdk-ios.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
+				kind = exactVersion;
+				version = 1.3.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
