@@ -6,15 +6,15 @@
 	<dict>
 		<key>Frameworks/RefinerInternalSDK.framework/Info.plist</key>
 		<data>
-		Z/bJxlkYIcXm1c3heGllWhciKFw=
+		dQiRRm56HR/lLvwpBSVOy4Qb1Ig=
 		</data>
 		<key>Frameworks/RefinerInternalSDK.framework/RefinerInternalSDK</key>
 		<data>
-		YXlYwX5WSLfQLK0zfMR2Ki8RLws=
+		qacBeNI7Wzdg26Y2IJ0hebiqoag=
 		</data>
 		<key>Frameworks/RefinerInternalSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		MkNYm/RU4vrwZ4sb4D4dL+iLNsg=
+		vvk2TdvIlE3hR+hINGYTo6YbOxg=
 		</data>
 		<key>Headers/RefinerSDK-Swift.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iKMbC9hK7tciPnPhDJoD2BeH+as=
+		3rE3xOfLdXMlCH0DohEr5iVV2PU=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		SuqSRGxDnwTrVJdTMsFCThFsQyE=
+		CyRPy4Iss1l8EwREDf80Wcho9RE=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zk/anp6438MaafMqwEZ1YAKA6eo=
+		edeXbaE0VSyhdgfkTMReeV6QiHg=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		SuqSRGxDnwTrVJdTMsFCThFsQyE=
+		CyRPy4Iss1l8EwREDf80Wcho9RE=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7/GmmhMaX/58ngCbPFHVO43N6uo=
+		ZjpVI2lamVWHEL/piU4Qve6On5E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,33 +83,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z/bJxlkYIcXm1c3heGllWhciKFw=
+			dQiRRm56HR/lLvwpBSVOy4Qb1Ig=
 			</data>
 			<key>hash2</key>
 			<data>
-			V4Ps4l2VXcwz1BvLJNaPXihu1N1AmQwNC6TCFtVr40k=
+			CuDyvwsx3fTnxXhpimJ2tT/Y+wz9oV+GhW7zTsZRvm4=
 			</data>
 		</dict>
 		<key>Frameworks/RefinerInternalSDK.framework/RefinerInternalSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YXlYwX5WSLfQLK0zfMR2Ki8RLws=
+			qacBeNI7Wzdg26Y2IJ0hebiqoag=
 			</data>
 			<key>hash2</key>
 			<data>
-			AeV1iTkK02hWxAbuIQ6KPEO61awfwK7D6qROz7ONQlI=
+			c0YKd8R1zOfEFrJiuQCd7O9AToQRTkaZOplknENuG6w=
 			</data>
 		</dict>
 		<key>Frameworks/RefinerInternalSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MkNYm/RU4vrwZ4sb4D4dL+iLNsg=
+			vvk2TdvIlE3hR+hINGYTo6YbOxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tn8sVJpScJUIBXndo4+Ml4liswKEro4rVWKiw+YTe4U=
+			F7EFz0AwpPOPUJPeVgZWxmUuNS+94Pqk1SuBRgmpeaI=
 			</data>
 		</dict>
 		<key>Headers/RefinerSDK-Swift.h</key>
@@ -138,11 +138,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SuqSRGxDnwTrVJdTMsFCThFsQyE=
+			CyRPy4Iss1l8EwREDf80Wcho9RE=
 			</data>
 			<key>hash2</key>
 			<data>
-			KXZX6ez5+v0OXEO4VNAc3n+fwhzmBnd9zruLX2yZMcc=
+			p9o39SZaRDPaxnoOvsMAtri3lWmyw9UEgD+/TNM34m0=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -182,22 +182,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zk/anp6438MaafMqwEZ1YAKA6eo=
+			edeXbaE0VSyhdgfkTMReeV6QiHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			SBpiDWa/beYdEv9V5Y2p2hncVLIg1Gzcv+nM9ygUJ5Q=
+			g3vGokZPiGd9ArWKFIQsXVRWZ9ii0I6ytnlV15VJOL8=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SuqSRGxDnwTrVJdTMsFCThFsQyE=
+			CyRPy4Iss1l8EwREDf80Wcho9RE=
 			</data>
 			<key>hash2</key>
 			<data>
-			KXZX6ez5+v0OXEO4VNAc3n+fwhzmBnd9zruLX2yZMcc=
+			p9o39SZaRDPaxnoOvsMAtri3lWmyw9UEgD+/TNM34m0=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -237,11 +237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7/GmmhMaX/58ngCbPFHVO43N6uo=
+			ZjpVI2lamVWHEL/piU4Qve6On5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			IsYqPSDpnDYlk0k0TKicalR/PwcVTVt4IcieBYpwt30=
+			w9hfp8E2cmAZNNi7uoKOLRFXu3318gsbjD3GSCQxdLM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
