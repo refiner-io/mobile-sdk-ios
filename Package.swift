@@ -20,7 +20,7 @@ let package = Package(
             name: "RefinerSDK",
             path: "./RefinerSDK.xcframework",
             resources: [
-                .process("PrivacyInfo.xcprivacy")
+                .copy("PrivacyInfo.xcprivacy")
             ]
         ),
         .binaryTarget(

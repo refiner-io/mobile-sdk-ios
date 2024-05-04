@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name          = "RefinerSDK"
-    s.version       = "1.3.7"
+    s.version       = "1.3.8"
     s.summary       = "Refiner iOS SDK"
     s.homepage      = "https://refiner.io"
     s.author        = { "Refiner" => "contact@refiner.io" }
@@ -21,7 +21,5 @@ Pod::Spec.new do |s|
     
     s.swift_version = "5.5.2"
     s.ios.deployment_target  = '11.0'
-    
-    s.resource_bundles = {'RefinerSDK_Privacy' => ['*/*/*/PrivacyInfo.xcprivacy']}
   
 end
