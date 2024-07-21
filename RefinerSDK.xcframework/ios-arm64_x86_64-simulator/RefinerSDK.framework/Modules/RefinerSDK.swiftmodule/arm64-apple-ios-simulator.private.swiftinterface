@@ -38,4 +38,5 @@ extension RefinerSDK.Refiner {
   @objc dynamic public func dismissForm(uuid: Swift.String)
   @objc dynamic public func closeForm(uuid: Swift.String)
   @objc dynamic public func setProject(with projectId: Swift.String)
+  @objc dynamic public func startSession()
 }
