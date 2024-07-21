@@ -350,6 +350,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Refiner * _N
 - (void)dismissFormWithUuid:(NSString * _Nonnull)uuid;
 - (void)closeFormWithUuid:(NSString * _Nonnull)uuid;
 - (void)setProjectWith:(NSString * _Nonnull)projectId;
+- (void)startSession;
 @end
 
 
