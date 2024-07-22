@@ -157,6 +157,14 @@ Refiner.instance.addToResponse(
     ])
 ```
 
+#### Start user session
+
+A new user session is automatically detected when a user returns to your application after at least one hour of inactivity. You can choose to manually start a new user session with the method shown below. You can call this method for example right after a user opens your app.
+
+```swift
+Refiner.instance.startSession()
+```
+
 #### Reset User
 
 Call `Reset User` to reset the user identifier previously set through `Identify User`. We recommend calling this method when the user logs out from your app.
