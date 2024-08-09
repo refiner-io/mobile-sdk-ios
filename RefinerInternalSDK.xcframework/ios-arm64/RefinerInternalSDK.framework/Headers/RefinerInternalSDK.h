@@ -581,6 +581,7 @@ __attribute__((swift_name("RefinerSettings")))
 @property (readonly) NSString *LOCALE __attribute__((swift_name("LOCALE")));
 @property (readonly) NSString *PROJECT_ID __attribute__((swift_name("PROJECT_ID")));
 @property (readonly) NSString *SCREEN_NAME __attribute__((swift_name("SCREEN_NAME")));
+@property (readonly) NSString *SET_USER_CALLED __attribute__((swift_name("SET_USER_CALLED")));
 @property (readonly) NSString *SIGNATURE __attribute__((swift_name("SIGNATURE")));
 @property (readonly) NSString *TOKEN __attribute__((swift_name("TOKEN")));
 @property (readonly) NSString *USER_ID __attribute__((swift_name("USER_ID")));
@@ -710,12 +711,18 @@ __attribute__((swift_name("RefinerConfigs")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormActionRequest")))
 @interface RISDKFormActionRequest : RISDKBase
-- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKFormActionRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:)")));
+- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable(with=NormalClass(value=io/refiner/shared/ext/AnySerializer))
+*/
+@property (readonly) id _Nullable contactAttributes __attribute__((swift_name("contactAttributes")));
 @property (readonly) NSString * _Nullable contactRemoteId __attribute__((swift_name("contactRemoteId")));
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
 @property (readonly) NSString *formUuid __attribute__((swift_name("formUuid")));

@@ -333,6 +333,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Refiner * _N
 - (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Identify User to create or update a user traits in Refiner.
 - (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
+/// Call set User to create or update a user traits locally.
+- (BOOL)setUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Reset User to reset the user identifier previously set through Identify User. We recommend calling this method when the user logs out from your app.
 - (void)resetUser;
 /// Track Event lets you track user events. Tracked events can be used to create user segments and target audiences in Refiner.
@@ -697,6 +699,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Refiner * _N
 - (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Identify User to create or update a user traits in Refiner.
 - (BOOL)identifyUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
+/// Call set User to create or update a user traits locally.
+- (BOOL)setUserWithUserId:(NSString * _Nonnull)userId userTraits:(NSDictionary<NSString *, id> * _Nullable)userTraits locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature error:(NSError * _Nullable * _Nullable)error;
 /// Call Reset User to reset the user identifier previously set through Identify User. We recommend calling this method when the user logs out from your app.
 - (void)resetUser;
 /// Track Event lets you track user events. Tracked events can be used to create user segments and target audiences in Refiner.

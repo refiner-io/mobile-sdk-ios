@@ -26,6 +26,7 @@ extension RefinerSDK.Refiner {
   @objc dynamic public func identifyUser(userId: Swift.String, signature: Swift.String? = nil) throws
   @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String? = nil) throws
   @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
+  @objc dynamic public func setUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
   @objc dynamic public func resetUser()
   @objc dynamic public func trackEvent(name: Swift.String)
   @objc dynamic public func trackScreen(name: Swift.String)
