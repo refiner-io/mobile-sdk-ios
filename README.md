@@ -100,6 +100,25 @@ Refiner.instance.identifyUser(
     signature: "SIGNATURE")
 ```
 
+### Set User
+
+The `Set User` method acts as an alternative to the `Identify User` method described above. 
+
+In contrast to the `Identify User` method, the `Set User` method does not immediatelly create a user object in your Refiner account. The provided user Id and traits are kept locally in your app and no data is communicated to our servers at first. Only when the user performs a meaningful action in your app (e.g. `Track Event` or `Track Screen` is executed) will the data be sent to our servers and a user object be created.
+
+The purpose of this alternative method is provide a way to identify users locally when the SDK is initialised but keep the number of tracked users in your Refiner account to a minimum.
+
+```swift
+Refiner.instance.setUser(
+    userTraits: [
+        "email": "hello@hello.com"
+        "something": "else"
+    ],
+    userId: "USER_ID",
+    locale: "en", 
+    signature: "SIGNATURE")
+```
+
 ### Track Event
 
 `Track Event` lets you track user events. Tracked events can be used to create user segments and target audiences in Refiner.
