@@ -4,7 +4,17 @@
 [![Version](https://img.shields.io/cocoapods/v/RefinerSDK.svg?style=flat)](https://cocoapods.org/pods/RefinerSDK)
 [![Package Manager](https://img.shields.io/badge/package%20manager-compatible-green.svg?logo=Swift)](https://github.com/refiner-io/mobile-sdk-ios)
 
+This repository hosts the official Refiner iOS SDK. Installing the SDK allows you to track user data in Refiner and launch in-app surveys within your iOS app.
+
 Refiner iOS SDK's minimum deployment target is iOS 11.
+
+Refiner is a customer feedback survey platform designed specifically for web and mobile applications. Get spot-on insights from your users with perfectly timed [mobile app microsurveys](https://refiner.io/features/mobile-app-surveys/).
+
+With Refiner you can ask your users any question while they are using your iOS mobile app. Measure [customer satisfaction (CSAT)](https://refiner.io/solutions/csat/), [Net Promoter Score (NPS)](https://refiner.io/solutions/nps/), or [customer effort score (CES)](https://refiner.io/solutions/ces/), research what to built next or profile your users. Refiner supports all product feedback survey use cases and comes packed with expert-built templates that will get you started quickly.
+
+Refiner integrates into your marketing & sales tech stack seamlessly. Our integrations allow you to sync survey response data in real time to third party tools, such as your CRM, email marketing automation platform, your backend API or data warehouse.  
+
+Please find more information about how Refiner mobile app survey work in our [documentation](https://refiner.io/docs/kb/mobile-sdk/getting-started/).
 
 ## 1) Installation
     The Refiner iOS SDK can be added either by using CocoaPods or SPM.
