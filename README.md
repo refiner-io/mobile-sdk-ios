@@ -284,3 +284,11 @@ A popular use-case for callback functions is to redirect a user to a new screen 
     }
 ```     
         
+`onError` gets called when an error occured.
+
+```swift
+    Refiner.instance.onError = { message in
+        print("onErrorCallback")
+        print("message: \(message)")
+    }
+```     
