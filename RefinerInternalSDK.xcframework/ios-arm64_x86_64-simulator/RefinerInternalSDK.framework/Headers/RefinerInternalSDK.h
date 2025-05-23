@@ -360,7 +360,7 @@ __attribute__((swift_name("NativeViewModel")))
 - (void)identifyUserUserId:(NSString *)userId contactAttributes:(id _Nullable)contactAttributes locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature onIdentifyUserState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onIdentifyUserState __attribute__((swift_name("identifyUser(userId:contactAttributes:locale:signature:onIdentifyUserState:)")));
 - (void)markFormAsShownFormUuid:(NSString *)formUuid onMarkFormAsShownState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onMarkFormAsShownState __attribute__((swift_name("markFormAsShown(formUuid:onMarkFormAsShownState:)")));
 - (void)onDestroy __attribute__((swift_name("onDestroy()")));
-- (void)partialSubmitFormContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes formUuid:(NSString *)formUuid __attribute__((swift_name("partialSubmitForm(contactAttributes:accountAttributes:formUuid:)")));
+- (void)partialSubmitFormContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes formUuid:(NSString *)formUuid onPartialSubmitFormState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onPartialSubmitFormState __attribute__((swift_name("partialSubmitForm(contactAttributes:accountAttributes:formUuid:onPartialSubmitFormState:)")));
 - (void)pingOnPingState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onPingState __attribute__((swift_name("ping(onPingState:)")));
 - (void)showFormFormUuid:(NSString *)formUuid force:(BOOL)force onShowFormState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onShowFormState __attribute__((swift_name("showForm(formUuid:force:onShowFormState:)")));
 - (void)startSessionOnStartSessionState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onStartSessionState __attribute__((swift_name("startSession(onStartSessionState:)")));
@@ -578,7 +578,9 @@ __attribute__((swift_name("RefinerSettings")))
 + (instancetype)refinerSettings __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) RISDKRefinerSettings *shared __attribute__((swift_name("shared")));
 @property (readonly) NSString *CONTEXTUAL_DATA __attribute__((swift_name("CONTEXTUAL_DATA")));
+@property (readonly) NSString *FORCE_FORM_VIEW __attribute__((swift_name("FORCE_FORM_VIEW")));
 @property (readonly) NSString *LOCALE __attribute__((swift_name("LOCALE")));
+@property (readonly) NSString *MANUAL_FORM_VIEW __attribute__((swift_name("MANUAL_FORM_VIEW")));
 @property (readonly) NSString *PROJECT_ID __attribute__((swift_name("PROJECT_ID")));
 @property (readonly) NSString *SCREEN_NAME __attribute__((swift_name("SCREEN_NAME")));
 @property (readonly) NSString *SET_USER_CALLED __attribute__((swift_name("SET_USER_CALLED")));
@@ -627,9 +629,9 @@ __attribute__((swift_name("AnySerializer")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("BaseResponse")))
 @interface RISDKBaseResponse : RISDKBase
-- (instancetype)initWithComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose token:(NSString * _Nullable)token formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn __attribute__((swift_name("init(component:componentData:message:onScreenDelay:styles:backdropClose:token:formViewUuid:componentDataJson:pingAgainIn:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose token:(NSString * _Nullable)token formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn error:(NSString * _Nullable)error __attribute__((swift_name("init(component:componentData:message:onScreenDelay:styles:backdropClose:token:formViewUuid:componentDataJson:pingAgainIn:error:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKBaseResponseCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKBaseResponse *)doCopyComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose token:(NSString * _Nullable)token formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn __attribute__((swift_name("doCopy(component:componentData:message:onScreenDelay:styles:backdropClose:token:formViewUuid:componentDataJson:pingAgainIn:)")));
+- (RISDKBaseResponse *)doCopyComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose token:(NSString * _Nullable)token formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn error:(NSString * _Nullable)error __attribute__((swift_name("doCopy(component:componentData:message:onScreenDelay:styles:backdropClose:token:formViewUuid:componentDataJson:pingAgainIn:error:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -658,6 +660,12 @@ __attribute__((swift_name("BaseResponse")))
  *   kotlinx.serialization.SerialName(value="component_data_json")
 */
 @property NSString * _Nullable componentDataJson __attribute__((swift_name("componentDataJson")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="error")
+*/
+@property (readonly) NSString * _Nullable error __attribute__((swift_name("error")));
 
 /**
  * @note annotations
@@ -758,9 +766,9 @@ __attribute__((swift_name("RefinerConfigs")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormActionRequest")))
 @interface RISDKFormActionRequest : RISDKBase
-- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes manualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKFormActionRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:)")));
+- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes manualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -786,6 +794,12 @@ __attribute__((swift_name("FormActionRequest")))
 
 /**
  * @note annotations
+ *   kotlinx.serialization.SerialName(value="force_form_view")
+*/
+@property (readonly) BOOL forceFormView __attribute__((swift_name("forceFormView")));
+
+/**
+ * @note annotations
  *   kotlinx.serialization.SerialName(value="form_uuid")
 */
 @property (readonly) NSString *formUuid __attribute__((swift_name("formUuid")));
@@ -801,6 +815,12 @@ __attribute__((swift_name("FormActionRequest")))
  *   kotlinx.serialization.SerialName(value="is_mobile_sdk")
 */
 @property (readonly) BOOL isMobileSdk __attribute__((swift_name("isMobileSdk")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="manual_form_view")
+*/
+@property (readonly) BOOL manualFormView __attribute__((swift_name("manualFormView")));
 
 /**
  * @note annotations

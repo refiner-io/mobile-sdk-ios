@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "RefinerSDK",
+    "printedName": "RefinerSDK",
     "children": [
       {
         "kind": "Import",
@@ -1404,6 +1404,160 @@
           },
           {
             "kind": "Var",
+            "name": "onError",
+            "printedName": "onError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RefinerSDK@objc(cs)Refiner(py)onError",
+            "mangledName": "$s10RefinerSDK0A0C7onErrorySScSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RefinerSDK@objc(cs)Refiner(im)onError",
+                "mangledName": "$s10RefinerSDK0A0C7onErrorySScSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RefinerSDK@objc(cs)Refiner(im)setOnError:",
+                "mangledName": "$s10RefinerSDK0A0C7onErrorySScSgvs",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A0C7onErrorySScSgvM",
+                "mangledName": "$s10RefinerSDK0A0C7onErrorySScSgvM",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "instance",
             "printedName": "instance",
             "children": [
@@ -2186,6 +2340,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2244,7 +2412,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.5.5\""
+      "value": "\"1.5.6\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
@@ -2259,13 +2427,6 @@
       "offset": 854,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
-      "kind": "StringLiteral",
-      "offset": 362,
-      "length": 39,
-      "value": "\"RefinerSDK.BottomPopupDismissInteractionController\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
@@ -2352,39 +2513,11 @@
       "value": "\"bottomPopupView\""
     },
     {
-      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupTransitionHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 194,
-      "length": 28,
-      "value": "\"RefinerSDK.BottomPopupTransitionHandler\""
-    },
-    {
-      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupNavigationController.swift",
-      "kind": "StringLiteral",
-      "offset": 189,
-      "length": 31,
-      "value": "\"RefinerSDK.BottomPopupNavigationController\""
-    },
-    {
-      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupNavigationController.swift",
-      "kind": "StringLiteral",
-      "offset": 189,
-      "length": 31,
-      "value": "\"RefinerSDK.BottomPopupNavigationController\""
-    },
-    {
-      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissAnimator.swift",
-      "kind": "StringLiteral",
-      "offset": 188,
-      "length": 26,
-      "value": "\"RefinerSDK.BottomPopupDismissAnimator\""
-    },
-    {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 33,
-      "value": "\"RefinerSDK.BottomPopupPresentationController\""
+      "kind": "IntegerLiteral",
+      "offset": 507,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WKWebViewConfiguration+Extension.swift",
@@ -2424,28 +2557,28 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewRouter.swift",
       "kind": "StringLiteral",
-      "offset": 246,
+      "offset": 249,
       "length": 46,
       "value": "\"https:\/\/js.refiner.io\/v001\/render\/index.html\""
     },
     {
-      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentAnimator.swift",
-      "kind": "StringLiteral",
-      "offset": 188,
-      "length": 26,
-      "value": "\"RefinerSDK.BottomPopupPresentAnimator\""
-    },
-    {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 809,
+      "offset": 819,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 836,
+      "offset": 846,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2975,
       "length": 5,
       "value": "false"
     },
@@ -2459,7 +2592,7 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1836,
+      "offset": 1966,
       "length": 5,
       "value": "false"
     }
