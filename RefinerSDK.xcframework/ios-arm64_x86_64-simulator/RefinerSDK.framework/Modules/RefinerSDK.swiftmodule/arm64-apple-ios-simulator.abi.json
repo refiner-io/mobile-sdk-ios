@@ -1610,6 +1610,220 @@
             ]
           },
           {
+            "kind": "TypeDecl",
+            "name": "WriteOperation",
+            "printedName": "WriteOperation",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "append",
+                "printedName": "append",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(RefinerSDK.Refiner.WriteOperation.Type) -> RefinerSDK.Refiner.WriteOperation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WriteOperation",
+                        "printedName": "RefinerSDK.Refiner.WriteOperation",
+                        "usr": "s:10RefinerSDK0A0C14WriteOperationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "RefinerSDK.Refiner.WriteOperation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WriteOperation",
+                            "printedName": "RefinerSDK.Refiner.WriteOperation",
+                            "usr": "s:10RefinerSDK0A0C14WriteOperationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10RefinerSDK0A0C14WriteOperationO6appendyA2EmF",
+                "mangledName": "$s10RefinerSDK0A0C14WriteOperationO6appendyA2EmF",
+                "moduleName": "RefinerSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "replace",
+                "printedName": "replace",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(RefinerSDK.Refiner.WriteOperation.Type) -> RefinerSDK.Refiner.WriteOperation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WriteOperation",
+                        "printedName": "RefinerSDK.Refiner.WriteOperation",
+                        "usr": "s:10RefinerSDK0A0C14WriteOperationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "RefinerSDK.Refiner.WriteOperation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WriteOperation",
+                            "printedName": "RefinerSDK.Refiner.WriteOperation",
+                            "usr": "s:10RefinerSDK0A0C14WriteOperationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10RefinerSDK0A0C14WriteOperationO7replaceyA2EmF",
+                "mangledName": "$s10RefinerSDK0A0C14WriteOperationO7replaceyA2EmF",
+                "moduleName": "RefinerSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "RefinerSDK.Refiner.WriteOperation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WriteOperation",
+                        "printedName": "RefinerSDK.Refiner.WriteOperation",
+                        "usr": "s:10RefinerSDK0A0C14WriteOperationO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10RefinerSDK0A0C14WriteOperationO8rawValueAESgSS_tcfc",
+                "mangledName": "$s10RefinerSDK0A0C14WriteOperationO8rawValueAESgSS_tcfc",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10RefinerSDK0A0C14WriteOperationO8rawValueSSvp",
+                "mangledName": "$s10RefinerSDK0A0C14WriteOperationO8rawValueSSvp",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10RefinerSDK0A0C14WriteOperationO8rawValueSSvg",
+                    "mangledName": "$s10RefinerSDK0A0C14WriteOperationO8rawValueSSvg",
+                    "moduleName": "RefinerSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10RefinerSDK0A0C14WriteOperationO",
+            "mangledName": "$s10RefinerSDK0A0C14WriteOperationO",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(projectId:debugMode:)",
@@ -1696,6 +1910,135 @@
           {
             "kind": "Function",
             "name": "identifyUser",
+            "printedName": "identifyUser(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userIdySS_tKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:writeOperation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:writeOperation:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId14writeOperationySS_SStKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:writeOperation:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:userTraits:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6TraitsySS_SDySSypGSgtKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:userTraits:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
             "printedName": "identifyUser(userId:userTraits:signature:)",
             "children": [
               {
@@ -1748,7 +2091,6 @@
                     "usr": "s:SS"
                   }
                 ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -1757,6 +2099,144 @@
             "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits9signatureySS_SDySSypGSgSSSgtKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:signature:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:userTraits:writeOperation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:writeOperation:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits14writeOperationySS_SDySSypGSgSStKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:userTraits:writeOperation:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:userTraits:locale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:locale:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6localeySS_SDySSypGSgSSSgtKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:userTraits:locale:error:",
             "declAttributes": [
               "Dynamic",
               "AccessControl",
@@ -1836,7 +2316,6 @@
                     "usr": "s:SS"
                   }
                 ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -1845,6 +2324,328 @@
             "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale9signatureySS_SDySSypGSgSSSgAKtKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:locale:signature:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:userTraits:locale:writeOperation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:locale:writeOperation:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale14writeOperationySS_SDySSypGSgSSSgSStKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:userTraits:locale:writeOperation:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:signature:writeOperation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:signature:writeOperation:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId9signature14writeOperationySS_SSSgSStKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:signature:writeOperation:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:userTraits:signature:writeOperation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:signature:writeOperation:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits9signature14writeOperationySS_SDySSypGSgSSSgAKtKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:userTraits:signature:writeOperation:error:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyUser",
+            "printedName": "identifyUser(userId:userTraits:locale:signature:writeOperation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:locale:signature:writeOperation:error:",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale9signature14writeOperationySS_SDySSypGSgSSSgA2LtKF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "identifyUserWithUserId:userTraits:locale:signature:writeOperation:error:",
             "declAttributes": [
               "Dynamic",
               "AccessControl",
@@ -2412,7 +3213,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.5.7\""
+      "value": "\"1.5.8\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
@@ -2599,9 +3400,23 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1966,
+      "offset": 1794,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5840,
+      "length": 8,
+      "value": "\"append\""
+    },
+    {
+      "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 5872,
+      "length": 9,
+      "value": "\"replace\""
     }
   ]
 }

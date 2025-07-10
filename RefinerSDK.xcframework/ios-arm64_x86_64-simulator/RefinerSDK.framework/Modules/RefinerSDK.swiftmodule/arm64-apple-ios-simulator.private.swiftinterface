@@ -24,10 +24,28 @@ public let RefinerSDKVersion: Swift.String
   @objc deinit
 }
 extension RefinerSDK.Refiner {
+  public enum WriteOperation : Swift.String {
+    case append
+    case replace
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   @objc dynamic public func initialize(projectId: Swift.String, debugMode: Swift.Bool)
   @objc dynamic public func identifyUser(userId: Swift.String, signature: Swift.String? = nil) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String? = nil) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
+  @objc dynamic public func identifyUser(userId: Swift.String) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, writeOperation: Swift.String) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String?) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, writeOperation: Swift.String) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String?) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, writeOperation: Swift.String) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, signature: Swift.String? = nil, writeOperation: Swift.String) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String? = nil, writeOperation: Swift.String?) throws
+  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil, writeOperation: Swift.String?) throws
   @objc dynamic public func setUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
   @objc dynamic public func resetUser()
   @objc dynamic public func trackEvent(name: Swift.String)
@@ -43,3 +61,6 @@ extension RefinerSDK.Refiner {
   @objc dynamic public func setProject(with projectId: Swift.String)
   @objc dynamic public func startSession()
 }
+extension RefinerSDK.Refiner.WriteOperation : Swift.Equatable {}
+extension RefinerSDK.Refiner.WriteOperation : Swift.Hashable {}
+extension RefinerSDK.Refiner.WriteOperation : Swift.RawRepresentable {}
