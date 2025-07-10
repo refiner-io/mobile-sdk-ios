@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class RISDKKotlinPair<__covariant A, __covariant B>, RISDKKotlinArray<T>, RISDKKeychainSettings, NSUserDefaults, RISDKNSUserDefaultsSettings, RISDKSettingsCompanion, RISDKEnvironment, RISDKKoin_coreKoin, RISDKLibKoinContext, RISDKKoin_coreKoinApplication, RISDKKermitLogger, RISDKDataState<__covariant T>, RISDKBaseResponse, RISDKKotlinEnumCompanion, RISDKKotlinEnum<E>, RISDKFormActionRequest, RISDKIdentifyUserRequest, RISDKSubmitFormRequest, RISDKPingRequest, RISDKShowFormRequest, RISDKStartSessionRequest, RISDKTrackEventRequest, RISDKTrackScreenRequest, RISDKRefinerModelCompanion, RISDKRefinerSettings, RISDKAnySerializer, RISDKBaseResponseCompanion, RISDKDataStateCompanion, RISDKRefinerConfigs, RISDKFormActionRequestCompanion, RISDKIdentifyUserRequestCompanion, RISDKPingRequestCompanion, RISDKShowFormRequestCompanion, RISDKStartSessionRequestCompanion, RISDKSubmitFormRequestCompanion, RISDKTrackEventRequestCompanion, RISDKTrackScreenRequestCompanion, RISDKKotlinx_serialization_jsonJsonElement, RISDKKoin_coreScope, RISDKKoin_coreParametersHolder, RISDKKotlinLazyThreadSafetyMode, RISDKKoin_coreModule, RISDKKoin_coreLogger, RISDKKoin_coreExtensionManager, RISDKKoin_coreInstanceRegistry, RISDKKoin_corePropertyRegistry, RISDKKoin_coreScopeRegistry, RISDKKotlinNothing, RISDKKoin_coreKoinApplicationCompanion, RISDKKoin_coreLevel, RISDKKermit_coreSeverity, RISDKKotlinThrowable, RISDKKermit_coreBaseLogger, RISDKKermitLoggerCompanion, RISDKKotlinException, RISDKKotlinRuntimeException, RISDKKotlinIllegalStateException, RISDKKtor_client_coreHttpRequestData, RISDKKtor_client_coreHttpResponseData, RISDKKtor_client_coreHttpClient, RISDKKtor_client_coreHttpClientEngineConfig, RISDKKotlinx_coroutines_coreCoroutineDispatcher, RISDKKotlinx_serialization_coreSerializersModule, RISDKKotlinx_serialization_coreSerialKind, RISDKKotlinx_serialization_jsonJsonElementCompanion, RISDKKoin_coreLockable, RISDKStately_concurrencyThreadLocalRef<T>, RISDKKoin_coreKoinDefinition<R>, RISDKKoin_coreInstanceFactory<T>, RISDKKoin_coreSingleInstanceFactory<T>, RISDKKoin_coreScopeDSL, RISDKKoin_coreScopeRegistryCompanion, RISDKKermit_coreLogWriter, RISDKKtor_httpUrl, RISDKKtor_httpHttpMethod, RISDKKtor_httpOutgoingContent, RISDKKtor_httpHttpStatusCode, RISDKKtor_utilsGMTDate, RISDKKtor_httpHttpProtocolVersion, RISDKKtor_client_coreHttpClientConfig<T>, RISDKKtor_eventsEvents, RISDKKtor_client_coreHttpReceivePipeline, RISDKKtor_client_coreHttpRequestPipeline, RISDKKtor_client_coreHttpResponsePipeline, RISDKKtor_client_coreHttpSendPipeline, RISDKKtor_client_coreProxyConfig, RISDKKotlinAbstractCoroutineContextElement, RISDKKotlinx_coroutines_coreCoroutineDispatcherKey, RISDKKoin_coreBeanDefinition<T>, RISDKKoin_coreInstanceFactoryCompanion, RISDKKoin_coreInstanceContext, RISDKKtor_httpUrlCompanion, RISDKKtor_httpURLProtocol, RISDKKtor_httpHttpMethodCompanion, RISDKKtor_utilsAttributeKey<T>, RISDKKtor_httpContentType, RISDKKotlinCancellationException, RISDKKtor_httpHttpStatusCodeCompanion, RISDKKtor_utilsWeekDay, RISDKKtor_utilsMonth, RISDKKtor_utilsGMTDateCompanion, RISDKKtor_httpHttpProtocolVersionCompanion, RISDKKtor_eventsEventDefinition<T>, RISDKKtor_utilsPipelinePhase, RISDKKtor_utilsPipeline<TSubject, TContext>, RISDKKtor_client_coreHttpReceivePipelinePhases, RISDKKtor_client_coreHttpResponse, RISDKKotlinUnit, RISDKKtor_client_coreHttpRequestPipelinePhases, RISDKKtor_client_coreHttpRequestBuilder, RISDKKtor_client_coreHttpResponsePipelinePhases, RISDKKtor_client_coreHttpResponseContainer, RISDKKtor_client_coreHttpClientCall, RISDKKtor_client_coreHttpSendPipelinePhases, RISDKKotlinAbstractCoroutineContextKey<B, E>, RISDKKoin_coreKind, RISDKKoin_coreCallbacks<T>, RISDKKotlinKTypeProjection, RISDKKtor_httpURLProtocolCompanion, RISDKKtor_utilsTypeInfo, RISDKKtor_httpHeaderValueParam, RISDKKtor_httpHeaderValueWithParametersCompanion, RISDKKtor_httpHeaderValueWithParameters, RISDKKtor_httpContentTypeCompanion, RISDKKtor_utilsWeekDayCompanion, RISDKKtor_utilsMonthCompanion, RISDKKtor_httpHeadersBuilder, RISDKKtor_client_coreHttpRequestBuilderCompanion, RISDKKtor_httpURLBuilder, RISDKKtor_client_coreHttpClientCallCompanion, RISDKKotlinKVariance, RISDKKotlinKTypeProjectionCompanion, RISDKKtor_utilsStringValuesBuilderImpl, RISDKKtor_httpURLBuilderCompanion, RISDKKotlinByteArray, RISDKKotlinx_io_coreBuffer, RISDKKotlinByteIterator;
+@class RISDKKotlinPair<__covariant A, __covariant B>, RISDKKotlinArray<T>, RISDKKeychainSettings, NSUserDefaults, RISDKNSUserDefaultsSettings, RISDKSettingsCompanion, RISDKEnvironment, RISDKKoin_coreKoin, RISDKLibKoinContext, RISDKKoin_coreKoinApplication, RISDKKermitLogger, RISDKDataState<__covariant T>, RISDKBaseResponse, RISDKKotlinEnumCompanion, RISDKKotlinEnum<E>, RISDKFormActionRequest, RISDKIdentifyUserRequest, RISDKSubmitFormRequest, RISDKPingRequest, RISDKShowFormRequest, RISDKStartSessionRequest, RISDKTrackEventRequest, RISDKTrackScreenRequest, RISDKRefinerModelCompanion, RISDKRefinerSettings, RISDKAnySerializer, RISDKScreenRules, RISDKBaseResponseCompanion, RISDKDataStateCompanion, RISDKRefinerConfigs, RISDKScreenRuleCompanion, RISDKScreenRule, RISDKScreenRulesCompanion, RISDKFormActionRequestCompanion, RISDKIdentifyUserRequestCompanion, RISDKPingRequestCompanion, RISDKShowFormRequestCompanion, RISDKStartSessionRequestCompanion, RISDKSubmitFormRequestCompanion, RISDKTrackEventRequestCompanion, RISDKTrackScreenRequestCompanion, RISDKKotlinx_serialization_jsonJsonElement, RISDKKoin_coreScope, RISDKKoin_coreParametersHolder, RISDKKotlinLazyThreadSafetyMode, RISDKKoin_coreModule, RISDKKoin_coreLogger, RISDKKoin_coreExtensionManager, RISDKKoin_coreInstanceRegistry, RISDKKoin_corePropertyRegistry, RISDKKoin_coreScopeRegistry, RISDKKotlinNothing, RISDKKoin_coreKoinApplicationCompanion, RISDKKoin_coreLevel, RISDKKermit_coreSeverity, RISDKKotlinThrowable, RISDKKermit_coreBaseLogger, RISDKKermitLoggerCompanion, RISDKKotlinException, RISDKKotlinRuntimeException, RISDKKotlinIllegalStateException, RISDKKtor_client_coreHttpRequestData, RISDKKtor_client_coreHttpResponseData, RISDKKtor_client_coreHttpClient, RISDKKtor_client_coreHttpClientEngineConfig, RISDKKotlinx_coroutines_coreCoroutineDispatcher, RISDKKotlinx_serialization_coreSerializersModule, RISDKKotlinx_serialization_coreSerialKind, RISDKKotlinx_serialization_jsonJsonElementCompanion, RISDKKoin_coreLockable, RISDKStately_concurrencyThreadLocalRef<T>, RISDKKoin_coreKoinDefinition<R>, RISDKKoin_coreInstanceFactory<T>, RISDKKoin_coreSingleInstanceFactory<T>, RISDKKoin_coreScopeDSL, RISDKKoin_coreScopeRegistryCompanion, RISDKKermit_coreLogWriter, RISDKKtor_httpUrl, RISDKKtor_httpHttpMethod, RISDKKtor_httpOutgoingContent, RISDKKtor_httpHttpStatusCode, RISDKKtor_utilsGMTDate, RISDKKtor_httpHttpProtocolVersion, RISDKKtor_client_coreHttpClientConfig<T>, RISDKKtor_eventsEvents, RISDKKtor_client_coreHttpReceivePipeline, RISDKKtor_client_coreHttpRequestPipeline, RISDKKtor_client_coreHttpResponsePipeline, RISDKKtor_client_coreHttpSendPipeline, RISDKKtor_client_coreProxyConfig, RISDKKotlinAbstractCoroutineContextElement, RISDKKotlinx_coroutines_coreCoroutineDispatcherKey, RISDKKoin_coreBeanDefinition<T>, RISDKKoin_coreInstanceFactoryCompanion, RISDKKoin_coreInstanceContext, RISDKKtor_httpUrlCompanion, RISDKKtor_httpURLProtocol, RISDKKtor_httpHttpMethodCompanion, RISDKKtor_utilsAttributeKey<T>, RISDKKtor_httpContentType, RISDKKotlinCancellationException, RISDKKtor_httpHttpStatusCodeCompanion, RISDKKtor_utilsWeekDay, RISDKKtor_utilsMonth, RISDKKtor_utilsGMTDateCompanion, RISDKKtor_httpHttpProtocolVersionCompanion, RISDKKtor_eventsEventDefinition<T>, RISDKKtor_utilsPipelinePhase, RISDKKtor_utilsPipeline<TSubject, TContext>, RISDKKtor_client_coreHttpReceivePipelinePhases, RISDKKtor_client_coreHttpResponse, RISDKKotlinUnit, RISDKKtor_client_coreHttpRequestPipelinePhases, RISDKKtor_client_coreHttpRequestBuilder, RISDKKtor_client_coreHttpResponsePipelinePhases, RISDKKtor_client_coreHttpResponseContainer, RISDKKtor_client_coreHttpClientCall, RISDKKtor_client_coreHttpSendPipelinePhases, RISDKKotlinAbstractCoroutineContextKey<B, E>, RISDKKoin_coreKind, RISDKKoin_coreCallbacks<T>, RISDKKotlinKTypeProjection, RISDKKtor_httpURLProtocolCompanion, RISDKKtor_utilsTypeInfo, RISDKKtor_httpHeaderValueParam, RISDKKtor_httpHeaderValueWithParametersCompanion, RISDKKtor_httpHeaderValueWithParameters, RISDKKtor_httpContentTypeCompanion, RISDKKtor_utilsWeekDayCompanion, RISDKKtor_utilsMonthCompanion, RISDKKtor_httpHeadersBuilder, RISDKKtor_client_coreHttpRequestBuilderCompanion, RISDKKtor_httpURLBuilder, RISDKKtor_client_coreHttpClientCallCompanion, RISDKKotlinKVariance, RISDKKotlinKTypeProjectionCompanion, RISDKKtor_utilsStringValuesBuilderImpl, RISDKKtor_httpURLBuilderCompanion, RISDKKotlinByteArray, RISDKKotlinx_io_coreBuffer, RISDKKotlinByteIterator;
 
 @protocol RISDKSettings, RISDKSettingsFactory, RISDKSettingsListener, RISDKObservableSettings, RISDKKoin_coreKoinComponent, RISDKKotlinCoroutineContext, RISDKKotlinx_coroutines_coreCoroutineScope, RISDKLibKoinComponent, RISDKAppInfo, RISDKKotlinx_coroutines_coreStateFlow, RISDKKotlinComparable, RISDKRefinerApi, RISDKKtor_client_coreHttpClientEngine, RISDKKotlinx_coroutines_coreFlow, RISDKKotlinx_serialization_coreEncoder, RISDKKotlinx_serialization_coreSerialDescriptor, RISDKKotlinx_serialization_coreSerializationStrategy, RISDKKotlinx_serialization_coreDecoder, RISDKKotlinx_serialization_coreDeserializationStrategy, RISDKKotlinx_serialization_coreKSerializer, RISDKKotlinIterator, RISDKKoin_coreKoinScopeComponent, RISDKKoin_coreQualifier, RISDKKotlinKClass, RISDKKotlinLazy, RISDKKotlinReadWriteProperty, RISDKKotlinCoroutineContextElement, RISDKKotlinCoroutineContextKey, RISDKKermit_coreLoggerConfig, RISDKKermit_coreMutableLoggerConfig, RISDKKotlinx_coroutines_coreFlowCollector, RISDKKotlinx_coroutines_coreSharedFlow, RISDKKtor_client_coreHttpClientEngineCapability, RISDKKtor_ioCloseable, RISDKKotlinx_serialization_coreCompositeEncoder, RISDKKotlinAnnotation, RISDKKotlinx_serialization_coreCompositeDecoder, RISDKKoin_coreScopeCallback, RISDKKotlinKDeclarationContainer, RISDKKotlinKAnnotatedElement, RISDKKotlinKClassifier, RISDKKoin_coreKoinExtension, RISDKKotlinKProperty, RISDKKotlinReadOnlyProperty, RISDKKtor_httpHeaders, RISDKKotlinx_coroutines_coreJob, RISDKKtor_utilsAttributes, RISDKKotlinContinuation, RISDKKotlinContinuationInterceptor, RISDKKotlinx_coroutines_coreRunnable, RISDKKotlinx_serialization_coreSerializersModuleCollector, RISDKKotlinKType, RISDKKotlinKCallable, RISDKKtor_httpParameters, RISDKKotlinMapEntry, RISDKKtor_utilsStringValues, RISDKKotlinx_coroutines_coreChildHandle, RISDKKotlinx_coroutines_coreChildJob, RISDKKotlinx_coroutines_coreDisposableHandle, RISDKKotlinSequence, RISDKKotlinx_coroutines_coreSelectClause0, RISDKKtor_client_coreHttpClientPlugin, RISDKKotlinSuspendFunction2, RISDKKotlinx_coroutines_coreParentJob, RISDKKotlinx_coroutines_coreSelectInstance, RISDKKotlinx_coroutines_coreSelectClause, RISDKKotlinFunction, RISDKKtor_httpHttpMessage, RISDKKtor_ioByteReadChannel, RISDKKtor_httpHttpMessageBuilder, RISDKKtor_client_coreHttpRequest, RISDKKotlinx_io_coreSource, RISDKKtor_utilsStringValuesBuilder, RISDKKtor_httpParametersBuilder, RISDKKotlinx_io_coreRawSink, RISDKKotlinAutoCloseable, RISDKKotlinx_io_coreRawSource, RISDKKotlinx_io_coreSink;
 
@@ -357,7 +357,7 @@ __attribute__((swift_name("NativeViewModel")))
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)closeFormOnCloseFormState:(void (^)(RISDKDataState<RISDKBoolean *> *))onCloseFormState __attribute__((swift_name("closeForm(onCloseFormState:)")));
 - (void)dismissFormFormUuid:(NSString *)formUuid onDismissFormState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onDismissFormState __attribute__((swift_name("dismissForm(formUuid:onDismissFormState:)")));
-- (void)identifyUserUserId:(NSString *)userId contactAttributes:(id _Nullable)contactAttributes locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature onIdentifyUserState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onIdentifyUserState __attribute__((swift_name("identifyUser(userId:contactAttributes:locale:signature:onIdentifyUserState:)")));
+- (void)identifyUserUserId:(NSString *)userId contactAttributes:(id _Nullable)contactAttributes locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature writeOperation:(NSString * _Nullable)writeOperation onIdentifyUserState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onIdentifyUserState __attribute__((swift_name("identifyUser(userId:contactAttributes:locale:signature:writeOperation:onIdentifyUserState:)")));
 - (void)markFormAsShownFormUuid:(NSString *)formUuid onMarkFormAsShownState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onMarkFormAsShownState __attribute__((swift_name("markFormAsShown(formUuid:onMarkFormAsShownState:)")));
 - (void)onDestroy __attribute__((swift_name("onDestroy()")));
 - (void)partialSubmitFormContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes formUuid:(NSString *)formUuid onPartialSubmitFormState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onPartialSubmitFormState __attribute__((swift_name("partialSubmitForm(contactAttributes:accountAttributes:formUuid:onPartialSubmitFormState:)")));
@@ -419,61 +419,61 @@ __attribute__((swift_name("RefinerApi")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)dismissFormFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("dismissForm(formActionRequest:projectId:token:completionHandler:)")));
+- (void)dismissFormFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("dismissForm(formActionRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)identifyUserIdentifyUserRequest:(RISDKIdentifyUserRequest *)identifyUserRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("identifyUser(identifyUserRequest:projectId:token:completionHandler:)")));
+- (void)identifyUserIdentifyUserRequest:(RISDKIdentifyUserRequest *)identifyUserRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("identifyUser(identifyUserRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)markFormAsShownFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("markFormAsShown(formActionRequest:projectId:token:completionHandler:)")));
+- (void)markFormAsShownFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("markFormAsShown(formActionRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)partialSubmitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("partialSubmitForm(submitFormRequest:projectId:token:completionHandler:)")));
+- (void)partialSubmitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("partialSubmitForm(submitFormRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)pingPingRequest:(RISDKPingRequest *)pingRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("ping(pingRequest:projectId:token:completionHandler:)")));
+- (void)pingPingRequest:(RISDKPingRequest *)pingRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("ping(pingRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)showFormShowFormRequest:(RISDKShowFormRequest *)showFormRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("showForm(showFormRequest:projectId:token:completionHandler:)")));
+- (void)showFormShowFormRequest:(RISDKShowFormRequest *)showFormRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("showForm(showFormRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)startSessionStartSessionRequest:(RISDKStartSessionRequest *)startSessionRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("startSession(startSessionRequest:projectId:token:completionHandler:)")));
+- (void)startSessionStartSessionRequest:(RISDKStartSessionRequest *)startSessionRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("startSession(startSessionRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)submitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitForm(submitFormRequest:projectId:token:completionHandler:)")));
+- (void)submitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitForm(submitFormRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)trackEventTrackEventRequest:(RISDKTrackEventRequest *)trackEventRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackEvent(trackEventRequest:projectId:token:completionHandler:)")));
+- (void)trackEventTrackEventRequest:(RISDKTrackEventRequest *)trackEventRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackEvent(trackEventRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)trackScreenTrackScreenRequest:(RISDKTrackScreenRequest *)trackScreenRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackScreen(trackScreenRequest:projectId:token:completionHandler:)")));
+- (void)trackScreenTrackScreenRequest:(RISDKTrackScreenRequest *)trackScreenRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackScreen(trackScreenRequest:projectId:completionHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -485,61 +485,61 @@ __attribute__((swift_name("RefinerApiImpl")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)dismissFormFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("dismissForm(formActionRequest:projectId:token:completionHandler:)")));
+- (void)dismissFormFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("dismissForm(formActionRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)identifyUserIdentifyUserRequest:(RISDKIdentifyUserRequest *)identifyUserRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("identifyUser(identifyUserRequest:projectId:token:completionHandler:)")));
+- (void)identifyUserIdentifyUserRequest:(RISDKIdentifyUserRequest *)identifyUserRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("identifyUser(identifyUserRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)markFormAsShownFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("markFormAsShown(formActionRequest:projectId:token:completionHandler:)")));
+- (void)markFormAsShownFormActionRequest:(RISDKFormActionRequest *)formActionRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("markFormAsShown(formActionRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)partialSubmitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("partialSubmitForm(submitFormRequest:projectId:token:completionHandler:)")));
+- (void)partialSubmitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("partialSubmitForm(submitFormRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)pingPingRequest:(RISDKPingRequest *)pingRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("ping(pingRequest:projectId:token:completionHandler:)")));
+- (void)pingPingRequest:(RISDKPingRequest *)pingRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("ping(pingRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)showFormShowFormRequest:(RISDKShowFormRequest *)showFormRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("showForm(showFormRequest:projectId:token:completionHandler:)")));
+- (void)showFormShowFormRequest:(RISDKShowFormRequest *)showFormRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("showForm(showFormRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)startSessionStartSessionRequest:(RISDKStartSessionRequest *)startSessionRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("startSession(startSessionRequest:projectId:token:completionHandler:)")));
+- (void)startSessionStartSessionRequest:(RISDKStartSessionRequest *)startSessionRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("startSession(startSessionRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)submitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitForm(submitFormRequest:projectId:token:completionHandler:)")));
+- (void)submitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("submitForm(submitFormRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)trackEventTrackEventRequest:(RISDKTrackEventRequest *)trackEventRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackEvent(trackEventRequest:projectId:token:completionHandler:)")));
+- (void)trackEventTrackEventRequest:(RISDKTrackEventRequest *)trackEventRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackEvent(trackEventRequest:projectId:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)trackScreenTrackScreenRequest:(RISDKTrackScreenRequest *)trackScreenRequest projectId:(NSString *)projectId token:(NSString * _Nullable)token completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackScreen(trackScreenRequest:projectId:token:completionHandler:)")));
+- (void)trackScreenTrackScreenRequest:(RISDKTrackScreenRequest *)trackScreenRequest projectId:(NSString *)projectId completionHandler:(void (^)(RISDKBaseResponse * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackScreen(trackScreenRequest:projectId:completionHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -558,6 +558,7 @@ __attribute__((swift_name("RefinerModel")))
 - (id<RISDKKotlinx_coroutines_coreFlow>)submitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest __attribute__((swift_name("submitForm(submitFormRequest:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)trackEventTrackEventRequest:(RISDKTrackEventRequest *)trackEventRequest __attribute__((swift_name("trackEvent(trackEventRequest:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)trackScreenTrackScreenRequest:(RISDKTrackScreenRequest *)trackScreenRequest __attribute__((swift_name("trackScreen(trackScreenRequest:)")));
+@property NSString * _Nullable lastTrackedScreen __attribute__((swift_name("lastTrackedScreen")));
 @property NSString * _Nullable screenName __attribute__((swift_name("screenName")));
 @end
 
@@ -579,13 +580,13 @@ __attribute__((swift_name("RefinerSettings")))
 @property (class, readonly, getter=shared) RISDKRefinerSettings *shared __attribute__((swift_name("shared")));
 @property (readonly) NSString *CONTEXTUAL_DATA __attribute__((swift_name("CONTEXTUAL_DATA")));
 @property (readonly) NSString *FORCE_FORM_VIEW __attribute__((swift_name("FORCE_FORM_VIEW")));
+@property (readonly) NSString *LAST_TRACKED_SCREEN __attribute__((swift_name("LAST_TRACKED_SCREEN")));
 @property (readonly) NSString *LOCALE __attribute__((swift_name("LOCALE")));
 @property (readonly) NSString *MANUAL_FORM_VIEW __attribute__((swift_name("MANUAL_FORM_VIEW")));
 @property (readonly) NSString *PROJECT_ID __attribute__((swift_name("PROJECT_ID")));
 @property (readonly) NSString *SCREEN_NAME __attribute__((swift_name("SCREEN_NAME")));
 @property (readonly) NSString *SET_USER_CALLED __attribute__((swift_name("SET_USER_CALLED")));
 @property (readonly) NSString *SIGNATURE __attribute__((swift_name("SIGNATURE")));
-@property (readonly) NSString *TOKEN __attribute__((swift_name("TOKEN")));
 @property (readonly) NSString *USER_ID __attribute__((swift_name("USER_ID")));
 @property (readonly) NSString *USER_TRAITS __attribute__((swift_name("USER_TRAITS")));
 @end
@@ -629,9 +630,9 @@ __attribute__((swift_name("AnySerializer")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("BaseResponse")))
 @interface RISDKBaseResponse : RISDKBase
-- (instancetype)initWithComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose token:(NSString * _Nullable)token formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn error:(NSString * _Nullable)error __attribute__((swift_name("init(component:componentData:message:onScreenDelay:styles:backdropClose:token:formViewUuid:componentDataJson:pingAgainIn:error:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn error:(NSString * _Nullable)error screenRules:(RISDKScreenRules * _Nullable)screenRules __attribute__((swift_name("init(component:componentData:message:onScreenDelay:styles:backdropClose:formViewUuid:componentDataJson:pingAgainIn:error:screenRules:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKBaseResponseCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKBaseResponse *)doCopyComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose token:(NSString * _Nullable)token formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn error:(NSString * _Nullable)error __attribute__((swift_name("doCopy(component:componentData:message:onScreenDelay:styles:backdropClose:token:formViewUuid:componentDataJson:pingAgainIn:error:)")));
+- (RISDKBaseResponse *)doCopyComponent:(NSString * _Nullable)component componentData:(id _Nullable)componentData message:(NSString * _Nullable)message onScreenDelay:(RISDKInt * _Nullable)onScreenDelay styles:(NSString * _Nullable)styles backdropClose:(RISDKBoolean * _Nullable)backdropClose formViewUuid:(NSString * _Nullable)formViewUuid componentDataJson:(NSString * _Nullable)componentDataJson pingAgainIn:(RISDKInt * _Nullable)pingAgainIn error:(NSString * _Nullable)error screenRules:(RISDKScreenRules * _Nullable)screenRules __attribute__((swift_name("doCopy(component:componentData:message:onScreenDelay:styles:backdropClose:formViewUuid:componentDataJson:pingAgainIn:error:screenRules:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -693,15 +694,15 @@ __attribute__((swift_name("BaseResponse")))
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="styles")
+ *   kotlinx.serialization.SerialName(value="screen_rules")
 */
-@property (readonly) NSString * _Nullable styles __attribute__((swift_name("styles")));
+@property (readonly) RISDKScreenRules * _Nullable screenRules __attribute__((swift_name("screenRules")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="token")
+ *   kotlinx.serialization.SerialName(value="styles")
 */
-@property (readonly) NSString * _Nullable token __attribute__((swift_name("token")));
+@property (readonly) NSString * _Nullable styles __attribute__((swift_name("styles")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -756,6 +757,62 @@ __attribute__((swift_name("RefinerConfigs")))
 @property (readonly) BOOL debugMode __attribute__((swift_name("debugMode")));
 @property (readonly) NSString *projectId __attribute__((swift_name("projectId")));
 @property (readonly) int32_t statusBarHeight __attribute__((swift_name("statusBarHeight")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ScreenRule")))
+@interface RISDKScreenRule : RISDKBase
+- (instancetype)initWithValue:(NSString *)value operator:(NSString *)operator_ __attribute__((swift_name("init(value:operator:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) RISDKScreenRuleCompanion *companion __attribute__((swift_name("companion")));
+- (RISDKScreenRule *)doCopyValue:(NSString *)value operator:(NSString *)operator_ __attribute__((swift_name("doCopy(value:operator:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly, getter=operator) NSString *operator_ __attribute__((swift_name("operator_")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ScreenRule.Companion")))
+@interface RISDKScreenRuleCompanion : RISDKBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) RISDKScreenRuleCompanion *shared __attribute__((swift_name("shared")));
+- (id<RISDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ScreenRules")))
+@interface RISDKScreenRules : RISDKBase
+- (instancetype)initWithAllow:(NSArray<RISDKScreenRule *> * _Nullable)allow exclude:(NSArray<RISDKScreenRule *> * _Nullable)exclude __attribute__((swift_name("init(allow:exclude:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) RISDKScreenRulesCompanion *companion __attribute__((swift_name("companion")));
+- (RISDKScreenRules *)doCopyAllow:(NSArray<RISDKScreenRule *> * _Nullable)allow exclude:(NSArray<RISDKScreenRule *> * _Nullable)exclude __attribute__((swift_name("doCopy(allow:exclude:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<RISDKScreenRule *> * _Nullable allow __attribute__((swift_name("allow")));
+@property (readonly) NSArray<RISDKScreenRule *> * _Nullable exclude __attribute__((swift_name("exclude")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ScreenRules.Companion")))
+@interface RISDKScreenRulesCompanion : RISDKBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) RISDKScreenRulesCompanion *shared __attribute__((swift_name("shared")));
+- (id<RISDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -865,9 +922,9 @@ __attribute__((swift_name("FormActionRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("IdentifyUserRequest")))
 @interface RISDKIdentifyUserRequest : RISDKBase
-- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight writeOperation:(NSString * _Nullable)writeOperation __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKIdentifyUserRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)")));
+- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight writeOperation:(NSString * _Nullable)writeOperation __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -926,6 +983,12 @@ __attribute__((swift_name("IdentifyUserRequest")))
  *   kotlinx.serialization.SerialName(value="mobile_statusbar_height")
 */
 @property (readonly) int32_t statusBarHeight __attribute__((swift_name("statusBarHeight")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="write_operation")
+*/
+@property (readonly) NSString * _Nullable writeOperation __attribute__((swift_name("writeOperation")));
 @end
 
 __attribute__((objc_subclassing_restricted))
