@@ -3213,7 +3213,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.5.8\""
+      "value": "\"1.5.9\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
@@ -3386,7 +3386,7 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3017,
+      "offset": 3037,
       "length": 5,
       "value": "false"
     },
