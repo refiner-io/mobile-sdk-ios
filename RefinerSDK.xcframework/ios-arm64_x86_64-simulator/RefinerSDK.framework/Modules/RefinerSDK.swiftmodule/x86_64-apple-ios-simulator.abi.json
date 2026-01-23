@@ -3212,8 +3212,8 @@
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/StartKMM.swift",
       "kind": "StringLiteral",
       "offset": 147,
-      "length": 8,
-      "value": "\"1.5.10\""
+      "length": 7,
+      "value": "\"1.5.8\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
@@ -3232,14 +3232,14 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1404,
+      "offset": 1264,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1732,
+      "offset": 1592,
       "length": 5,
       "value": "false"
     },
@@ -3372,21 +3372,21 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 950,
+      "offset": 861,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 977,
+      "offset": 888,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3126,
+      "offset": 3017,
       "length": 5,
       "value": "false"
     },
