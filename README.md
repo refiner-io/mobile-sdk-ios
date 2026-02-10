@@ -81,9 +81,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 Call `Identify User` to create or update a user traits in Refiner. 
 
 
-The first parameter is the userId of your logged-in user and is the only mandatory parameter. 
+The first parameter is the userId of your logged-in user. This parameter is optional — when omitted or set to `nil`, the SDK operates in anonymous mode.
 
-The second parameter is an object of user traits. You can omit or set this value to `null` if you don't want to send any user traits to your Refiner account.
+The second parameter is an object of user traits. You can omit or set this value to `nil` if you don't want to send any user traits to your Refiner account.
 
 ```swift
 Refiner.instance.identifyUser(
@@ -97,9 +97,9 @@ Refiner.instance.identifyUser(
 
 #### Advanced parameters
 
-The third parameter is for setting the `locale` of a user and is optional. The expected format is a two letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code. When provided, the locale code is used for launching surveys for specific languages, as well as launching translated surveys. You can omit or set the value to `null` if you are not using any language specific features.
+The third parameter is for setting the `locale` of a user and is optional. The expected format is a two letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code. When provided, the locale code is used for launching surveys for specific languages, as well as launching translated surveys. You can omit or set the value to `nil` if you are not using any language specific features.
 
-The fourth parameter is an optional [Identity Verification](https://refiner.io/docs/kb/settings/identity-verification/) signature. We recommend to use a Identify Verification signature for increased security in a production environment. For development purposes, you can omit or set this value to `null`.
+The fourth parameter is an optional [Identity Verification](https://refiner.io/docs/kb/settings/identity-verification/) signature. We recommend to use a Identify Verification signature for increased security in a production environment. For development purposes, you can omit or set this value to `nil`.
 
 The fifth parameter allows you to change the data storage mode for userTraits from the default "append" mode to "replace". By default, traits are appended to the existing user record—this means previously stored data will persist even if it's not included in the current payload. When set to "replace", only the traits provided in the current payload are kept. Any previously stored traits that are not included will be removed from the user object in Refiner.
 
@@ -199,7 +199,7 @@ Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 
 ### Attach Contextual Data
 
-Attach contextual data to the survey submissions with `addToResponse`. Set `null` to remove the contextual data.
+Attach contextual data to the survey submissions with `addToResponse`. Set `nil` to remove the contextual data.
 
 ```swift
 Refiner.instance.addToResponse(
