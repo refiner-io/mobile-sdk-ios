@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RefinerSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Foundation
 import RefinerInternalSDK
 @_exported import RefinerSDK
@@ -27,26 +27,54 @@ extension RefinerSDK.Refiner {
   public enum WriteOperation : Swift.String {
     case append
     case replace
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
   }
   @objc dynamic public func initialize(projectId: Swift.String, debugMode: Swift.Bool)
-  @objc dynamic public func identifyUser(userId: Swift.String, signature: Swift.String? = nil) throws
-  @objc dynamic public func identifyUser(userId: Swift.String) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, writeOperation: Swift.String) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String?) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, writeOperation: Swift.String) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String?) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, writeOperation: Swift.String) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, signature: Swift.String? = nil, writeOperation: Swift.String) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, signature: Swift.String? = nil, writeOperation: Swift.String?) throws
-  @objc dynamic public func identifyUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil, writeOperation: Swift.String?) throws
-  @objc dynamic public func setUser(userId: Swift.String, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, signature: Swift.String? = nil) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, writeOperation: Swift.String) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, signature: Swift.String?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, writeOperation: Swift.String) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, locale: Swift.String?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, locale: Swift.String?, writeOperation: Swift.String) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, signature: Swift.String? = nil, writeOperation: Swift.String) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, signature: Swift.String? = nil, writeOperation: Swift.String?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func identifyUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil, writeOperation: Swift.String?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func setUser(userId: Swift.String? = nil, userTraits: [Swift.String : Any]?, locale: Swift.String?, signature: Swift.String? = nil) throws
+  #endif
   @objc dynamic public func resetUser()
   @objc dynamic public func trackEvent(name: Swift.String)
   @objc dynamic public func trackScreen(name: Swift.String)
@@ -60,6 +88,8 @@ extension RefinerSDK.Refiner {
   @objc dynamic public func closeForm(uuid: Swift.String)
   @objc dynamic public func setProject(with projectId: Swift.String)
   @objc dynamic public func startSession()
+  @objc dynamic public func setAnonymousId(_ anonymousId: Swift.String)
+  @objc dynamic public func setLocale(_ locale: Swift.String)
 }
 extension RefinerSDK.Refiner.WriteOperation : Swift.Equatable {}
 extension RefinerSDK.Refiner.WriteOperation : Swift.Hashable {}
