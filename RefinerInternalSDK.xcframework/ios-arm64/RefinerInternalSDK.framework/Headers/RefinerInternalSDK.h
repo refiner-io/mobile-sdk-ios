@@ -324,6 +324,7 @@ __attribute__((swift_name("Koin_coreKoinComponent")))
 __attribute__((swift_name("LibKoinComponent")))
 @protocol RISDKLibKoinComponent <RISDKKoin_coreKoinComponent>
 @required
+- (RISDKKoin_coreKoin * _Nullable)getKoinOrNull __attribute__((swift_name("getKoinOrNull()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -333,6 +334,8 @@ __attribute__((swift_name("LibKoinContext")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)libKoinContext __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) RISDKLibKoinContext *shared __attribute__((swift_name("shared")));
+- (RISDKKoin_coreKoin * _Nullable)getKoinOrNull __attribute__((swift_name("getKoinOrNull()")));
+@property (readonly) BOOL isInitialized __attribute__((swift_name("isInitialized")));
 @property RISDKKoin_coreKoinApplication *koinApp __attribute__((swift_name("koinApp")));
 @end
 
@@ -367,7 +370,7 @@ __attribute__((swift_name("NativeViewModel")))
 - (void)submitFormContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes formUuid:(NSString *)formUuid onSubmitFormState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onSubmitFormState __attribute__((swift_name("submitForm(contactAttributes:accountAttributes:formUuid:onSubmitFormState:)")));
 - (void)trackEventEventName:(NSString *)eventName onTrackEventState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onTrackEventState __attribute__((swift_name("trackEvent(eventName:onTrackEventState:)")));
 - (void)trackScreenScreenName:(NSString *)screenName onTrackScreenState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onTrackScreenState __attribute__((swift_name("trackScreen(screenName:onTrackScreenState:)")));
-@property (readonly) id<RISDKAppInfo> appInfo __attribute__((swift_name("appInfo")));
+@property (readonly) id<RISDKAppInfo> _Nullable appInfo __attribute__((swift_name("appInfo")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> dismissFormStateFlow __attribute__((swift_name("dismissFormStateFlow")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> identifyUserStateFlow __attribute__((swift_name("identifyUserStateFlow")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> markFormAsShownStateFlow __attribute__((swift_name("markFormAsShownStateFlow")));
@@ -553,6 +556,7 @@ __attribute__((swift_name("RefinerModel")))
 - (id<RISDKKotlinx_coroutines_coreFlow>)markFormAsShownFormActionRequest:(RISDKFormActionRequest *)formActionRequest __attribute__((swift_name("markFormAsShown(formActionRequest:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)partialSubmitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest __attribute__((swift_name("partialSubmitForm(submitFormRequest:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)pingPingRequest:(RISDKPingRequest *)pingRequest __attribute__((swift_name("ping(pingRequest:)")));
+- (void)setAnonymousIdId:(NSString *)id __attribute__((swift_name("setAnonymousId(id:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)showFormShowFormRequest:(RISDKShowFormRequest *)showFormRequest __attribute__((swift_name("showForm(showFormRequest:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)startSessionRequest:(RISDKStartSessionRequest *)request __attribute__((swift_name("startSession(request:)")));
 - (id<RISDKKotlinx_coroutines_coreFlow>)submitFormSubmitFormRequest:(RISDKSubmitFormRequest *)submitFormRequest __attribute__((swift_name("submitForm(submitFormRequest:)")));
@@ -578,7 +582,9 @@ __attribute__((swift_name("RefinerSettings")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)refinerSettings __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) RISDKRefinerSettings *shared __attribute__((swift_name("shared")));
+@property (readonly) NSString *ANONYMOUS_ID __attribute__((swift_name("ANONYMOUS_ID")));
 @property (readonly) NSString *CONTEXTUAL_DATA __attribute__((swift_name("CONTEXTUAL_DATA")));
+@property (readonly) NSString *FIRST_SEEN_AT __attribute__((swift_name("FIRST_SEEN_AT")));
 @property (readonly) NSString *FORCE_FORM_VIEW __attribute__((swift_name("FORCE_FORM_VIEW")));
 @property (readonly) NSString *LAST_TRACKED_SCREEN __attribute__((swift_name("LAST_TRACKED_SCREEN")));
 @property (readonly) NSString *LOCALE __attribute__((swift_name("LOCALE")));
@@ -823,12 +829,18 @@ __attribute__((swift_name("ScreenRules.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormActionRequest")))
 @interface RISDKFormActionRequest : RISDKBase
-- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes manualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView __attribute__((swift_name("init(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes manualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(formUuid:contactRemoteId:anonymousId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKFormActionRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes manualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView __attribute__((swift_name("doCopy(formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:)")));
+- (RISDKFormActionRequest *)doCopyFormUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight contactAttributes:(id _Nullable)contactAttributes manualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(formUuid:contactRemoteId:anonymousId:isMobileSdk:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -848,6 +860,12 @@ __attribute__((swift_name("FormActionRequest")))
  *   kotlinx.serialization.SerialName(value="contact_remote_id_signature")
 */
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -922,12 +940,18 @@ __attribute__((swift_name("FormActionRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("IdentifyUserRequest")))
 @interface RISDKIdentifyUserRequest : RISDKBase
-- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight writeOperation:(NSString * _Nullable)writeOperation __attribute__((swift_name("init(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight writeOperation:(NSString * _Nullable)writeOperation firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(contactAttributes:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKIdentifyUserRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString *)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight writeOperation:(NSString * _Nullable)writeOperation __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:)")));
+- (RISDKIdentifyUserRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight writeOperation:(NSString * _Nullable)writeOperation firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(contactAttributes:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -940,13 +964,19 @@ __attribute__((swift_name("IdentifyUserRequest")))
  * @note annotations
  *   kotlinx.serialization.SerialName(value="contact_remote_id")
 */
-@property (readonly) NSString *contactRemoteId __attribute__((swift_name("contactRemoteId")));
+@property (readonly) NSString * _Nullable contactRemoteId __attribute__((swift_name("contactRemoteId")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="contact_remote_id_signature")
 */
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -1009,12 +1039,18 @@ __attribute__((swift_name("IdentifyUserRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PingRequest")))
 @interface RISDKPingRequest : RISDKBase
-- (instancetype)initWithScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKPingRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKPingRequest *)doCopyScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)")));
+- (RISDKPingRequest *)doCopyScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -1027,6 +1063,12 @@ __attribute__((swift_name("PingRequest")))
  *   kotlinx.serialization.SerialName(value="contact_remote_id_signature")
 */
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -1089,12 +1131,18 @@ __attribute__((swift_name("PingRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ShowFormRequest")))
 @interface RISDKShowFormRequest : RISDKBase
-- (instancetype)initWithManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(manualFormView:forceFormView:formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKShowFormRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKShowFormRequest *)doCopyManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(manualFormView:forceFormView:formUuid:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)")));
+- (RISDKShowFormRequest *)doCopyManualFormView:(BOOL)manualFormView forceFormView:(BOOL)forceFormView formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(manualFormView:forceFormView:formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -1107,6 +1155,12 @@ __attribute__((swift_name("ShowFormRequest")))
  *   kotlinx.serialization.SerialName(value="contact_remote_id_signature")
 */
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -1181,12 +1235,18 @@ __attribute__((swift_name("ShowFormRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("StartSessionRequest")))
 @interface RISDKStartSessionRequest : RISDKBase
-- (instancetype)initWithScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKStartSessionRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKStartSessionRequest *)doCopyScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)")));
+- (RISDKStartSessionRequest *)doCopyScreenName:(NSString * _Nullable)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -1199,6 +1259,12 @@ __attribute__((swift_name("StartSessionRequest")))
  *   kotlinx.serialization.SerialName(value="contact_remote_id_signature")
 */
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -1261,9 +1327,9 @@ __attribute__((swift_name("StartSessionRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SubmitFormRequest")))
 @interface RISDKSubmitFormRequest : RISDKBase
-- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature screenName:(NSString * _Nullable)screenName mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature screenName:(NSString * _Nullable)screenName mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:anonymousId:isMobileSdk:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKSubmitFormRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKSubmitFormRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature screenName:(NSString * _Nullable)screenName mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:isMobileSdk:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:)")));
+- (RISDKSubmitFormRequest *)doCopyContactAttributes:(id _Nullable)contactAttributes accountAttributes:(id _Nullable)accountAttributes isPartialSubmit:(BOOL)isPartialSubmit formUuid:(NSString *)formUuid contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature screenName:(NSString * _Nullable)screenName mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion formViewUuid:(NSString * _Nullable)formViewUuid statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:anonymousId:isMobileSdk:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1274,6 +1340,12 @@ __attribute__((swift_name("SubmitFormRequest")))
  *   kotlinx.serialization.Serializable(with=NormalClass(value=io/refiner/shared/ext/AnySerializer))
 */
 @property (readonly) id _Nullable accountAttributes __attribute__((swift_name("accountAttributes")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -1293,6 +1365,12 @@ __attribute__((swift_name("SubmitFormRequest")))
  *   kotlinx.serialization.SerialName(value="contact_remote_id_signature")
 */
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -1367,12 +1445,18 @@ __attribute__((swift_name("SubmitFormRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TrackEventRequest")))
 @interface RISDKTrackEventRequest : RISDKBase
-- (instancetype)initWithEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(eventName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackEventRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKTrackEventRequest *)doCopyEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(eventName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)")));
+- (RISDKTrackEventRequest *)doCopyEventName:(NSString *)eventName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(eventName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -1391,6 +1475,12 @@ __attribute__((swift_name("TrackEventRequest")))
  *   kotlinx.serialization.SerialName(value="event_name")
 */
 @property (readonly) NSString *eventName __attribute__((swift_name("eventName")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -1447,12 +1537,18 @@ __attribute__((swift_name("TrackEventRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TrackScreenRequest")))
 @interface RISDKTrackScreenRequest : RISDKBase
-- (instancetype)initWithScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("init(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) RISDKTrackScreenRequestCompanion *companion __attribute__((swift_name("companion")));
-- (RISDKTrackScreenRequest *)doCopyScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight __attribute__((swift_name("doCopy(screenName:contactRemoteId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:)")));
+- (RISDKTrackScreenRequest *)doCopyScreenName:(NSString *)screenName contactRemoteId:(NSString * _Nullable)contactRemoteId anonymousId:(NSString * _Nullable)anonymousId isMobileSdk:(BOOL)isMobileSdk locale:(NSString * _Nullable)locale contactRemoteIdSignature:(NSString * _Nullable)contactRemoteIdSignature mobilePlatform:(NSString *)mobilePlatform mobileOsVersion:(NSString *)mobileOsVersion mobileSdkVersion:(NSString *)mobileSdkVersion statusBarHeight:(int32_t)statusBarHeight firstSeenAt:(RISDKLong * _Nullable)firstSeenAt __attribute__((swift_name("doCopy(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="anonymous_id")
+*/
+@property (readonly) NSString * _Nullable anonymousId __attribute__((swift_name("anonymousId")));
 
 /**
  * @note annotations
@@ -1465,6 +1561,12 @@ __attribute__((swift_name("TrackScreenRequest")))
  *   kotlinx.serialization.SerialName(value="contact_remote_id_signature")
 */
 @property (readonly) NSString * _Nullable contactRemoteIdSignature __attribute__((swift_name("contactRemoteIdSignature")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_seen_at")
+*/
+@property (readonly) RISDKLong * _Nullable firstSeenAt __attribute__((swift_name("firstSeenAt")));
 
 /**
  * @note annotations
@@ -1598,6 +1700,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KoinKt")))
 @interface RISDKKoinKt : RISDKBase
 + (RISDKKoin_coreKoinApplication *)doInitSharedSdkModule:(RISDKKoin_coreModule *)sdkModule initialized:(void (^)(void))initialized __attribute__((swift_name("doInitShared(sdkModule:initialized:)")));
++ (id<RISDKKotlinLazy>)safeInject:(id<RISDKLibKoinComponent>)receiver mode:(RISDKKotlinLazyThreadSafetyMode *)mode parameters:(RISDKKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("safeInject(_:mode:parameters:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1637,6 +1740,18 @@ __attribute__((swift_name("SerializationExtKt")))
 + (RISDKKotlinx_serialization_jsonJsonElement *)toJsonElement:(id _Nullable)receiver __attribute__((swift_name("toJsonElement(_:)")));
 + (NSDictionary<NSString *, RISDKKotlinx_serialization_jsonJsonElement *> *)toJsonObject:(NSDictionary<id, id> *)receiver __attribute__((swift_name("toJsonObject(_:)")));
 + (NSString * _Nullable)toJsonString:(id _Nullable)receiver __attribute__((swift_name("toJsonString(_:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TimeUtilsKt")))
+@interface RISDKTimeUtilsKt : RISDKBase
++ (int64_t)currentTimeSeconds __attribute__((swift_name("currentTimeSeconds()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("UuidGeneratorKt")))
+@interface RISDKUuidGeneratorKt : RISDKBase
++ (NSString *)generateUuid __attribute__((swift_name("generateUuid()")));
 @end
 
 __attribute__((objc_subclassing_restricted))

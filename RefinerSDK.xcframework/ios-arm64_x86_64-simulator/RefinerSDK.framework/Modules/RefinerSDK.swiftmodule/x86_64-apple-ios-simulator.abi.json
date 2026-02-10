@@ -1872,9 +1872,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1894,7 +1903,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:signature:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId9signatureySS_SSSgtKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId9signatureySSSg_AGtKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:signature:error:",
             "declAttributes": [
@@ -1919,14 +1928,23 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userIdySS_tKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userIdySSSg_tKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:error:",
             "declAttributes": [
@@ -1951,9 +1969,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1964,7 +1991,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:writeOperation:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId14writeOperationySS_SStKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId14writeOperationySSSg_SStKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:writeOperation:error:",
             "declAttributes": [
@@ -1989,9 +2016,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2023,7 +2059,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6TraitsySS_SDySSypGSgtKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6TraitsySSSg_SDySSypGSgtKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:error:",
             "declAttributes": [
@@ -2048,9 +2084,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2096,7 +2141,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:signature:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits9signatureySS_SDySSypGSgSSSgtKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits9signatureySSSg_SDySSypGSgAHtKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:signature:error:",
             "declAttributes": [
@@ -2121,9 +2166,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2161,7 +2215,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:writeOperation:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits14writeOperationySS_SDySSypGSgSStKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits14writeOperationySSSg_SDySSypGSgSStKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:writeOperation:error:",
             "declAttributes": [
@@ -2186,9 +2240,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2234,7 +2297,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:locale:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6localeySS_SDySSypGSgSSSgtKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6localeySSSg_SDySSypGSgAHtKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:locale:error:",
             "declAttributes": [
@@ -2259,9 +2322,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2321,7 +2393,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:locale:signature:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale9signatureySS_SDySSypGSgSSSgAKtKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale9signatureySSSg_SDySSypGSgA2ItKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:locale:signature:error:",
             "declAttributes": [
@@ -2346,9 +2418,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2400,7 +2481,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:locale:writeOperation:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale14writeOperationySS_SDySSypGSgSSSgSStKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale14writeOperationySSSg_SDySSypGSgAISStKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:locale:writeOperation:error:",
             "declAttributes": [
@@ -2425,9 +2506,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2453,7 +2543,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:signature:writeOperation:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId9signature14writeOperationySS_SSSgSStKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId9signature14writeOperationySSSg_AHSStKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:signature:writeOperation:error:",
             "declAttributes": [
@@ -2478,9 +2568,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2541,7 +2640,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:signature:writeOperation:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits9signature14writeOperationySS_SDySSypGSgSSSgAKtKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits9signature14writeOperationySSSg_SDySSypGSgA2ItKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:signature:writeOperation:error:",
             "declAttributes": [
@@ -2566,9 +2665,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2643,7 +2751,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)identifyUserWithUserId:userTraits:locale:signature:writeOperation:error:",
-            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale9signature14writeOperationySS_SDySSypGSgSSSgA2LtKF",
+            "mangledName": "$s10RefinerSDK0A0C12identifyUser6userId0E6Traits6locale9signature14writeOperationySSSg_SDySSypGSgA3JtKF",
             "moduleName": "RefinerSDK",
             "objc_name": "identifyUserWithUserId:userTraits:locale:signature:writeOperation:error:",
             "declAttributes": [
@@ -2668,9 +2776,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2731,7 +2848,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)setUserWithUserId:userTraits:locale:signature:error:",
-            "mangledName": "$s10RefinerSDK0A0C7setUser6userId0E6Traits6locale9signatureySS_SDySSypGSgSSSgAKtKF",
+            "mangledName": "$s10RefinerSDK0A0C7setUser6userId0E6Traits6locale9signatureySSSg_SDySSypGSgA2ItKF",
             "moduleName": "RefinerSDK",
             "objc_name": "setUserWithUserId:userTraits:locale:signature:error:",
             "declAttributes": [
@@ -3122,6 +3239,64 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAnonymousId",
+            "printedName": "setAnonymousId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)setAnonymousId:",
+            "mangledName": "$s10RefinerSDK0A0C14setAnonymousIdyySSF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocale",
+            "printedName": "setLocale(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)setLocale:",
+            "mangledName": "$s10RefinerSDK0A0C9setLocaleyySSF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3213,7 +3388,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.5.8\""
+      "value": "\"1.6.1\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
@@ -3232,14 +3407,14 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1264,
+      "offset": 1404,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1592,
+      "offset": 1732,
       "length": 5,
       "value": "false"
     },
@@ -3316,7 +3491,7 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupPresentationController.swift",
       "kind": "IntegerLiteral",
-      "offset": 507,
+      "offset": 684,
       "length": 1,
       "value": "0"
     },
@@ -3372,21 +3547,21 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 861,
+      "offset": 913,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 888,
+      "offset": 940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3017,
+      "offset": 3089,
       "length": 5,
       "value": "false"
     },
@@ -3394,27 +3569,27 @@
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
       "offset": 113,
-      "length": 60,
-      "value": "\"Please initialize Refiner in your AppDelegate Class first!\""
+      "length": 34,
+      "value": "\"Please initialize Refiner first!\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1794,
+      "offset": 1736,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5840,
+      "offset": 7799,
       "length": 8,
       "value": "\"append\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5872,
+      "offset": 7831,
       "length": 9,
       "value": "\"replace\""
     }
