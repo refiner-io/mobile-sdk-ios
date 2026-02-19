@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tLW7XpO8Rw7pMj57XFm9NeS/MNs=
+		KExCT6meu8PkqHXLefxg7BwKAc4=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		eYlR3/ltbW8AnWVSgHFF0nVjdqg=
+		qB5d1dXUQtkVPa3q63+5c4mXRBU=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B489okmzNp72ekci1q9E3xEnMOg=
+		6yBbPB0mz7CqWq+mdOsDtJ0a3Xw=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eYlR3/ltbW8AnWVSgHFF0nVjdqg=
+		qB5d1dXUQtkVPa3q63+5c4mXRBU=
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hjRkgYv4VTja9X5uqPf3Z+hdAUk=
+		aRpeklPlFO3QPlEX0RnCTp2/BVI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S5dpzLhFBI5dyPp+Tyu+GfYmEE38P1a1mGbGxgGL9sY=
+			Na0v3+NNtzOa8YMme4YNaFNS3N4/v/Fy1ajq7Mv9VC8=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1mHEy1L2e0YOt0UZGQzZZt0j4+4fdBM1vjZWpu7oax0=
+			rWYb3DE8NqHzKQB3d5rCzzwSvbR2rtb/4CN44zvvUOs=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S5dpzLhFBI5dyPp+Tyu+GfYmEE38P1a1mGbGxgGL9sY=
+			Na0v3+NNtzOa8YMme4YNaFNS3N4/v/Fy1ajq7Mv9VC8=
 			</data>
 		</dict>
 		<key>Modules/RefinerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hKf5P5uBK8fxvowd0X2RjkHRc1T4BU6cHQ4ulhjbebQ=
+			FAJoj9sN16W2dNMkp7shyNmLFBdRurFqPS40+tkpdrE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
