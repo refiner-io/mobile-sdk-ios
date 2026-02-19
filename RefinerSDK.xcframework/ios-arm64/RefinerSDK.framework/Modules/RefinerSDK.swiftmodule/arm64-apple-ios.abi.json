@@ -3388,7 +3388,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.6.1\""
+      "value": "\"1.6.2\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
@@ -3582,14 +3582,14 @@
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7799,
+      "offset": 7805,
       "length": 8,
       "value": "\"append\""
     },
     {
       "filePath": "\/Users\/alpertekin\/Documents\/GitHub\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/RefinerSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7831,
+      "offset": 7837,
       "length": 9,
       "value": "\"replace\""
     }
