@@ -1,0 +1,151 @@
+name: Release - Prepare
+
+# Triggered by mobile-sdk-internal after iOS XCFrameworks are built and attached to a GitHub Release.
+# Downloads the XCFrameworks, bumps the podspec version, and opens a PR for review.
+
+on:
+  repository_dispatch:
+    types: [release]
+  # Manual re-trigger in case repository_dispatch fails
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "iOS SDK version (e.g. 1.8.0)"
+        required: true
+      release_tag:
+        description: "GitHub Release tag in mobile-sdk-internal to download XCFrameworks from (e.g. ios-1.8.0)"
+        required: true
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Resolve inputs
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            echo "version=${{ github.event.client_payload.version }}" >> $GITHUB_OUTPUT
+            echo "release_tag=${{ github.event.client_payload.release_tag }}" >> $GITHUB_OUTPUT
+          else
+            echo "version=${{ inputs.version }}" >> $GITHUB_OUTPUT
+            echo "release_tag=${{ inputs.release_tag }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ steps.app-token.outputs.token }}
+          # Use LFS if ever enabled — currently binaries are plain git objects
+          lfs: false
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create release branch
+        run: |
+          BRANCH="release/${{ steps.resolve.outputs.version }}"
+          git checkout -b "$BRANCH"
+
+      - name: Download XCFrameworks from mobile-sdk-internal release
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          VERSION="${{ steps.resolve.outputs.version }}"
+          RELEASE_TAG="${{ steps.resolve.outputs.release_tag }}"
+
+          # Download XCFramework zips from the internal repo release
+          gh release download "$RELEASE_TAG" \
+            --repo refiner-io/mobile-sdk-internal \
+            --pattern "*.xcframework.zip" \
+            --dir /tmp/xcframeworks
+
+          ls /tmp/xcframeworks/
+
+      - name: Replace XCFrameworks
+        run: |
+          # Remove existing XCFrameworks
+          rm -rf RefinerSDK.xcframework RefinerInternalSDK.xcframework
+
+          # Unzip new ones
+          unzip -o /tmp/xcframeworks/RefinerSDK.xcframework.zip
+          unzip -o /tmp/xcframeworks/RefinerInternalSDK.xcframework.zip
+
+      - name: Bump version in RefinerSDK.podspec
+        run: |
+          VERSION="${{ steps.resolve.outputs.version }}"
+          sed -i "s/s\.version\s*=\s*\"[^\"]*\"/s.version       = \"${VERSION}\"/" RefinerSDK.podspec
+          grep "s.version" RefinerSDK.podspec
+
+      - name: Commit and push
+        run: |
+          VERSION="${{ steps.resolve.outputs.version }}"
+          BRANCH="release/${VERSION}"
+          git add RefinerSDK.xcframework RefinerInternalSDK.xcframework RefinerSDK.podspec
+          git commit -m "Release ${VERSION}"
+          git push origin "$BRANCH"
+
+      - name: Create PR
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          VERSION="${{ steps.resolve.outputs.version }}"
+          BRANCH="release/${VERSION}"
+          PR_URL=$(gh pr create \
+            --repo "${{ github.repository }}" \
+            --base main \
+            --head "$BRANCH" \
+            --title "Release ${VERSION}" \
+            --body "$(cat <<EOF
+          # What it does
+
+          This pull request releases iOS SDK version ${VERSION} via CocoaPods and SPM.
+
+          **Changes:**
+          - Updated \`RefinerSDK.xcframework\` (new binary)
+          - Updated \`RefinerInternalSDK.xcframework\` (new binary)
+          - Bumped \`s.version\` in \`RefinerSDK.podspec\` to \`${VERSION}\`
+
+          After merging, CI will automatically:
+          1. Run \`pod lib lint RefinerSDK.podspec\`
+          2. Push to CocoaPods trunk (\`pod trunk push\`)
+          3. Create git tag \`${VERSION}\` and GitHub Release
+
+          SPM consumers will automatically resolve the new version via the git tag.
+
+          # How to test it
+
+          1. Pull this branch locally
+          2. Run \`pod lib lint RefinerSDK.podspec --allow-warnings\` to validate the podspec
+          3. Optionally integrate locally via \`path:\` in a test app to verify the XCFrameworks work
+
+          # Acceptance criteria
+
+          * \`RefinerSDK.podspec\` version is \`${VERSION}\`
+          * XCFrameworks are present and not corrupted
+          * \`pod lib lint\` passes without errors
+
+          # Link to ticket
+
+          [Add Trello link here]
+
+          ---
+          > **Before merging:** Add a comment **"Reviewed & validated"** to confirm you have reviewed and tested this release.
+          > Merging will automatically publish to CocoaPods trunk.
+          EOF
+          )")
+          echo "PR created: $PR_URL"
+          echo "## iOS Release PR" >> $GITHUB_STEP_SUMMARY
+          echo "Version: \`${VERSION}\`" >> $GITHUB_STEP_SUMMARY
+          echo "PR: $PR_URL" >> $GITHUB_STEP_SUMMARY
