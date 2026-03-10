@@ -358,6 +358,7 @@ __attribute__((swift_name("NativeViewModel")))
 @interface RISDKNativeViewModel : RISDKBase <RISDKLibKoinComponent>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)cancelPingJob __attribute__((swift_name("cancelPingJob()")));
 - (void)closeFormOnCloseFormState:(void (^)(RISDKDataState<RISDKBoolean *> *))onCloseFormState __attribute__((swift_name("closeForm(onCloseFormState:)")));
 - (void)dismissFormFormUuid:(NSString *)formUuid onDismissFormState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onDismissFormState __attribute__((swift_name("dismissForm(formUuid:onDismissFormState:)")));
 - (void)identifyUserUserId:(NSString *)userId contactAttributes:(id _Nullable)contactAttributes locale:(NSString * _Nullable)locale signature:(NSString * _Nullable)signature writeOperation:(NSString * _Nullable)writeOperation onIdentifyUserState:(void (^)(RISDKDataState<RISDKBaseResponse *> *))onIdentifyUserState __attribute__((swift_name("identifyUser(userId:contactAttributes:locale:signature:writeOperation:onIdentifyUserState:)")));
@@ -373,6 +374,7 @@ __attribute__((swift_name("NativeViewModel")))
 @property (readonly) id<RISDKAppInfo> _Nullable appInfo __attribute__((swift_name("appInfo")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> dismissFormStateFlow __attribute__((swift_name("dismissFormStateFlow")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> identifyUserStateFlow __attribute__((swift_name("identifyUserStateFlow")));
+@property BOOL isClientDisabled __attribute__((swift_name("isClientDisabled")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> markFormAsShownStateFlow __attribute__((swift_name("markFormAsShownStateFlow")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> partialSubmitFormStateFlow __attribute__((swift_name("partialSubmitFormStateFlow")));
 @property (readonly) id<RISDKKotlinx_coroutines_coreStateFlow> pingStateFlow __attribute__((swift_name("pingStateFlow")));
@@ -583,6 +585,7 @@ __attribute__((swift_name("RefinerSettings")))
 + (instancetype)refinerSettings __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) RISDKRefinerSettings *shared __attribute__((swift_name("shared")));
 @property (readonly) NSString *ANONYMOUS_ID __attribute__((swift_name("ANONYMOUS_ID")));
+@property (readonly) NSString *CLIENT_DISABLED __attribute__((swift_name("CLIENT_DISABLED")));
 @property (readonly) NSString *CONTEXTUAL_DATA __attribute__((swift_name("CONTEXTUAL_DATA")));
 @property (readonly) NSString *FIRST_SEEN_AT __attribute__((swift_name("FIRST_SEEN_AT")));
 @property (readonly) NSString *FORCE_FORM_VIEW __attribute__((swift_name("FORCE_FORM_VIEW")));
