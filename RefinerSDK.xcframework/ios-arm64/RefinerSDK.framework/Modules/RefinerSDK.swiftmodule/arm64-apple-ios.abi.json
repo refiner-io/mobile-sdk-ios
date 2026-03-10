@@ -3434,7 +3434,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.7.0\""
+      "value": "\"1.7.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-internal\/mobile-sdk-internal\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
