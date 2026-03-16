@@ -233,13 +233,13 @@ When ‘disable client’ is invoked, the SDK immediately stops any communicatio
 
 This allows you to programmatically suspend survey activity – for example, in critical areas of your app, during maintenance windows, or based on user consent preferences.
 
-``````swift
+```swift
 Refiner.instance.disableClient();
 ```
 
 The client remains disabled on the current device until it is explicitly re-enabled using the following command:
 
-``````swift
+```swift
 Refiner.instance.enableClient();
 ```
 
