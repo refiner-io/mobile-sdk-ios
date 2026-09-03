@@ -7,5 +7,4 @@ framework module RefinerSDK {
 
 module RefinerSDK.Swift {
   header "RefinerSDK-Swift.h"
-  requires objc
 }
