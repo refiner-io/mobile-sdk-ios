@@ -95,6 +95,13 @@
       },
       {
         "kind": "Import",
+        "name": "RefinerInternalSDK",
+        "printedName": "RefinerInternalSDK",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -237,6 +244,13 @@
         "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RefinerInternalSDK",
+        "printedName": "RefinerInternalSDK",
         "declKind": "Import",
         "moduleName": "RefinerSDK"
       },
@@ -3434,7 +3448,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.7.2\""
+      "value": "\"1.7.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-internal\/mobile-sdk-internal\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/BottomPopup\/BottomPopupDismissInteractionController.swift",
@@ -3453,14 +3467,14 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-internal\/mobile-sdk-internal\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1404,
+      "offset": 1430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-internal\/mobile-sdk-internal\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1732,
+      "offset": 1758,
       "length": 5,
       "value": "false"
     },
@@ -3593,21 +3607,21 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-internal\/mobile-sdk-internal\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 913,
+      "offset": 939,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-internal\/mobile-sdk-internal\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 940,
+      "offset": 966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-internal\/mobile-sdk-internal\/mobile-sdk-internal\/iOS\/RefinerSDKFramework\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3089,
+      "offset": 3115,
       "length": 5,
       "value": "false"
     },
