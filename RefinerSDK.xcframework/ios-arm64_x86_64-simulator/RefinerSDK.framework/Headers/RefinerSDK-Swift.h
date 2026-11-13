@@ -378,6 +378,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum RefinerColorScheme : NSInteger;
 @interface Refiner (SWIFT_EXTENSION(RefinerSDK))
 /// Initialize the SDK with your project ID. Call this in <code>application(_:didFinishLaunchingWithOptions:)</code>.
 - (void)initializeWithProjectId:(NSString * _Nonnull)projectId debugMode:(BOOL)debugMode;
@@ -412,10 +413,31 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)startSession;
 - (void)setAnonymousId:(NSString * _Nonnull)anonymousId;
 - (void)setLocale:(NSString * _Nonnull)locale;
+/// Sets the country sent as <code>country</code> on every request, alongside <code>locale</code>.
+- (void)setCountry:(NSString * _Nonnull)country;
+/// Sets the survey color scheme preference: <code>.auto</code> (follow the host appearance),
+/// <code>.light</code> or <code>.dark</code>. Forwarded to the renderer together with the detected host
+/// scheme on every survey render and immediately if a survey is on screen. Kept in
+/// memory only; may be called before <code>initialize</code>.
+- (void)setColorScheme:(enum RefinerColorScheme)colorScheme;
+/// String variant matching the JavaScript SDK: <code>"auto" | "light" | "dark"</code>.
+/// Unknown values are ignored.
+- (void)setColorSchemeWithString:(NSString * _Nonnull)colorScheme;
 - (void)disableClient;
 - (void)enableClient;
 @end
 
+/// Color scheme preference passed to the survey renderer via <code>Refiner.setColorScheme(_:)</code>.
+/// <code>.auto</code> lets the renderer follow the color scheme detected on the host (OS / app
+/// appearance); <code>.light</code> / <code>.dark</code> force one. Kept in memory only — never persisted and
+/// never sent to the Refiner API.
+typedef SWIFT_ENUM(NSInteger, RefinerColorScheme, open) {
+  RefinerColorSchemeAuto = 0,
+  RefinerColorSchemeLight = 1,
+  RefinerColorSchemeDark = 2,
+};
+
+@class UITraitCollection;
 /// Hosts the survey iframe inside a <code>WKWebView</code>, presented as a bottom popup.
 /// <code>BottomPopupRouter.isSurveyVisible()</code> identifies a visible survey by an exact
 /// <code>type(of: topVC) == WebViewController.self</code> match (KMM compared the class name verbatim).
@@ -425,6 +447,7 @@ SWIFT_CLASS("_TtC10RefinerSDK17WebViewController")
 @interface WebViewController : BottomPopupViewController
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)viewDidDisappear:(BOOL)animated;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
@@ -838,6 +861,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum RefinerColorScheme : NSInteger;
 @interface Refiner (SWIFT_EXTENSION(RefinerSDK))
 /// Initialize the SDK with your project ID. Call this in <code>application(_:didFinishLaunchingWithOptions:)</code>.
 - (void)initializeWithProjectId:(NSString * _Nonnull)projectId debugMode:(BOOL)debugMode;
@@ -872,10 +896,31 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)startSession;
 - (void)setAnonymousId:(NSString * _Nonnull)anonymousId;
 - (void)setLocale:(NSString * _Nonnull)locale;
+/// Sets the country sent as <code>country</code> on every request, alongside <code>locale</code>.
+- (void)setCountry:(NSString * _Nonnull)country;
+/// Sets the survey color scheme preference: <code>.auto</code> (follow the host appearance),
+/// <code>.light</code> or <code>.dark</code>. Forwarded to the renderer together with the detected host
+/// scheme on every survey render and immediately if a survey is on screen. Kept in
+/// memory only; may be called before <code>initialize</code>.
+- (void)setColorScheme:(enum RefinerColorScheme)colorScheme;
+/// String variant matching the JavaScript SDK: <code>"auto" | "light" | "dark"</code>.
+/// Unknown values are ignored.
+- (void)setColorSchemeWithString:(NSString * _Nonnull)colorScheme;
 - (void)disableClient;
 - (void)enableClient;
 @end
 
+/// Color scheme preference passed to the survey renderer via <code>Refiner.setColorScheme(_:)</code>.
+/// <code>.auto</code> lets the renderer follow the color scheme detected on the host (OS / app
+/// appearance); <code>.light</code> / <code>.dark</code> force one. Kept in memory only — never persisted and
+/// never sent to the Refiner API.
+typedef SWIFT_ENUM(NSInteger, RefinerColorScheme, open) {
+  RefinerColorSchemeAuto = 0,
+  RefinerColorSchemeLight = 1,
+  RefinerColorSchemeDark = 2,
+};
+
+@class UITraitCollection;
 /// Hosts the survey iframe inside a <code>WKWebView</code>, presented as a bottom popup.
 /// <code>BottomPopupRouter.isSurveyVisible()</code> identifies a visible survey by an exact
 /// <code>type(of: topVC) == WebViewController.self</code> match (KMM compared the class name verbatim).
@@ -885,6 +930,7 @@ SWIFT_CLASS("_TtC10RefinerSDK17WebViewController")
 @interface WebViewController : BottomPopupViewController
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)viewDidDisappear:(BOOL)animated;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @property (nonatomic, readonly) BOOL shouldAutorotate;

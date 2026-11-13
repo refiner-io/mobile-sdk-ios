@@ -53,9 +53,10 @@ public struct BaseResponse : Swift.Codable, Swift.Equatable {
   public let formViewUuid: Swift.String?
   public var componentDataJson: Swift.String?
   public let pingAgainIn: Swift.Int?
+  public let trackNextScreenVisit: Swift.Bool?
   public let error: Swift.String?
   public let screenRules: RefinerSDK.ScreenRules?
-  public init(component: Swift.String? = nil, componentData: RefinerSDK.AnyCodable? = nil, message: Swift.String? = nil, onScreenDelay: Swift.Int? = nil, styles: Swift.String? = nil, backdropClose: Swift.Bool? = true, formViewUuid: Swift.String? = nil, componentDataJson: Swift.String? = nil, pingAgainIn: Swift.Int? = nil, error: Swift.String? = nil, screenRules: RefinerSDK.ScreenRules? = nil)
+  public init(component: Swift.String? = nil, componentData: RefinerSDK.AnyCodable? = nil, message: Swift.String? = nil, onScreenDelay: Swift.Int? = nil, styles: Swift.String? = nil, backdropClose: Swift.Bool? = true, formViewUuid: Swift.String? = nil, componentDataJson: Swift.String? = nil, pingAgainIn: Swift.Int? = nil, trackNextScreenVisit: Swift.Bool? = nil, error: Swift.String? = nil, screenRules: RefinerSDK.ScreenRules? = nil)
   public init(from decoder: any Swift.Decoder) throws
   public static func == (a: RefinerSDK.BaseResponse, b: RefinerSDK.BaseResponse) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -177,6 +178,7 @@ public struct FormActionRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let mobilePlatform: Swift.String
   public let mobileOsVersion: Swift.String
@@ -187,7 +189,7 @@ public struct FormActionRequest : Swift.Codable, Swift.Equatable {
   public let manualFormView: Swift.Bool
   public let forceFormView: Swift.Bool
   public let firstSeenAt: Swift.Int64?
-  public init(formUuid: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, formViewUuid: Swift.String? = nil, statusBarHeight: Swift.Int, contactAttributes: RefinerSDK.AnyCodable? = nil, manualFormView: Swift.Bool = false, forceFormView: Swift.Bool = false, firstSeenAt: Swift.Int64? = nil)
+  public init(formUuid: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, formViewUuid: Swift.String? = nil, statusBarHeight: Swift.Int, contactAttributes: RefinerSDK.AnyCodable? = nil, manualFormView: Swift.Bool = false, forceFormView: Swift.Bool = false, firstSeenAt: Swift.Int64? = nil)
   public static func == (a: RefinerSDK.FormActionRequest, b: RefinerSDK.FormActionRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -198,6 +200,7 @@ public struct IdentifyUserRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let mobilePlatform: Swift.String
   public let mobileOsVersion: Swift.String
@@ -205,7 +208,8 @@ public struct IdentifyUserRequest : Swift.Codable, Swift.Equatable {
   public let statusBarHeight: Swift.Int
   public let writeOperation: Swift.String?
   public let firstSeenAt: Swift.Int64?
-  public init(contactAttributes: RefinerSDK.AnyCodable? = nil, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, writeOperation: Swift.String? = "append", firstSeenAt: Swift.Int64? = nil)
+  public let screenName: Swift.String?
+  public init(contactAttributes: RefinerSDK.AnyCodable? = nil, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, writeOperation: Swift.String? = "append", firstSeenAt: Swift.Int64? = nil, screenName: Swift.String? = nil)
   public static func == (a: RefinerSDK.IdentifyUserRequest, b: RefinerSDK.IdentifyUserRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -257,13 +261,14 @@ public struct PingRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let mobilePlatform: Swift.String
   public let mobileOsVersion: Swift.String
   public let mobileSdkVersion: Swift.String
   public let statusBarHeight: Swift.Int
   public let firstSeenAt: Swift.Int64?
-  public init(screenName: Swift.String? = nil, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
+  public init(screenName: Swift.String? = nil, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
   public static func == (a: RefinerSDK.PingRequest, b: RefinerSDK.PingRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -335,6 +340,9 @@ extension RefinerSDK.Refiner {
   @objc final public func startSession()
   @objc final public func setAnonymousId(_ anonymousId: Swift.String)
   @objc final public func setLocale(_ locale: Swift.String)
+  @objc final public func setCountry(_ country: Swift.String)
+  @objc final public func setColorScheme(_ colorScheme: RefinerSDK.RefinerColorScheme)
+  @objc(setColorSchemeWithString:) final public func setColorScheme(_ colorScheme: Swift.String)
   @objc final public func disableClient()
   @objc final public func enableClient()
 }
@@ -366,6 +374,20 @@ public enum RefinerAPIError : Foundation.LocalizedError, Swift.Equatable {
   }
   public static func == (a: RefinerSDK.RefinerAPIError, b: RefinerSDK.RefinerAPIError) -> Swift.Bool
 }
+@objc public enum RefinerColorScheme : Swift.Int {
+  case auto
+  case light
+  case dark
+  public var wireValue: Swift.String {
+    get
+  }
+  public init?(wireValue: Swift.String)
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public struct RefinerConfigs : Swift.Equatable {
   public let projectId: Swift.String
   public let debugMode: Swift.Bool
@@ -375,7 +397,11 @@ public struct RefinerConfigs : Swift.Equatable {
 }
 final public class RefinerOrchestrator {
   final public let store: RefinerSDK.RefinerStateStore
+  final public var trackNextScreenVisit: Swift.Bool {
+    get
+  }
   public init(api: RefinerSDK.RefinerAPIClient, settings: RefinerSDK.RefinerSettings, store: RefinerSDK.RefinerStateStore = RefinerStateStore(), scheduler: RefinerSDK.PingScheduler? = nil)
+  final public func resetTrackNextScreenVisit()
   final public func identifyUser(_ request: RefinerSDK.IdentifyUserRequest) async
   final public func trackEvent(_ request: RefinerSDK.TrackEventRequest) async
   final public func trackScreen(_ request: RefinerSDK.TrackScreenRequest) async
@@ -396,6 +422,10 @@ final public class RefinerSettings {
     set
   }
   final public var locale: Swift.String? {
+    get
+    set
+  }
+  final public var country: Swift.String? {
     get
     set
   }
@@ -455,6 +485,7 @@ final public class RefinerSettings {
 public enum RefinerSettingsKeys {
   public static let projectId: Swift.String
   public static let locale: Swift.String
+  public static let country: Swift.String
   public static let userId: Swift.String
   public static let userTraits: Swift.String
   public static let contextualData: Swift.String
@@ -507,13 +538,14 @@ public struct ShowFormRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let mobilePlatform: Swift.String
   public let mobileOsVersion: Swift.String
   public let mobileSdkVersion: Swift.String
   public let statusBarHeight: Swift.Int
   public let firstSeenAt: Swift.Int64?
-  public init(manualFormView: Swift.Bool = true, forceFormView: Swift.Bool, formUuid: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
+  public init(manualFormView: Swift.Bool = true, forceFormView: Swift.Bool, formUuid: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
   public static func == (a: RefinerSDK.ShowFormRequest, b: RefinerSDK.ShowFormRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -524,13 +556,14 @@ public struct StartSessionRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let mobilePlatform: Swift.String
   public let mobileOsVersion: Swift.String
   public let mobileSdkVersion: Swift.String
   public let statusBarHeight: Swift.Int
   public let firstSeenAt: Swift.Int64?
-  public init(screenName: Swift.String? = nil, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
+  public init(screenName: Swift.String? = nil, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
   public static func == (a: RefinerSDK.StartSessionRequest, b: RefinerSDK.StartSessionRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -550,6 +583,7 @@ public struct SubmitFormRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let screenName: Swift.String?
   public let mobilePlatform: Swift.String
@@ -558,7 +592,7 @@ public struct SubmitFormRequest : Swift.Codable, Swift.Equatable {
   public let formViewUuid: Swift.String?
   public let statusBarHeight: Swift.Int
   public let firstSeenAt: Swift.Int64?
-  public init(contactAttributes: RefinerSDK.AnyCodable? = nil, accountAttributes: RefinerSDK.AnyCodable? = nil, isPartialSubmit: Swift.Bool, formUuid: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, screenName: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, formViewUuid: Swift.String? = nil, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
+  public init(contactAttributes: RefinerSDK.AnyCodable? = nil, accountAttributes: RefinerSDK.AnyCodable? = nil, isPartialSubmit: Swift.Bool, formUuid: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, screenName: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, formViewUuid: Swift.String? = nil, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
   public static func == (a: RefinerSDK.SubmitFormRequest, b: RefinerSDK.SubmitFormRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -569,13 +603,14 @@ public struct TrackEventRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let mobilePlatform: Swift.String
   public let mobileOsVersion: Swift.String
   public let mobileSdkVersion: Swift.String
   public let statusBarHeight: Swift.Int
   public let firstSeenAt: Swift.Int64?
-  public init(eventName: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
+  public init(eventName: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
   public static func == (a: RefinerSDK.TrackEventRequest, b: RefinerSDK.TrackEventRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -586,13 +621,14 @@ public struct TrackScreenRequest : Swift.Codable, Swift.Equatable {
   public let anonymousId: Swift.String?
   public let isMobileSdk: Swift.Bool
   public let locale: Swift.String?
+  public let country: Swift.String?
   public let contactRemoteIdSignature: Swift.String?
   public let mobilePlatform: Swift.String
   public let mobileOsVersion: Swift.String
   public let mobileSdkVersion: Swift.String
   public let statusBarHeight: Swift.Int
   public let firstSeenAt: Swift.Int64?
-  public init(screenName: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
+  public init(screenName: Swift.String, contactRemoteId: Swift.String? = nil, anonymousId: Swift.String? = nil, isMobileSdk: Swift.Bool = true, locale: Swift.String? = nil, country: Swift.String? = nil, contactRemoteIdSignature: Swift.String? = nil, mobilePlatform: Swift.String, mobileOsVersion: Swift.String, mobileSdkVersion: Swift.String, statusBarHeight: Swift.Int, firstSeenAt: Swift.Int64? = nil)
   public static func == (a: RefinerSDK.TrackScreenRequest, b: RefinerSDK.TrackScreenRequest) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -614,6 +650,7 @@ public enum UrlPolicy {
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
@@ -651,6 +688,9 @@ extension RefinerSDK.WebViewController : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
 }
 extension RefinerSDK.WebViewController : RefinerSDK.WebViewInterface {
+  @_Concurrency.MainActor @preconcurrency final public var detectedColorScheme: Swift.String {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency final public var dimensions: (height: Swift.Int, width: Swift.Int) {
     get
   }
@@ -666,6 +706,7 @@ extension RefinerSDK.WebViewController : WebKit.WKScriptMessageHandler {
 }
 public protocol WebViewInterface : AnyObject {
   var dimensions: (height: Swift.Int, width: Swift.Int) { get }
+  var detectedColorScheme: Swift.String { get }
   func loadWebView(with url: Foundation.URL)
   func dismissWebView()
   func endEditing()
@@ -689,15 +730,20 @@ public protocol WebViewPresenterInterface : AnyObject {
   func handleHttpError(statusCode: Swift.Int)
   func handleConnectionError(_ error: any Swift.Error)
   func isConnectionError(_ error: any Swift.Error) -> Swift.Bool
+  func hostColorSchemeDidChange()
+  func updateColorSchemePreference(_ preference: RefinerSDK.RefinerColorScheme)
 }
 final public class WebViewPresenter {
   weak final public var view: (any RefinerSDK.WebViewInterface)?
   weak final public var delegate: (any RefinerSDK.WebViewDelegate)?
+  final public var colorSchemePreference: RefinerSDK.RefinerColorScheme {
+    get
+  }
   final public let popupShouldBeganDismiss: Swift.Bool
   final public var javaScriptHandler: RefinerSDK.JavaScriptMessageHandler
   final public var prefersStatusBarHidden: Swift.Bool
   final public var openExternal: (_ url: Foundation.URL) -> Swift.Void
-  public init(view: (any RefinerSDK.WebViewInterface)?, delegate: (any RefinerSDK.WebViewDelegate)?, url: Swift.String, component: Swift.String?, componentData: Swift.String, styles: Swift.String?, contextualData: Swift.String?, popupShouldBeganDismiss: Swift.Bool, mobileSdkVersion: Swift.String = Refiner.version, javaScriptHandler: RefinerSDK.JavaScriptMessageHandler = JavaScriptMessageHandler())
+  public init(view: (any RefinerSDK.WebViewInterface)?, delegate: (any RefinerSDK.WebViewDelegate)?, url: Swift.String, component: Swift.String?, componentData: Swift.String, styles: Swift.String?, contextualData: Swift.String?, popupShouldBeganDismiss: Swift.Bool, mobileSdkVersion: Swift.String = Refiner.version, colorSchemePreference: RefinerSDK.RefinerColorScheme = .auto, javaScriptHandler: RefinerSDK.JavaScriptMessageHandler = JavaScriptMessageHandler())
   @objc deinit
 }
 extension RefinerSDK.WebViewPresenter : RefinerSDK.WebViewPresenterInterface {
@@ -706,6 +752,8 @@ extension RefinerSDK.WebViewPresenter : RefinerSDK.WebViewPresenterInterface {
   final public func didReceive(message: WebKit.WKScriptMessage)
   final public func decidePolicyFor(url: Swift.String) -> WebKit.WKNavigationActionPolicy
   final public func webViewDidFinishNavigation()
+  final public func hostColorSchemeDidChange()
+  final public func updateColorSchemePreference(_ preference: RefinerSDK.RefinerColorScheme)
   final public func handleHttpError(statusCode: Swift.Int)
   final public func handleConnectionError(_ error: any Swift.Error)
   final public func isConnectionError(_ error: any Swift.Error) -> Swift.Bool
@@ -738,5 +786,8 @@ extension RefinerSDK.JavaScriptMessageHandler.Event.Key : Swift.RawRepresentable
 extension RefinerSDK.Refiner.WriteOperation : Swift.Equatable {}
 extension RefinerSDK.Refiner.WriteOperation : Swift.Hashable {}
 extension RefinerSDK.Refiner.WriteOperation : Swift.RawRepresentable {}
+extension RefinerSDK.RefinerColorScheme : Swift.Equatable {}
+extension RefinerSDK.RefinerColorScheme : Swift.Hashable {}
+extension RefinerSDK.RefinerColorScheme : Swift.RawRepresentable {}
 extension RefinerSDK.WriteOperation : Swift.Hashable {}
 extension RefinerSDK.WriteOperation : Swift.RawRepresentable {}

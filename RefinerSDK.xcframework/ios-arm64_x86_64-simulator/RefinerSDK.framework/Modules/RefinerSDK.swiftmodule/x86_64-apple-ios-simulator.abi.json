@@ -1543,6 +1543,67 @@
           },
           {
             "kind": "Var",
+            "name": "trackNextScreenVisit",
+            "printedName": "trackNextScreenVisit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK12BaseResponseV20trackNextScreenVisitSbSgvp",
+            "mangledName": "$s10RefinerSDK12BaseResponseV20trackNextScreenVisitSbSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK12BaseResponseV20trackNextScreenVisitSbSgvg",
+                "mangledName": "$s10RefinerSDK12BaseResponseV20trackNextScreenVisitSbSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "error",
             "printedName": "error",
             "children": [
@@ -1664,7 +1725,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(component:componentData:message:onScreenDelay:styles:backdropClose:formViewUuid:componentDataJson:pingAgainIn:error:screenRules:)",
+            "printedName": "init(component:componentData:message:onScreenDelay:styles:backdropClose:formViewUuid:componentDataJson:pingAgainIn:trackNextScreenVisit:error:screenRules:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1810,6 +1871,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
                   {
@@ -1839,8 +1915,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK12BaseResponseV9component0E4Data7message13onScreenDelay6styles13backdropClose12formViewUuid0eF4Json11pingAgainIn5error11screenRulesACSSSg_AA10AnyCodableVSgAOSiSgAOSbSgA2osoA0iW0VSgtcfc",
-            "mangledName": "$s10RefinerSDK12BaseResponseV9component0E4Data7message13onScreenDelay6styles13backdropClose12formViewUuid0eF4Json11pingAgainIn5error11screenRulesACSSSg_AA10AnyCodableVSgAOSiSgAOSbSgA2osoA0iW0VSgtcfc",
+            "usr": "s:10RefinerSDK12BaseResponseV9component0E4Data7message13onScreenDelay6styles13backdropClose12formViewUuid0eF4Json11pingAgainIn09trackNextI5Visit5error11screenRulesACSSSg_AA10AnyCodableVSgAPSiSgAPSbSgA2ptupA0iZ0VSgtcfc",
+            "mangledName": "$s10RefinerSDK12BaseResponseV9component0E4Data7message13onScreenDelay6styles13backdropClose12formViewUuid0eF4Json11pingAgainIn09trackNextI5Visit5error11screenRulesACSSSg_AA10AnyCodableVSgAPSiSgAPSbSgA2ptupA0iZ0VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -6000,6 +6076,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK17FormActionRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK17FormActionRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK17FormActionRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK17FormActionRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -6505,7 +6641,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:firstSeenAt:)",
+            "printedName": "init(formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:contactAttributes:manualFormView:forceFormView:firstSeenAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6555,6 +6691,21 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -6671,8 +6822,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK17FormActionRequestV8formUuid15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT00f4ViewG015statusBarHeight0H10Attributes06manualcU005forcecU011firstSeenAtACSS_SSSgASSbA2SS3SASSiAA10AnyCodableVSgS2bs5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK17FormActionRequestV8formUuid15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT00f4ViewG015statusBarHeight0H10Attributes06manualcU005forcecU011firstSeenAtACSS_SSSgASSbA2SS3SASSiAA10AnyCodableVSgS2bs5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK17FormActionRequestV8formUuid15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU00f4ViewG015statusBarHeight0H10Attributes06manualcV005forcecV011firstSeenAtACSS_SSSgATSbA3TS3SATSiAA10AnyCodableVSgS2bs5Int64VSgtcfc",
+            "mangledName": "$s10RefinerSDK17FormActionRequestV8formUuid15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU00f4ViewG015statusBarHeight0H10Attributes06manualcV005forcecV011firstSeenAtACSS_SSSgATSbA3TS3SATSiAA10AnyCodableVSgS2bs5Int64VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -7114,6 +7265,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK19IdentifyUserRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK19IdentifyUserRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK19IdentifyUserRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK19IdentifyUserRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -7469,9 +7680,70 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "screenName",
+            "printedName": "screenName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK19IdentifyUserRequestV10screenNameSSSgvp",
+            "mangledName": "$s10RefinerSDK19IdentifyUserRequestV10screenNameSSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK19IdentifyUserRequestV10screenNameSSSgvg",
+                "mangledName": "$s10RefinerSDK19IdentifyUserRequestV10screenNameSSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(contactAttributes:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:firstSeenAt:)",
+            "printedName": "init(contactAttributes:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:writeOperation:firstSeenAt:screenName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7563,6 +7835,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -7614,11 +7901,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK19IdentifyUserRequestV17contactAttributes0F8RemoteId09anonymousI011isMobileSdk6locale0fhI9Signature14mobilePlatform0P9OsVersion0pmS015statusBarHeight14writeOperation11firstSeenAtAcA10AnyCodableVSg_SSSgASSbA2SS3SSiASs5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK19IdentifyUserRequestV17contactAttributes0F8RemoteId09anonymousI011isMobileSdk6locale0fhI9Signature14mobilePlatform0P9OsVersion0pmS015statusBarHeight14writeOperation11firstSeenAtAcA10AnyCodableVSg_SSSgASSbA2SS3SSiASs5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK19IdentifyUserRequestV17contactAttributes0F8RemoteId09anonymousI011isMobileSdk6locale7country0fhI9Signature14mobilePlatform0Q9OsVersion0qmT015statusBarHeight14writeOperation11firstSeenAt10screenNameAcA10AnyCodableVSg_SSSgAUSbA3US3SSiAUs5Int64VSgAUtcfc",
+            "mangledName": "$s10RefinerSDK19IdentifyUserRequestV17contactAttributes0F8RemoteId09anonymousI011isMobileSdk6locale7country0fhI9Signature14mobilePlatform0Q9OsVersion0qmT015statusBarHeight14writeOperation11firstSeenAt10screenNameAcA10AnyCodableVSg_SSSgAUSbA3US3SSiAUs5Int64VSgAUtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -9205,6 +9507,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK11PingRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK11PingRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK11PingRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK11PingRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -9502,7 +9864,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
+            "printedName": "init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9594,6 +9956,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -9633,8 +10010,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK11PingRequestV10screenName15contactRemoteId09anonymousI011isMobileSdk6locale0ghI9Signature14mobilePlatform0P9OsVersion0pmS015statusBarHeight11firstSeenAtACSSSg_A2OSbA2OS3SSis5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK11PingRequestV10screenName15contactRemoteId09anonymousI011isMobileSdk6locale0ghI9Signature14mobilePlatform0P9OsVersion0pmS015statusBarHeight11firstSeenAtACSSSg_A2OSbA2OS3SSis5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK11PingRequestV10screenName15contactRemoteId09anonymousI011isMobileSdk6locale7country0ghI9Signature14mobilePlatform0Q9OsVersion0qmT015statusBarHeight11firstSeenAtACSSSg_A2PSbA3PS3SSis5Int64VSgtcfc",
+            "mangledName": "$s10RefinerSDK11PingRequestV10screenName15contactRemoteId09anonymousI011isMobileSdk6locale7country0ghI9Signature14mobilePlatform0Q9OsVersion0qmT015statusBarHeight11firstSeenAtACSSSg_A2PSbA3PS3SSis5Int64VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -13114,6 +13491,97 @@
           },
           {
             "kind": "Function",
+            "name": "setCountry",
+            "printedName": "setCountry(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)setCountry:",
+            "mangledName": "$s10RefinerSDK0A0C10setCountryyySSF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setColorScheme",
+            "printedName": "setColorScheme(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefinerColorScheme",
+                "printedName": "RefinerSDK.RefinerColorScheme",
+                "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)setColorScheme:",
+            "mangledName": "$s10RefinerSDK0A0C14setColorSchemeyyAA0adE0OF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setColorScheme",
+            "printedName": "setColorScheme(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RefinerSDK@objc(cs)Refiner(im)setColorSchemeWithString:",
+            "mangledName": "$s10RefinerSDK0A0C14setColorSchemeyySSF",
+            "moduleName": "RefinerSDK",
+            "objc_name": "setColorSchemeWithString:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "disableClient",
             "printedName": "disableClient()",
             "children": [
@@ -14139,6 +14607,354 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RefinerColorScheme",
+        "printedName": "RefinerColorScheme",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "auto",
+            "printedName": "auto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RefinerSDK.RefinerColorScheme.Type) -> RefinerSDK.RefinerColorScheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefinerColorScheme",
+                    "printedName": "RefinerSDK.RefinerColorScheme",
+                    "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RefinerSDK.RefinerColorScheme.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefinerColorScheme",
+                        "printedName": "RefinerSDK.RefinerColorScheme",
+                        "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@RefinerSDK@E@RefinerColorScheme@RefinerColorSchemeAuto",
+            "mangledName": "$s10RefinerSDK0A11ColorSchemeO4autoyA2CmF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "light",
+            "printedName": "light",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RefinerSDK.RefinerColorScheme.Type) -> RefinerSDK.RefinerColorScheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefinerColorScheme",
+                    "printedName": "RefinerSDK.RefinerColorScheme",
+                    "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RefinerSDK.RefinerColorScheme.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefinerColorScheme",
+                        "printedName": "RefinerSDK.RefinerColorScheme",
+                        "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@RefinerSDK@E@RefinerColorScheme@RefinerColorSchemeLight",
+            "mangledName": "$s10RefinerSDK0A11ColorSchemeO5lightyA2CmF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "dark",
+            "printedName": "dark",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RefinerSDK.RefinerColorScheme.Type) -> RefinerSDK.RefinerColorScheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefinerColorScheme",
+                    "printedName": "RefinerSDK.RefinerColorScheme",
+                    "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RefinerSDK.RefinerColorScheme.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefinerColorScheme",
+                        "printedName": "RefinerSDK.RefinerColorScheme",
+                        "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@RefinerSDK@E@RefinerColorScheme@RefinerColorSchemeDark",
+            "mangledName": "$s10RefinerSDK0A11ColorSchemeO4darkyA2CmF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "wireValue",
+            "printedName": "wireValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK0A11ColorSchemeO9wireValueSSvp",
+            "mangledName": "$s10RefinerSDK0A11ColorSchemeO9wireValueSSvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A11ColorSchemeO9wireValueSSvg",
+                "mangledName": "$s10RefinerSDK0A11ColorSchemeO9wireValueSSvg",
+                "moduleName": "RefinerSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wireValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RefinerSDK.RefinerColorScheme?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefinerColorScheme",
+                    "printedName": "RefinerSDK.RefinerColorScheme",
+                    "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10RefinerSDK0A11ColorSchemeO9wireValueACSgSS_tcfc",
+            "mangledName": "$s10RefinerSDK0A11ColorSchemeO9wireValueACSgSS_tcfc",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RefinerSDK.RefinerColorScheme?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefinerColorScheme",
+                    "printedName": "RefinerSDK.RefinerColorScheme",
+                    "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10RefinerSDK0A11ColorSchemeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10RefinerSDK0A11ColorSchemeO8rawValueACSgSi_tcfc",
+            "moduleName": "RefinerSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK0A11ColorSchemeO8rawValueSivp",
+            "mangledName": "$s10RefinerSDK0A11ColorSchemeO8rawValueSivp",
+            "moduleName": "RefinerSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A11ColorSchemeO8rawValueSivg",
+                "mangledName": "$s10RefinerSDK0A11ColorSchemeO8rawValueSivg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@RefinerSDK@E@RefinerColorScheme",
+        "mangledName": "$s10RefinerSDK0A11ColorSchemeO",
+        "moduleName": "RefinerSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "RefinerConfigs",
         "printedName": "RefinerConfigs",
         "children": [
@@ -14439,6 +15255,56 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "trackNextScreenVisit",
+            "printedName": "trackNextScreenVisit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK0A12OrchestratorC20trackNextScreenVisitSbvp",
+            "mangledName": "$s10RefinerSDK0A12OrchestratorC20trackNextScreenVisitSbvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A12OrchestratorC20trackNextScreenVisitSbvg",
+                "mangledName": "$s10RefinerSDK0A12OrchestratorC20trackNextScreenVisitSbvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(api:settings:store:scheduler:)",
@@ -14492,6 +15358,28 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "resetTrackNextScreenVisit",
+            "printedName": "resetTrackNextScreenVisit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RefinerSDK0A12OrchestratorC25resetTrackNextScreenVisityyF",
+            "mangledName": "$s10RefinerSDK0A12OrchestratorC25resetTrackNextScreenVisityyF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -15115,6 +16003,121 @@
                 "declKind": "Accessor",
                 "usr": "s:10RefinerSDK0A8SettingsC6localeSSSgvM",
                 "mangledName": "$s10RefinerSDK0A8SettingsC6localeSSSgvM",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK0A8SettingsC7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK0A8SettingsC7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A8SettingsC7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK0A8SettingsC7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A8SettingsC7countrySSSgvs",
+                "mangledName": "$s10RefinerSDK0A8SettingsC7countrySSSgvs",
+                "moduleName": "RefinerSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A8SettingsC7countrySSSgvM",
+                "mangledName": "$s10RefinerSDK0A8SettingsC7countrySSSgvM",
                 "moduleName": "RefinerSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -16637,6 +17640,53 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK0A12SettingsKeysO7countrySSvpZ",
+            "mangledName": "$s10RefinerSDK0A12SettingsKeysO7countrySSvpZ",
+            "moduleName": "RefinerSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK0A12SettingsKeysO7countrySSvgZ",
+                "mangledName": "$s10RefinerSDK0A12SettingsKeysO7countrySSvgZ",
+                "moduleName": "RefinerSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "userId",
             "printedName": "userId",
             "children": [
@@ -18115,6 +19165,13 @@
         "moduleName": "RefinerSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ScreenRules",
         "printedName": "ScreenRules",
@@ -19094,6 +20151,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK15ShowFormRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK15ShowFormRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK15ShowFormRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK15ShowFormRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -19391,7 +20508,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(manualFormView:forceFormView:formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
+            "printedName": "init(manualFormView:forceFormView:formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19487,6 +20604,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -19526,8 +20658,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK15ShowFormRequestV06manualD4View05forcedG08formUuid15contactRemoteId09anonymousM011isMobileSdk6locale0klM9Signature14mobilePlatform0T9OsVersion0tqW015statusBarHeight11firstSeenAtACSb_SbS2SSgAQSbA2QS3SSis5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK15ShowFormRequestV06manualD4View05forcedG08formUuid15contactRemoteId09anonymousM011isMobileSdk6locale0klM9Signature14mobilePlatform0T9OsVersion0tqW015statusBarHeight11firstSeenAtACSb_SbS2SSgAQSbA2QS3SSis5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK15ShowFormRequestV06manualD4View05forcedG08formUuid15contactRemoteId09anonymousM011isMobileSdk6locale7country0klM9Signature14mobilePlatform0U9OsVersion0uqX015statusBarHeight11firstSeenAtACSb_SbS2SSgARSbA3RS3SSis5Int64VSgtcfc",
+            "mangledName": "$s10RefinerSDK15ShowFormRequestV06manualD4View05forcedG08formUuid15contactRemoteId09anonymousM011isMobileSdk6locale7country0klM9Signature14mobilePlatform0U9OsVersion0uqX015statusBarHeight11firstSeenAtACSb_SbS2SSgARSbA3RS3SSis5Int64VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -19962,6 +21094,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK19StartSessionRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK19StartSessionRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK19StartSessionRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK19StartSessionRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -20259,7 +21451,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
+            "printedName": "init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20351,6 +21543,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -20390,8 +21597,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK19StartSessionRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT015statusBarHeight11firstSeenAtACSSSg_A2OSbA2OS3SSis5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK19StartSessionRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT015statusBarHeight11firstSeenAtACSSSg_A2OSbA2OS3SSis5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK19StartSessionRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU015statusBarHeight11firstSeenAtACSSSg_A2PSbA3PS3SSis5Int64VSgtcfc",
+            "mangledName": "$s10RefinerSDK19StartSessionRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU015statusBarHeight11firstSeenAtACSSSg_A2PSbA3PS3SSis5Int64VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -21102,6 +22309,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK17SubmitFormRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK17SubmitFormRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK17SubmitFormRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK17SubmitFormRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -21519,7 +22786,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:firstSeenAt:)",
+            "printedName": "init(contactAttributes:accountAttributes:isPartialSubmit:formUuid:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:screenName:mobilePlatform:mobileOsVersion:mobileSdkVersion:formViewUuid:statusBarHeight:firstSeenAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21653,6 +22920,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -21707,8 +22989,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK17SubmitFormRequestV17contactAttributes07accountG009isPartialC08formUuid0F8RemoteId09anonymousN00I9MobileSdk6locale0fmN9Signature10screenName14mobilePlatform0V9OsVersion0vqY00k4ViewL015statusBarHeight11firstSeenAtAcA10AnyCodableVSg_AVSbS2SSgAWSbA3WS3SAWSis5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK17SubmitFormRequestV17contactAttributes07accountG009isPartialC08formUuid0F8RemoteId09anonymousN00I9MobileSdk6locale0fmN9Signature10screenName14mobilePlatform0V9OsVersion0vqY00k4ViewL015statusBarHeight11firstSeenAtAcA10AnyCodableVSg_AVSbS2SSgAWSbA3WS3SAWSis5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK17SubmitFormRequestV17contactAttributes07accountG009isPartialC08formUuid0F8RemoteId09anonymousN00I9MobileSdk6locale7country0fmN9Signature10screenName14mobilePlatform0W9OsVersion0wqZ00k4ViewL015statusBarHeight11firstSeenAtAcA10AnyCodableVSg_AWSbS2SSgAXSbA4XS3SAXSis5Int64VSgtcfc",
+            "mangledName": "$s10RefinerSDK17SubmitFormRequestV17contactAttributes07accountG009isPartialC08formUuid0F8RemoteId09anonymousN00I9MobileSdk6locale7country0fmN9Signature10screenName14mobilePlatform0W9OsVersion0wqZ00k4ViewL015statusBarHeight11firstSeenAtAcA10AnyCodableVSg_AWSbS2SSgAXSbA4XS3SAXSis5Int64VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -22127,6 +23409,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK17TrackEventRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK17TrackEventRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK17TrackEventRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK17TrackEventRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -22424,7 +23766,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(eventName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
+            "printedName": "init(eventName:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22507,6 +23849,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -22546,8 +23903,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK17TrackEventRequestV9eventName15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT015statusBarHeight11firstSeenAtACSS_SSSgAOSbA2OS3SSis5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK17TrackEventRequestV9eventName15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT015statusBarHeight11firstSeenAtACSS_SSSgAOSbA2OS3SSis5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK17TrackEventRequestV9eventName15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU015statusBarHeight11firstSeenAtACSS_SSSgAPSbA3PS3SSis5Int64VSgtcfc",
+            "mangledName": "$s10RefinerSDK17TrackEventRequestV9eventName15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU015statusBarHeight11firstSeenAtACSS_SSSgAPSbA3PS3SSis5Int64VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -22966,6 +24323,66 @@
           },
           {
             "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK18TrackScreenRequestV7countrySSSgvp",
+            "mangledName": "$s10RefinerSDK18TrackScreenRequestV7countrySSSgvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK18TrackScreenRequestV7countrySSSgvg",
+                "mangledName": "$s10RefinerSDK18TrackScreenRequestV7countrySSSgvg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contactRemoteIdSignature",
             "printedName": "contactRemoteIdSignature",
             "children": [
@@ -23263,7 +24680,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
+            "printedName": "init(screenName:contactRemoteId:anonymousId:isMobileSdk:locale:country:contactRemoteIdSignature:mobilePlatform:mobileOsVersion:mobileSdkVersion:statusBarHeight:firstSeenAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23346,6 +24763,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
@@ -23385,8 +24817,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK18TrackScreenRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT015statusBarHeight11firstSeenAtACSS_SSSgAOSbA2OS3SSis5Int64VSgtcfc",
-            "mangledName": "$s10RefinerSDK18TrackScreenRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale0hiJ9Signature14mobilePlatform0Q9OsVersion0qnT015statusBarHeight11firstSeenAtACSS_SSSgAOSbA2OS3SSis5Int64VSgtcfc",
+            "usr": "s:10RefinerSDK18TrackScreenRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU015statusBarHeight11firstSeenAtACSS_SSSgAPSbA3PS3SSis5Int64VSgtcfc",
+            "mangledName": "$s10RefinerSDK18TrackScreenRequestV10screenName15contactRemoteId09anonymousJ011isMobileSdk6locale7country0hiJ9Signature14mobilePlatform0R9OsVersion0rnU015statusBarHeight11firstSeenAtACSS_SSSgAPSbA3PS3SSis5Int64VSgtcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -24657,6 +26089,47 @@
           },
           {
             "kind": "Function",
+            "name": "traitCollectionDidChange",
+            "printedName": "traitCollectionDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITraitCollection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITraitCollection",
+                    "printedName": "UIKit.UITraitCollection",
+                    "usr": "c:objc(cs)UITraitCollection"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RefinerSDK@objc(cs)WebViewController(im)traitCollectionDidChange:",
+            "mangledName": "$s10RefinerSDK17WebViewControllerC24traitCollectionDidChangeyySo07UITraitG0CSgF",
+            "moduleName": "RefinerSDK",
+            "overriding": true,
+            "objc_name": "traitCollectionDidChange:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "viewDidDisappear",
             "printedName": "viewDidDisappear(_:)",
             "children": [
@@ -25451,6 +26924,55 @@
           },
           {
             "kind": "Var",
+            "name": "detectedColorScheme",
+            "printedName": "detectedColorScheme",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK17WebViewControllerC19detectedColorSchemeSSvp",
+            "mangledName": "$s10RefinerSDK17WebViewControllerC19detectedColorSchemeSSvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK17WebViewControllerC19detectedColorSchemeSSvg",
+                "mangledName": "$s10RefinerSDK17WebViewControllerC19detectedColorSchemeSSvg",
+                "moduleName": "RefinerSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "dimensions",
             "printedName": "dimensions",
             "children": [
@@ -25963,6 +27485,51 @@
                 "declKind": "Accessor",
                 "usr": "s:10RefinerSDK16WebViewInterfaceP10dimensionsSi6height_Si5widthtvg",
                 "mangledName": "$s10RefinerSDK16WebViewInterfaceP10dimensionsSi6height_Si5widthtvg",
+                "moduleName": "RefinerSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : RefinerSDK.WebViewInterface>",
+                "sugared_genericSig": "<Self where Self : RefinerSDK.WebViewInterface>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detectedColorScheme",
+            "printedName": "detectedColorScheme",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK16WebViewInterfaceP19detectedColorSchemeSSvp",
+            "mangledName": "$s10RefinerSDK16WebViewInterfaceP19detectedColorSchemeSSvp",
+            "moduleName": "RefinerSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK16WebViewInterfaceP19detectedColorSchemeSSvg",
+                "mangledName": "$s10RefinerSDK16WebViewInterfaceP19detectedColorSchemeSSvg",
                 "moduleName": "RefinerSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : RefinerSDK.WebViewInterface>",
                 "sugared_genericSig": "<Self where Self : RefinerSDK.WebViewInterface>",
@@ -26617,6 +28184,60 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hostColorSchemeDidChange",
+            "printedName": "hostColorSchemeDidChange()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RefinerSDK25WebViewPresenterInterfaceP24hostColorSchemeDidChangeyyF",
+            "mangledName": "$s10RefinerSDK25WebViewPresenterInterfaceP24hostColorSchemeDidChangeyyF",
+            "moduleName": "RefinerSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RefinerSDK.WebViewPresenterInterface>",
+            "sugared_genericSig": "<Self where Self : RefinerSDK.WebViewPresenterInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateColorSchemePreference",
+            "printedName": "updateColorSchemePreference(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefinerColorScheme",
+                "printedName": "RefinerSDK.RefinerColorScheme",
+                "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RefinerSDK25WebViewPresenterInterfaceP27updateColorSchemePreferenceyyAA0ahI0OF",
+            "mangledName": "$s10RefinerSDK25WebViewPresenterInterfaceP27updateColorSchemePreferenceyyAA0ahI0OF",
+            "moduleName": "RefinerSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RefinerSDK.WebViewPresenterInterface>",
+            "sugared_genericSig": "<Self where Self : RefinerSDK.WebViewPresenterInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -26895,6 +28516,54 @@
                   "Final"
                 ],
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "colorSchemePreference",
+            "printedName": "colorSchemePreference",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RefinerColorScheme",
+                "printedName": "RefinerSDK.RefinerColorScheme",
+                "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK16WebViewPresenterC21colorSchemePreferenceAA0a5ColorG0Ovp",
+            "mangledName": "$s10RefinerSDK16WebViewPresenterC21colorSchemePreferenceAA0a5ColorG0Ovp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefinerColorScheme",
+                    "printedName": "RefinerSDK.RefinerColorScheme",
+                    "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK16WebViewPresenterC21colorSchemePreferenceAA0a5ColorG0Ovg",
+                "mangledName": "$s10RefinerSDK16WebViewPresenterC21colorSchemePreferenceAA0a5ColorG0Ovg",
+                "moduleName": "RefinerSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -27273,7 +28942,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(view:delegate:url:component:componentData:styles:contextualData:popupShouldBeganDismiss:mobileSdkVersion:javaScriptHandler:)",
+            "printedName": "init(view:delegate:url:component:componentData:styles:contextualData:popupShouldBeganDismiss:mobileSdkVersion:colorSchemePreference:javaScriptHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -27378,6 +29047,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "RefinerColorScheme",
+                "printedName": "RefinerSDK.RefinerColorScheme",
+                "hasDefaultArg": true,
+                "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "JavaScriptMessageHandler",
                 "printedName": "RefinerSDK.JavaScriptMessageHandler",
                 "hasDefaultArg": true,
@@ -27385,8 +29061,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10RefinerSDK16WebViewPresenterC4view8delegate3url9component0I4Data6styles010contextualJ023popupShouldBeganDismiss16mobileSdkVersion17javaScriptHandlerAcA0cD9Interface_pSg_AA0cD8Delegate_pSgS2SSgSSA2RSbSSAA04Javau7MessageV0Ctcfc",
-            "mangledName": "$s10RefinerSDK16WebViewPresenterC4view8delegate3url9component0I4Data6styles010contextualJ023popupShouldBeganDismiss16mobileSdkVersion17javaScriptHandlerAcA0cD9Interface_pSg_AA0cD8Delegate_pSgS2SSgSSA2RSbSSAA04Javau7MessageV0Ctcfc",
+            "usr": "s:10RefinerSDK16WebViewPresenterC4view8delegate3url9component0I4Data6styles010contextualJ023popupShouldBeganDismiss16mobileSdkVersion21colorSchemePreference17javaScriptHandlerAcA0cD9Interface_pSg_AA0cD8Delegate_pSgS2SSgSSA2SSbSSAA0a5ColorU0OAA04Javax7MessageY0Ctcfc",
+            "mangledName": "$s10RefinerSDK16WebViewPresenterC4view8delegate3url9component0I4Data6styles010contextualJ023popupShouldBeganDismiss16mobileSdkVersion21colorSchemePreference17javaScriptHandlerAcA0cD9Interface_pSg_AA0cD8Delegate_pSgS2SSgSSA2SSbSSAA0a5ColorU0OAA04Javax7MessageY0Ctcfc",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "AccessControl"
@@ -27509,6 +29185,56 @@
             "declKind": "Func",
             "usr": "s:10RefinerSDK16WebViewPresenterC03webD19DidFinishNavigationyyF",
             "mangledName": "$s10RefinerSDK16WebViewPresenterC03webD19DidFinishNavigationyyF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hostColorSchemeDidChange",
+            "printedName": "hostColorSchemeDidChange()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RefinerSDK16WebViewPresenterC24hostColorSchemeDidChangeyyF",
+            "mangledName": "$s10RefinerSDK16WebViewPresenterC24hostColorSchemeDidChangeyyF",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateColorSchemePreference",
+            "printedName": "updateColorSchemePreference(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefinerColorScheme",
+                "printedName": "RefinerSDK.RefinerColorScheme",
+                "usr": "c:@M@RefinerSDK@E@RefinerColorScheme"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10RefinerSDK16WebViewPresenterC27updateColorSchemePreferenceyyAA0agH0OF",
+            "mangledName": "$s10RefinerSDK16WebViewPresenterC27updateColorSchemePreferenceyyAA0agH0OF",
             "moduleName": "RefinerSDK",
             "declAttributes": [
               "Final",
@@ -28057,56 +29783,63 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 787,
+      "offset": 1008,
       "length": 16,
       "value": "\"component_data\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 854,
+      "offset": 1075,
       "length": 17,
       "value": "\"on_screen_delay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 921,
+      "offset": 1142,
       "length": 16,
       "value": "\"backdrop_close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 966,
+      "offset": 1187,
       "length": 16,
       "value": "\"form_view_uuid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 1237,
       "length": 21,
       "value": "\"component_data_json\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1065,
+      "offset": 1286,
       "length": 15,
       "value": "\"ping_again_in\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1127,
+      "offset": 1338,
+      "length": 25,
+      "value": "\"track_next_screen_visit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1410,
       "length": 14,
       "value": "\"screen_rules\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/BaseResponse.swift",
       "kind": "BooleanLiteral",
-      "offset": 1371,
+      "offset": 1654,
       "length": 4,
       "value": "true"
     },
@@ -28246,294 +29979,301 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 832,
+      "offset": 864,
       "length": 11,
       "value": "\"form_uuid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 875,
+      "offset": 907,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 922,
+      "offset": 954,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 964,
+      "offset": 996,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1002,
+      "offset": 1034,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1051,
+      "offset": 1104,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1111,
+      "offset": 1164,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1213,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1265,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1261,
+      "offset": 1314,
       "length": 16,
       "value": "\"form_view_uuid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1309,
+      "offset": 1362,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1368,
+      "offset": 1421,
       "length": 20,
       "value": "\"contact_attributes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1419,
+      "offset": 1472,
       "length": 18,
       "value": "\"manual_form_view\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1467,
+      "offset": 1520,
       "length": 17,
       "value": "\"force_form_view\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1512,
+      "offset": 1565,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1682,
+      "offset": 1735,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 2011,
+      "offset": 2096,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/FormActionRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 2048,
+      "offset": 2133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 691,
+      "offset": 921,
       "length": 20,
       "value": "\"contact_attributes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 973,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 790,
+      "offset": 1020,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 832,
+      "offset": 1062,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 1159,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 968,
+      "offset": 1219,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 1268,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1069,
+      "offset": 1320,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1121,
+      "offset": 1372,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1177,
+      "offset": 1428,
       "length": 17,
       "value": "\"write_operation\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1222,
+      "offset": 1473,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1515,
+      "length": 13,
+      "value": "\"screen_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1412,
+      "offset": 1703,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/IdentifyUserRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1661,
+      "offset": 1984,
       "length": 8,
       "value": "\"append\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 609,
+      "offset": 641,
       "length": 13,
       "value": "\"screen_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 654,
+      "offset": 686,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 733,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 775,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 819,
+      "offset": 872,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 879,
+      "offset": 932,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 981,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 980,
+      "offset": 1033,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1032,
+      "offset": 1085,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1085,
+      "offset": 1138,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/PingRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1264,
+      "offset": 1317,
       "length": 4,
       "value": "true"
     },
@@ -28575,7 +30315,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Refiner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3652,
+      "offset": 3944,
       "length": 5,
       "value": "false"
     },
@@ -28601,16 +30341,37 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/RefinerColorScheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 393,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/RefinerColorScheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Core\/RefinerOrchestrator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1577,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Core\/RefinerOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 19261,
+      "offset": 21399,
       "length": 24,
       "value": "\"ProjectId is required!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Core\/RefinerOrchestrator.swift",
       "kind": "StringLiteral",
-      "offset": 19325,
+      "offset": 21463,
       "length": 55,
       "value": "\"Refiner SDK not initialized. Call initialize() first.\""
     },
@@ -28619,7 +30380,7 @@
       "kind": "StringLiteral",
       "offset": 395,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"2.1.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
@@ -28638,532 +30399,567 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 587,
+      "length": 9,
+      "value": "\"COUNTRY\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
       "length": 9,
       "value": "\"USER_ID\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 631,
+      "offset": 673,
       "length": 13,
       "value": "\"USER_TRAITS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 684,
+      "offset": 726,
       "length": 17,
       "value": "\"CONTEXTUAL_DATA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 736,
+      "offset": 778,
       "length": 11,
       "value": "\"SIGNATURE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 825,
       "length": 13,
       "value": "\"SCREEN_NAME\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 881,
       "length": 21,
       "value": "\"LAST_TRACKED_SCREEN\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 899,
+      "offset": 941,
       "length": 17,
       "value": "\"SET_USER_CALLED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 956,
+      "offset": 998,
       "length": 18,
       "value": "\"MANUAL_FORM_VIEW\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1013,
+      "offset": 1055,
       "length": 17,
       "value": "\"FORCE_FORM_VIEW\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1067,
+      "offset": 1109,
       "length": 15,
       "value": "\"FIRST_SEEN_AT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1119,
+      "offset": 1161,
       "length": 14,
       "value": "\"ANONYMOUS_ID\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1173,
+      "offset": 1215,
       "length": 17,
       "value": "\"CLIENT_DISABLED\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Core\/RequestQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2338,
+      "length": 10,
+      "value": "50000000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Core\/RequestQueue.swift",
+      "kind": "Array",
+      "offset": 2462,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Core\/RequestQueue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2494,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Core\/RequestQueue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3031,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 694,
+      "offset": 726,
       "length": 18,
       "value": "\"manual_form_view\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 742,
+      "offset": 774,
       "length": 17,
       "value": "\"force_form_view\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 816,
       "length": 11,
       "value": "\"form_uuid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 827,
+      "offset": 859,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 906,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 948,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 992,
+      "offset": 1045,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1052,
+      "offset": 1105,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1101,
+      "offset": 1154,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1153,
+      "offset": 1206,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1205,
+      "offset": 1258,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
+      "offset": 1311,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1329,
+      "offset": 1382,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/ShowFormRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1494,
+      "offset": 1547,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 634,
+      "offset": 666,
       "length": 13,
       "value": "\"screen_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 679,
+      "offset": 711,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 726,
+      "offset": 758,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 768,
+      "offset": 800,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 844,
+      "offset": 897,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 904,
+      "offset": 957,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 953,
+      "offset": 1006,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1005,
+      "offset": 1058,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1057,
+      "offset": 1110,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1110,
+      "offset": 1163,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/StartSessionRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1289,
+      "offset": 1342,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 851,
+      "offset": 883,
       "length": 20,
       "value": "\"contact_attributes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 905,
+      "offset": 937,
       "length": 20,
       "value": "\"account_attributes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 957,
+      "offset": 989,
       "length": 19,
       "value": "\"is_partial_submit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1001,
+      "offset": 1033,
       "length": 11,
       "value": "\"form_uuid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1044,
+      "offset": 1076,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1091,
+      "offset": 1123,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1133,
+      "offset": 1165,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1171,
+      "offset": 1203,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1220,
+      "offset": 1273,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1329,
       "length": 13,
       "value": "\"screen_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1320,
+      "offset": 1373,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1369,
+      "offset": 1422,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1421,
+      "offset": 1474,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1470,
+      "offset": 1523,
       "length": 16,
       "value": "\"form_view_uuid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1518,
+      "offset": 1571,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1571,
+      "offset": 1624,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/SubmitFormRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1864,
+      "offset": 1917,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 625,
+      "offset": 657,
       "length": 12,
       "value": "\"event_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 701,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 716,
+      "offset": 748,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 758,
+      "offset": 790,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 834,
+      "offset": 887,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 894,
+      "offset": 947,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 943,
+      "offset": 996,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 1048,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1047,
+      "offset": 1100,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 1153,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackEventRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1271,
+      "offset": 1324,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 662,
       "length": 13,
       "value": "\"screen_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 707,
       "length": 19,
       "value": "\"contact_remote_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 722,
+      "offset": 754,
       "length": 14,
       "value": "\"anonymous_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 764,
+      "offset": 796,
       "length": 15,
       "value": "\"is_mobile_sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 893,
       "length": 29,
       "value": "\"contact_remote_id_signature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 953,
       "length": 17,
       "value": "\"mobile_platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 949,
+      "offset": 1002,
       "length": 19,
       "value": "\"mobile_os_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1001,
+      "offset": 1054,
       "length": 20,
       "value": "\"mobile_sdk_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1053,
+      "offset": 1106,
       "length": 25,
       "value": "\"mobile_statusbar_height\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1106,
+      "offset": 1159,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Models\/Requests\/TrackScreenRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 1278,
+      "offset": 1331,
       "length": 4,
       "value": "true"
     },
@@ -29198,63 +30994,63 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2426,
+      "offset": 3014,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5852,
+      "offset": 6691,
       "length": 44,
       "value": "\"var meta = document.createElement('meta');\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5907,
+      "offset": 6746,
       "length": 25,
       "value": "\"meta.name = 'viewport';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5943,
+      "offset": 6782,
       "length": 94,
       "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6048,
+      "offset": 6887,
       "length": 54,
       "value": "\"var head = document.getElementsByTagName('head')[0];\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6105,
+      "offset": 6944,
       "length": 25,
       "value": "\"head.appendChild(meta);\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1243,
+      "offset": 1646,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "Dictionary",
-      "offset": 1510,
+      "offset": 1913,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1599,
+      "offset": 2002,
       "length": 5,
       "value": "false"
     }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name          = "RefinerSDK"
-    s.version       = "2.0.0"
+    s.version       = "2.1.0"
     s.summary       = "Refiner iOS SDK"
     s.homepage      = "https://refiner.io"
     s.author        = { "Refiner" => "contact@refiner.io" }
