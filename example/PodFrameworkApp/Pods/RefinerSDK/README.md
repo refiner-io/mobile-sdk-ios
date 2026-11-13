@@ -1,18 +1,25 @@
+# Refiner Mobile SDK for iOS
+
 [![Platform](https://img.shields.io/badge/platform-iOS-green.svg)](https://refiner.io)
 [![Version](https://img.shields.io/cocoapods/v/RefinerSDK.svg?style=flat)](https://cocoapods.org/pods/RefinerSDK)
 [![Package Manager](https://img.shields.io/badge/package%20manager-compatible-green.svg?logo=Swift)](https://github.com/refiner-io/mobile-sdk-ios)
 
-
-# Refiner Mobile SDK integration
-
-## iOS
+This repository hosts the official Refiner iOS SDK. Installing the SDK allows you to track user data in Refiner and launch [in-app surveys](https://refiner.io/features/in-app-surveys/) within your iOS app.
 
 Refiner iOS SDK's minimum deployment target is iOS 11.
 
-### 1) Installation
+Refiner is a customer feedback survey platform designed specifically for web and mobile applications. Get spot-on insights from your users with perfectly timed [mobile in-app surveys](https://refiner.io/features/mobile-app-surveys/).
+
+With Refiner you can ask your users any question while they are using your iOS mobile app. Measure [customer satisfaction (CSAT)](https://refiner.io/solutions/csat/), [Net Promoter Score (NPS)](https://refiner.io/solutions/nps/), or [customer effort score (CES)](https://refiner.io/solutions/ces/), research what to built next or profile your users. Refiner supports all product feedback survey use cases and comes packed with expert-built templates that will get you started quickly.
+
+Refiner integrates into your marketing & sales tech stack seamlessly. Our integrations allow you to sync survey response data in real time to third party tools, such as your CRM, email marketing automation platform, your backend API or data warehouse.  
+
+Please find more information about how Refiner mobile app survey work in our [documentation](https://refiner.io/docs/kb/mobile-sdk/getting-started/).
+
+## 1) Installation
     The Refiner iOS SDK can be added either by using CocoaPods or SPM.
 
-#### 1.1 Swift Package Manager (Xcode 11+)
+### 1.1 Swift Package Manager (Xcode 11+)
 
 [Swift Package Manager](https://swift.org/package-manager/) (SwiftPM) is a tool for managing the distribution of Swift code as well as C-family dependency. From Xcode 11, SwiftPM got natively integrated with Xcode.
 
@@ -20,7 +27,7 @@ Refiner SDK support SwiftPM. To use SwiftPM, you should use Xcode 11 to open you
 
 After select the package, you can choose the dependency type (tagged version, branch or commit). Then Xcode will setup all the stuff for you.
 
-#### 1.2 CocoaPods
+### 1.2 CocoaPods
 
 Referencing the `RefinerSDK` pod in the `Podfile` will be sufficient to add the Refiner iOS SDK to your project.
 
@@ -39,7 +46,7 @@ target 'YOUR_APPLICATION_NAME' do
 
   # ... beginning of your Podfile ...
 
-  pod 'RefinerSDK'
+  pod 'RefinerSDK', :git => 'https://github.com/refiner-io/mobile-sdk-ios.git', :tag => '2.1.0'
 
   # ... remaining of your Podfile ...
 
@@ -54,29 +61,29 @@ end
 pod install
 ```
 
-### 2) Usage
+## 2) Usage
 
 Visit our [documentation](https://refiner.io/docs/kb/mobile-sdk/mobile-sdk-reference/) for more information about how to use the SDK methods.
 
-#### Initialization & Configuration
+### Initialization & Configuration
 
 Initialize Refiner iOS SDK in your application class with the needed configuration parameters. 
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    Refiner.instance.initialize(projectId: "PROJECT_ID", enableDebugMode: true)
+    Refiner.instance.initialize(projectId: "PROJECT_ID", debugMode: true)
     return true
 }
 ```
 
-#### Identify User
+### Identify User
 
-Call `Identify User` to create or update a user traits in Refiner. 
+Call `Identify User` to create or update user traits in Refiner. 
 
 
-The first parameter is the userId of your logged-in user and is the only mandatory parameter. 
+The first parameter is the unique identifier of your logged-in user.
 
-The second parameter is an object of user traits. You can omit or set this value to `null` if you don't want to send any user traits to your Refiner account.
+The second parameter is an object of user traits. You can omit or set this value to `nil` if you don't want to send any user traits to your Refiner account.
 
 ```swift
 Refiner.instance.identifyUser(
@@ -88,9 +95,13 @@ Refiner.instance.identifyUser(
 )
 ```
 
-The third parameter is for setting the `locale` of a user and is optional. The expected format is a two letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code. When provided, the locale code is used for launching surveys for specific languages, as well as launching translated surveys. You can omit or set the value to `null` if you are not using any language specific features.
+#### Optional parameters
 
-The fourth parameter is an optional [Identity Verification](https://refiner.io/docs/kb/mobile-sdk/identify-verification-for-mobile-sdks/) signature. We recommend to use a Identify Verification signature for increased security in a production environment. For development purposes, you can omit or set this value to `null`.
+The third parameter is for setting the `locale` of a user. The expected format is a two letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code. When provided, the locale code is used for launching surveys for specific languages, as well as launching translated surveys. You can omit or set the value to `nil` if you are not using any language specific features.
+
+The fourth parameter is an [Identity Verification](https://refiner.io/docs/kb/settings/identity-verification/) signature. We recommend to use a Identify Verification signature for increased security in a production environment. For development purposes, you can omit or set this value to `nil`.
+
+The fifth parameter allows you to change the data storage mode for userTraits from the default "append" mode to "replace". By default, traits are appended to the existing user record—this means previously stored data will persist even if it's not included in the current payload. When set to "replace", only the traits provided in the current payload are kept. Any previously stored traits that are not included will be removed from the user object in Refiner.
 
 ```swift
 Refiner.instance.identifyUser(
@@ -100,10 +111,51 @@ Refiner.instance.identifyUser(
     ],
     userId: "USER_ID",
     locale: "en", 
+    signature: "SIGNATURE",
+    writeOperation: Refiner.WriteOperation.replace.rawValue
+)
+```
+
+### Set Anonymous Id
+
+The `Set Anonymous Id` method allows you to set a anonymous user ID for users that are not logged-in. This is useful for tracking users who haven't signed up yet or for apps that don't require authentication.
+
+When not called, Refiner will automatically generate and maintain a unique anonymous identifier for the user. This identifier persists across app sessions.
+
+```swift
+Refiner.instance.setAnonymousId(anonymousId: "ANONYMOUS_ID")
+```
+
+### Set Locale
+
+The `Set Locale` method allows you to set or update the locale for a user.
+
+The expected format is a two letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code.
+
+```swift
+Refiner.instance.setLocale(locale: "en")
+```
+
+### Set User
+
+The `Set User` method acts as an alternative to the `Identify User` method described above. 
+
+In contrast to the `Identify User` method, the `Set User` method does not immediately create a user object in your Refiner account. The provided user Id and traits are kept locally in your app and no data is communicated to our servers at first. Only when the user performs a meaningful action in your app (e.g. `Track Event` or `Track Screen` is executed) will a user object be created in Refiner. Provided user traits will be attached to the user object when a survey is shown.
+
+The purpose of this alternative method is provide a way to identify users locally when the SDK is initialised but keep the number of tracked users in your Refiner account to a minimum.
+
+```swift
+Refiner.instance.setUser(
+    userTraits: [
+        "email": "hello@hello.com"
+        "something": "else"
+    ],
+    userId: "USER_ID",
+    locale: "en", 
     signature: "SIGNATURE")
 ```
 
-#### Track Event
+### Track Event
 
 `Track Event` lets you track user events. Tracked events can be used to create user segments and target audiences in Refiner.
 
@@ -111,9 +163,9 @@ Refiner.instance.identifyUser(
 Refiner.instance.trackEvent(name: "EVENT_NAME")
 ```
 
-#### Track Screen
+### Track Screen
 
-`Track Screen` provides to track screen that user is currently on. Screen information can be used to launch surveys in specific areas of your app. 
+`Track Screen` lets you to track screen that user is currently on. Screen information can be used to launch surveys in specific areas of your app. 
 
 We recommend to track screens on which you might want to show a survey one day. There is no need to systematically track all screens of your app.
 
@@ -121,7 +173,7 @@ We recommend to track screens on which you might want to show a survey one day. 
 Refiner.instance.trackScreen(name: "SCREEN_NAME")
 ```
 
-#### Ping
+### Ping
 
 Depending on your setup, you might want to initiate regular checks for surveys that are scheduled for the current user. For example when you are using time based trigger events, or when a target audience is based on user data received by our backend API. 
 
@@ -131,7 +183,7 @@ The `Ping` method provides an easy way to perform such checks. You can call the 
 Refiner.ping()
 ```
 
-#### Show Form
+### Show Form
 
 If you use the Manual Trigger Event for your survey, you need to call `Show Form` whenever you want to launch the survey.
 
@@ -145,9 +197,9 @@ For testing purposes, you can also provide an additional `force` parameter which
 Refiner.instance.showForm(uuid: "FORM_UUID", force: true)
 ```
 
-#### Attach Contextual Data
+### Attach Contextual Data
 
-Attach contextual data to the survey submissions with `addToResponse`. Set `null` to remove the contextual data.
+Attach contextual data to the survey submissions with `addToResponse`. Set `nil` to remove the contextual data.
 
 ```swift
 Refiner.instance.addToResponse(
@@ -157,7 +209,15 @@ Refiner.instance.addToResponse(
     ])
 ```
 
-#### Reset User
+### Start user session
+
+A new user session is automatically detected when a user returns to your application after at least one hour of inactivity. You can choose to manually start a new user session with the method shown below. You can call this method for example right after a user opens your app.
+
+```swift
+Refiner.instance.startSession()
+```
+
+### Reset User
 
 Call `Reset User` to reset the user identifier previously set through `Identify User`. We recommend calling this method when the user logs out from your app.
 
@@ -165,7 +225,47 @@ Call `Reset User` to reset the user identifier previously set through `Identify 
 Refiner.instance.resetUser()
 ```
 
-#### Register callback functions
+### Disable & enable client
+
+You can instruct the SDK to stop querying our servers and prevent any surveys from being displayed.
+
+When ‘disable client’ is invoked, the SDK immediately stops any communication with the backend API and currently open surveys will be closed.
+
+This allows you to programmatically suspend survey activity – for example, in critical areas of your app, during maintenance windows, or based on user consent preferences.
+
+```swift
+Refiner.instance.disableClient();
+```
+
+The client remains disabled on the current device until it is explicitly re-enabled using the following command:
+
+```swift
+Refiner.instance.enableClient();
+```
+
+### Set Project
+
+Change the environment UUID during runtime, after the SDK has been initialised.
+
+```swift
+Refiner.instance.setProject(projectId: "PROJECT_ID");
+```
+
+### Close Surveys
+
+Close a survey programmatically without sending any information to the backend API with the `closeForm` method. 
+
+```swift
+Refiner.instance.closeForm(uuid: "FORM_UUID")
+```
+
+Close a survey programmatically and send a "dismissed at" timestamp to the backend server with the `dismissForm` method. 
+
+```swift
+Refiner.instance.dismissForm(uuid: "FORM_UUID")
+```
+
+### Register callback functions
 
 Registering callback functions allows you to execute any code at specific moments in the lifecycle of a survey.
 A popular use-case for callback functions is to redirect a user to a new screen once they completed a survey.
@@ -209,7 +309,16 @@ A popular use-case for callback functions is to redirect a user to a new screen 
     }
 ```
 
-`onDismiss` gets called when the user dismissed a survey by clicking on the “x” in the top right corner.
+`onDismiss` gets called when the user dismissed a survey by clicking on the "x" in the top right corner.
+
+```swift
+    Refiner.instance.onDismiss = { formId in
+        print("onDismissCallback")
+        print("formId: \(formId))")
+    }
+```
+
+`onComplete` gets called when the user completed (submitted) a survey.
 
 ```swift
     Refiner.instance.onComplete = { formId, formData in
@@ -217,14 +326,13 @@ A popular use-case for callback functions is to redirect a user to a new screen 
         print("formId: \(formId))")
         print("formData: \(formData ?? ""))")
     }
-```
-
-`onComplete` gets called when the user completed (submitted) a survey.
-
-```swift
-    Refiner.instance.onDismiss = { formId in
-        print("onDismissCallback")
-        print("formId: \(formId))")
-    }
 ```     
         
+`onError` gets called when an error occurred.
+
+```swift
+    Refiner.instance.onError = { message in
+        print("onErrorCallback")
+        print("message: \(message)")
+    }
+```     

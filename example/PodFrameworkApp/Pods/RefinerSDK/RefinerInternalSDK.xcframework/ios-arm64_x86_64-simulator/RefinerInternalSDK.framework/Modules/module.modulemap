@@ -1,6 +1,0 @@
-framework module RefinerInternalSDK {
-    umbrella header "RefinerInternalSDK.h"
-
-    export *
-    module * { export * }
-}

@@ -1,2 +1,1 @@
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/RefinerSDK/RefinerSDK.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/RefinerSDK/RefinerInternalSDK.framework
