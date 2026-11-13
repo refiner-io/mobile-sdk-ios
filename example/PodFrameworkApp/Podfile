@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.0'
 
 target 'PodFrameworkApp' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,5 +7,6 @@ target 'PodFrameworkApp' do
 
   # Pods for PodFrameworkApp
 
-    pod "RefinerSDK"
+    # RefinerSDK is not on the CocoaPods trunk; take it from this repo.
+    pod 'RefinerSDK', :git => 'https://github.com/refiner-io/mobile-sdk-ios.git', :tag => '2.1.0'
 end
