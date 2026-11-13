@@ -1,7 +1,7 @@
 # Refiner Mobile SDK for iOS
 
 [![Platform](https://img.shields.io/badge/platform-iOS-green.svg)](https://refiner.io)
-[![Version](https://img.shields.io/cocoapods/v/RefinerSDK.svg?style=flat)](https://cocoapods.org/pods/RefinerSDK)
+[![Version](https://img.shields.io/github/v/release/refiner-io/mobile-sdk-ios?label=version)](https://github.com/refiner-io/mobile-sdk-ios/releases/latest)
 [![Package Manager](https://img.shields.io/badge/package%20manager-compatible-green.svg?logo=Swift)](https://github.com/refiner-io/mobile-sdk-ios)
 
 This repository hosts the official Refiner iOS SDK. Installing the SDK allows you to track user data in Refiner and launch [in-app surveys](https://refiner.io/features/in-app-surveys/) within your iOS app.
