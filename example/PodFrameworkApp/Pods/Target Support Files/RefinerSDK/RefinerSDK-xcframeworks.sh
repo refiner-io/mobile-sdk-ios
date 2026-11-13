@@ -23,12 +23,6 @@ variant_for_slice()
   "RefinerSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "RefinerInternalSDK.xcframework/ios-arm64")
-    echo ""
-    ;;
-  "RefinerInternalSDK.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   esac
 }
 
@@ -39,12 +33,6 @@ archs_for_slice()
     echo "arm64"
     ;;
   "RefinerSDK.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
-  "RefinerInternalSDK.xcframework/ios-arm64")
-    echo "arm64"
-    ;;
-  "RefinerInternalSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -130,5 +118,4 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/RefinerSDK/RefinerSDK.xcframework" "RefinerSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/RefinerSDK/RefinerInternalSDK.xcframework" "RefinerSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 
