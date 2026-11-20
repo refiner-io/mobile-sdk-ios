@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreGraphics
 import Foundation
+import ObjectiveC
 import Swift
 import UIKit
 import WebKit
@@ -102,6 +103,12 @@ public protocol BottomPopupAttributesDelegate : AnyObject {
   var popupDimmingViewAlpha: CoreFoundation.CGFloat { get }
   var popupShouldBeganDismiss: Swift.Bool { get }
   var popupViewAccessibilityIdentifier: Swift.String { get }
+  var popupFadesInAndOut: Swift.Bool { get }
+}
+extension RefinerSDK.BottomPopupAttributesDelegate {
+  public var popupFadesInAndOut: Swift.Bool {
+    get
+  }
 }
 public enum BottomPopupConstants {
   public static let minPercentOfVisiblePartToCompleteAnimation: CoreFoundation.CGFloat
@@ -147,6 +154,9 @@ public enum BottomPopupConstants {
     get
   }
   @_Concurrency.MainActor @preconcurrency open var popupViewAccessibilityIdentifier: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency open var popupFadesInAndOut: Swift.Bool {
     get
   }
   @objc deinit
@@ -671,6 +681,9 @@ public enum UrlPolicy {
     get
   }
   @_Concurrency.MainActor @preconcurrency override final public var popupShouldDismissInteractivelty: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency override final public var popupFadesInAndOut: Swift.Bool {
     get
   }
   @_Concurrency.MainActor @preconcurrency override final public var popupShouldBeganDismiss: Swift.Bool {
