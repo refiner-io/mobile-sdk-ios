@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/refiner-io/mobile-sdk-ios.git",
       "state" : {
-        "revision" : "ab89477cced23025570e26120f3db9e4eed3cbac",
-        "version" : "2.1.0"
+        "revision" : "350136fcdfe9f1c09d7d5c54dea857a230845f67",
+        "version" : "2.2.0"
       }
     }
   ],
