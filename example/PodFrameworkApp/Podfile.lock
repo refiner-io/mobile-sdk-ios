@@ -1,22 +1,22 @@
 PODS:
-  - RefinerSDK (2.1.0)
+  - RefinerSDK (2.2.0)
 
 DEPENDENCIES:
-  - RefinerSDK (from `https://github.com/refiner-io/mobile-sdk-ios.git`, tag `2.1.0`)
+  - RefinerSDK (from `https://github.com/refiner-io/mobile-sdk-ios.git`, tag `2.2.0`)
 
 EXTERNAL SOURCES:
   RefinerSDK:
     :git: https://github.com/refiner-io/mobile-sdk-ios.git
-    :tag: 2.1.0
+    :tag: 2.2.0
 
 CHECKOUT OPTIONS:
   RefinerSDK:
     :git: https://github.com/refiner-io/mobile-sdk-ios.git
-    :tag: 2.1.0
+    :tag: 2.2.0
 
 SPEC CHECKSUMS:
-  RefinerSDK: 8fcc555b13a163e54b94695fdce1910ea42dd87b
+  RefinerSDK: b0ce2edbf59f96f68a7420f04aee8dd776cd111d
 
-PODFILE CHECKSUM: f7214c29f583ce473f3716cdb55f1634fea634d4
+PODFILE CHECKSUM: 4f36be0fd6cb57bf85c1758cf4a992a8ae60fff2
 
 COCOAPODS: 1.16.2

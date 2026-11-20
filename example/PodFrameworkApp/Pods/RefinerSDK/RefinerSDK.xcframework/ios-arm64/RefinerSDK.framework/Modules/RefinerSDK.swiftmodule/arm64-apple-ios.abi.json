@@ -3704,6 +3704,95 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "popupFadesInAndOut",
+            "printedName": "popupFadesInAndOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK29BottomPopupAttributesDelegateP18popupFadesInAndOutSbvp",
+            "mangledName": "$s10RefinerSDK29BottomPopupAttributesDelegateP18popupFadesInAndOutSbvp",
+            "moduleName": "RefinerSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK29BottomPopupAttributesDelegateP18popupFadesInAndOutSbvg",
+                "mangledName": "$s10RefinerSDK29BottomPopupAttributesDelegateP18popupFadesInAndOutSbvg",
+                "moduleName": "RefinerSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : RefinerSDK.BottomPopupAttributesDelegate>",
+                "sugared_genericSig": "<Self where Self : RefinerSDK.BottomPopupAttributesDelegate>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "popupFadesInAndOut",
+            "printedName": "popupFadesInAndOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK29BottomPopupAttributesDelegatePAAE18popupFadesInAndOutSbvp",
+            "mangledName": "$s10RefinerSDK29BottomPopupAttributesDelegatePAAE18popupFadesInAndOutSbvp",
+            "moduleName": "RefinerSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK29BottomPopupAttributesDelegatePAAE18popupFadesInAndOutSbvg",
+                "mangledName": "$s10RefinerSDK29BottomPopupAttributesDelegatePAAE18popupFadesInAndOutSbvg",
+                "moduleName": "RefinerSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : RefinerSDK.BottomPopupAttributesDelegate>",
+                "sugared_genericSig": "<Self where Self : RefinerSDK.BottomPopupAttributesDelegate>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
@@ -4986,6 +5075,50 @@
                 "declKind": "Accessor",
                 "usr": "s:10RefinerSDK25BottomPopupViewControllerC05popupE23AccessibilityIdentifierSSvg",
                 "mangledName": "$s10RefinerSDK25BottomPopupViewControllerC05popupE23AccessibilityIdentifierSSvg",
+                "moduleName": "RefinerSDK",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "popupFadesInAndOut",
+            "printedName": "popupFadesInAndOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK25BottomPopupViewControllerC18popupFadesInAndOutSbvp",
+            "mangledName": "$s10RefinerSDK25BottomPopupViewControllerC18popupFadesInAndOutSbvp",
+            "moduleName": "RefinerSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK25BottomPopupViewControllerC18popupFadesInAndOutSbvg",
+                "mangledName": "$s10RefinerSDK25BottomPopupViewControllerC18popupFadesInAndOutSbvg",
                 "moduleName": "RefinerSDK",
                 "isOpen": true,
                 "accessorKind": "get"
@@ -9201,6 +9334,13 @@
             "mangledName": "$ss8CopyableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
       },
       {
         "kind": "Import",
@@ -26515,6 +26655,56 @@
           },
           {
             "kind": "Var",
+            "name": "popupFadesInAndOut",
+            "printedName": "popupFadesInAndOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10RefinerSDK17WebViewControllerC18popupFadesInAndOutSbvp",
+            "mangledName": "$s10RefinerSDK17WebViewControllerC18popupFadesInAndOutSbvp",
+            "moduleName": "RefinerSDK",
+            "overriding": true,
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10RefinerSDK17WebViewControllerC18popupFadesInAndOutSbvg",
+                "mangledName": "$s10RefinerSDK17WebViewControllerC18popupFadesInAndOutSbvg",
+                "moduleName": "RefinerSDK",
+                "overriding": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "popupShouldBeganDismiss",
             "printedName": "popupShouldBeganDismiss",
             "children": [
@@ -27406,6 +27596,27 @@
             "mangledName": "$s10RefinerSDK16WebViewInterfaceP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "RefinerSDK"
       },
       {
         "kind": "Import",
@@ -29874,70 +30085,70 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 1447,
+      "offset": 1720,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1503,
+      "offset": 1776,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 1555,
+      "offset": 1828,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 1615,
+      "offset": 1888,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 1675,
+      "offset": 1948,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 1734,
+      "offset": 2007,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1789,
+      "offset": 2062,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1843,
+      "offset": 2116,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1910,
+      "offset": 2183,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/BottomPopup\/BottomPopupUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
+      "offset": 2257,
       "length": 17,
       "value": "\"bottomPopupView\""
     },
@@ -30380,7 +30591,7 @@
       "kind": "StringLiteral",
       "offset": 395,
       "length": 7,
-      "value": "\"2.1.0\""
+      "value": "\"2.2.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/Storage\/RefinerSettingsKeys.swift",
@@ -30986,52 +31197,66 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1296,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1255,
+      "offset": 1452,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3014,
+      "offset": 5261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6691,
+      "offset": 9179,
       "length": 44,
       "value": "\"var meta = document.createElement('meta');\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6746,
+      "offset": 9234,
       "length": 25,
       "value": "\"meta.name = 'viewport';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6782,
+      "offset": 9270,
       "length": 94,
       "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6887,
+      "offset": 9375,
       "length": 54,
       "value": "\"var head = document.getElementsByTagName('head')[0];\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6944,
+      "offset": 9432,
       "length": 25,
       "value": "\"head.appendChild(meta);\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewInputAccessory.swift",
+      "kind": "StringLiteral",
+      "offset": 634,
+      "length": 26,
+      "value": "\"_RefinerNoInputAccessory\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/mobile-sdk-ios-internal\/Sources\/RefinerSDK\/WebView\/WebViewPresenter.swift",
